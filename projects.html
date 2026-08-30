@@ -1,215 +1,177 @@
-<!DOCTYPE html>
-<html lang="uk" class="dark">
+<!doctype html>
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Кейси & Технічний Стек | Arsenii Leno</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: '#3b82f6',
-            darkBg: '#0b0f19',
-            cardBg: '#111827',
-            borderCol: '#1f2937'
-          }
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b12">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Вибрані клієнтські й дослідницькі проєкти Arsenii Leno: медична edge-платформа, market-event analytics, LegalTech RAG-концепт і clinic workflow prototype.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Arsenii Leno">
+  <meta property="og:title" content="Проєкти та стек — Arsenii Leno">
+  <meta property="og:description" content="Верифіковані ролі, чесні статуси й технічні рішення — від live-клініки до дослідницьких прототипів.">
+  <meta property="og:url" content="https://arsenii-leno.github.io/projects.html">
+  <meta property="og:image" content="https://arsenii-leno.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Проєкти та стек — Arsenii Leno">
+  <meta name="twitter:description" content="Верифіковані ролі, чесні статуси й технічні рішення — від live-клініки до дослідницьких прототипів.">
+  <meta name="twitter:image" content="https://arsenii-leno.github.io/og.png">
+  <link rel="canonical" href="https://arsenii-leno.github.io/projects.html">
+  <link rel="alternate" hreflang="uk" href="https://arsenii-leno.github.io/projects.html">
+  <link rel="alternate" hreflang="sk" href="https://arsenii-leno.github.io/projects.html?lang=sk">
+  <link rel="alternate" hreflang="en" href="https://arsenii-leno.github.io/projects.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://arsenii-leno.github.io/projects.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Проєкти та стек — Arsenii Leno</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": "https://arsenii-leno.github.io/projects.html",
+      "name": "Selected projects by Arsenii Leno",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "url": "https://med.uz.ua", "name": "med.uz.ua" },
+          { "@type": "ListItem", "position": 2, "url": "https://github.com/arsenii-leno/gram-event-quant", "name": "gram-event-quant" },
+          { "@type": "ListItem", "position": 3, "url": "https://github.com/arsenii-leno/DIkastes.ai", "name": "DIkastes.ai" }
+        ]
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b0f19; color: #e5e7eb; }
-  </style>
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
+<body data-page="projects">
+  <a class="skip-link" href="#main" data-i18n="global.skip">Перейти до основного вмісту</a>
+  <div class="page-glow page-glow--one" aria-hidden="true"></div>
+  <div class="page-glow page-glow--two" aria-hidden="true"></div>
 
-  <main class="max-w-4xl mx-auto px-6 py-12 w-full">
-    
-    <nav class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-12">
-      <a href="index.html" class="text-xl font-extrabold text-white tracking-tight flex items-center gap-2">
-        <span>Arsenii Leno</span>
-        <span class="text-xs px-2 py-0.5 rounded bg-blue-900/40 text-blue-400 border border-blue-800/50">Engineering & Growth</span>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Arsenii Leno — home">
+        <span class="brand-mark" aria-hidden="true">AL</span>
+        <span class="brand-copy"><strong>Arsenii Leno</strong><small data-i18n="global.brandTag">Infrastructure &amp; Growth</small></span>
       </a>
-      <div class="flex items-center gap-6 text-sm font-semibold">
-        <a href="index.html" class="text-gray-400 hover:text-white transition">Послуги & Прайсинг</a>
-        <a href="about.html" class="text-gray-400 hover:text-white transition">Про мене</a>
-        <a href="projects.html" class="text-blue-400 border-b-2 border-blue-400 pb-0.5">Кейси & Технічний стек</a>
+      <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria-label="global.navLabel">
+        <a class="nav-link" href="index.html" data-i18n="global.nav.services">Послуги</a>
+        <a class="nav-link" href="about.html" data-i18n="global.nav.about">Про мене</a>
+        <a class="nav-link is-active" href="projects.html" aria-current="page" data-i18n="global.nav.projects">Проєкти</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="global.languageLabel">
+          <button class="language-button is-active" type="button" data-language="uk" aria-pressed="true">UA</button>
+          <button class="language-button" type="button" data-language="sk" aria-pressed="false">SK</button>
+          <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="button button--small button--ghost header-cta" href="index.html#contact" data-i18n="global.nav.consultation">Консультація</a>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <header class="mb-12">
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">
-        Реалізовані Проєкти & Технічний Стек
-      </h1>
-      <p class="text-base text-gray-300">
-        Практичні інженерні рішення, AI-архітектура та підтверджені сертифікації у сфері автоматизації реклами.
-      </p>
-    </header>
-
-    <section class="mb-14">
-      <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-        <span class="text-amber-400">🎖️</span> Офіційні сертифікації
-      </h2>
-      <div class="p-6 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-amber-500/40 transition-all">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
-          <div>
-            <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-amber-950/60 text-amber-300 border border-amber-800/50 uppercase tracking-wider">
-              Google Verified Credential
-            </span>
-            <h3 class="text-lg font-bold text-white mt-1.5">
-              AI-Powered Performance Ads Certification
-            </h3>
-          </div>
-          <a href="https://www.credential.net/966f96a1-99c6-4a13-b928-80732c562d8d" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-400 hover:text-blue-300 transition bg-blue-950/50 px-3 py-1.5 rounded-lg border border-blue-800/50 self-start sm:self-auto">
-            <span>Verify Badge ↗</span>
-          </a>
+  <main id="main">
+    <section class="section page-hero page-hero--projects">
+      <div class="shell">
+        <div class="page-hero__wide-copy">
+          <p class="eyebrow" data-i18n="projects.hero.eyebrow">Реальна робота й дослідницькі системи</p>
+          <h1><span data-i18n="projects.hero.title">Проєкти з контекстом.</span> <span class="gradient-text" data-i18n="projects.hero.titleAccent">Не галерея технологій.</span></h1>
+          <p class="page-hero__lede" data-i18n="projects.hero.lede">Для кожного проєкту вказано фактичний статус, мою роль і межі доказової бази — щоб live-клієнтська робота не змішувалася з research-прототипами.</p>
         </div>
-        <p class="text-sm text-gray-400 mb-4 leading-relaxed">
-          Офіційна сертифікація від Google Skillshop, що підтверджує навички в крос-канальній оптимізації, алгоритмічному бідингу (Smart Bidding), Performance Max кампаніях та максимізації конверсій.
-        </p>
-        <div class="flex flex-wrap items-center gap-3 text-xs text-gray-400 border-t border-gray-800/60 pt-3">
-          <span><strong>Організація:</strong> Google Skillshop</span>
-          <span>•</span>
-          <span><strong>Дата видачі:</strong> Липень 2026</span>
-          <span>•</span>
-          <span><strong>ID:</strong> 966f96a1-99c6-4a13-b928-80732c562d8d</span>
-        </div>
+        <div class="project-index" id="project-index"></div>
       </div>
     </section>
 
-    <section class="mb-14">
-      <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-        <span class="text-blue-500">⚡</span> Вибрані проєкти
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        
-        <a href="https://med.uz.ua" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-blue-500/50 transition-all group flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="font-bold text-white group-hover:text-blue-400 flex items-center gap-1.5 text-lg">
-                med.uz.ua <span>↗</span>
-              </h3>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-950/60 text-emerald-400 border border-emerald-800/50 font-semibold">100/100 CWV</span>
+    <section class="section section--muted">
+      <div class="shell">
+        <article class="flagship-card">
+          <div class="flagship-card__header">
+            <div>
+              <span class="project-status project-status--live"><i aria-hidden="true"></i><span data-i18n="projects.flagship.status">Live client platform</span></span>
+              <p class="eyebrow" data-i18n="projects.flagship.eyebrow">Флагманський кейс · 01</p>
+              <h2>med.uz.ua</h2>
             </div>
-            <p class="text-sm text-gray-400 mb-4 leading-relaxed">
-              Edge-платформа для офтальмологічного центру. Zero-JS архітектура на Astro та Cloudflare Pages, надшвидке завантаження sub-100ms та наскрізна лідогенерація.
-            </p>
+            <a class="button button--ghost" href="https://med.uz.ua" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.flagship.visit">Відкрити сайт</span><span aria-hidden="true">↗</span></a>
           </div>
-          <div class="flex flex-wrap gap-1.5 text-xs text-gray-400">
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">Astro</span>
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">Tailwind CSS</span>
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">Cloudflare</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arsenii-leno/gram-event-quant" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-blue-500/50 transition-all group flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="font-bold text-white group-hover:text-blue-400 flex items-center gap-1.5 text-lg">
-                gram-event-quant <span>↗</span>
-              </h3>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-950/60 text-blue-400 border border-blue-800/50 font-semibold">Low-Latency</span>
+          <div class="flagship-grid">
+            <div class="flagship-story">
+              <h3 data-i18n="projects.flagship.challengeTitle">Задача</h3>
+              <p data-i18n="projects.flagship.challenge">Замінити успадковану WordPress-систему на легшу архітектуру та побудувати зрозумілий шлях від пошуку послуги до звернення в клініку.</p>
+              <h3 data-i18n="projects.flagship.roleTitle">Моя роль</h3>
+              <p data-i18n="projects.flagship.role">Інформаційна архітектура, Astro-реалізація, edge-доставка, мультимовність, privacy-aware аналітика та рекламна інфраструктура.</p>
             </div>
-            <p class="text-sm text-gray-400 mb-4 leading-relaxed">
-              Асинхронний квантовий фреймворк на Python. Обробка високочастотних потоків даних через неблокуючі WebSockets з правилами slippage protection.
-            </p>
+            <div class="architecture-map" id="flagship-map" aria-label="Project architecture" data-i18n-aria-label="projects.flagship.mapLabel"></div>
           </div>
-          <div class="flex flex-wrap gap-1.5 text-xs text-gray-400">
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">Python 3.12</span>
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">asyncio</span>
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">WebSockets</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arsenii-leno/DIkastes.ai" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-blue-500/50 transition-all group flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="font-bold text-white group-hover:text-blue-400 flex items-center gap-1.5 text-lg">
-                DIkastes.ai <span>↗</span>
-              </h3>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-purple-950/60 text-purple-400 border border-purple-800/50 font-semibold">LegalTech AI</span>
-            </div>
-            <p class="text-sm text-gray-400 mb-4 leading-relaxed">
-              Інтелектуальний асистент для юридичних досліджень. Поєднує нормативні бази даних та прецедентний аналіз через гібридний RAG та векторні індекси.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-1.5 text-xs text-gray-400">
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">FastAPI</span>
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">RAG</span>
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">Vector Search</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arsenii-leno/Clinic-App" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-blue-500/50 transition-all group flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="font-bold text-white group-hover:text-blue-400 flex items-center gap-1.5 text-lg">
-                Clinic-App <span>↗</span>
-              </h3>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-300 font-semibold">Full-Stack</span>
-            </div>
-            <p class="text-sm text-gray-400 mb-4 leading-relaxed">
-              Клінічний дашборд та портал онлайн-запису пацієнтів. Типізоване керування станом, агрегація записів та адаптивний інтерфейс.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-1.5 text-xs text-gray-400">
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">TypeScript</span>
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">React</span>
-            <span class="px-2.5 py-1 bg-gray-800/60 rounded border border-gray-700/50">Tailwind</span>
-          </div>
-        </a>
-
+          <div class="flagship-outcomes" id="flagship-outcomes"></div>
+          <p class="claim-note" data-i18n="projects.flagship.claimNote">Live-статус і технології перевіряються за публічним сайтом. Рекламні результати не публікуються без узгоджених чисел і періоду порівняння.</p>
+        </article>
       </div>
     </section>
 
-    <section class="mb-14">
-      <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-        <span class="text-emerald-400">💻</span> Повний стек технологій
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
-        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800">
-          <div class="text-white font-bold mb-2">Frontend & Core</div>
-          <div class="text-gray-400 space-y-1">
-            <div>• HTML5 / Pure CSS / Tailwind</div>
-            <div>• Astro (Islands Arch)</div>
-            <div>• JavaScript / TypeScript / React</div>
-          </div>
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading section-heading--split">
+          <div><p class="eyebrow" data-i18n="projects.selected.eyebrow">Вибрані системи</p><h2 data-i18n="projects.selected.title">Від market data до LegalTech.</h2></div>
+          <p data-i18n="projects.selected.intro">Research і prototype-проєкти навмисно позначені як такі. Вони демонструють спосіб мислення, а не видаються за production-кейси.</p>
         </div>
-        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800">
-          <div class="text-white font-bold mb-2">Backend & Infrastructure</div>
-          <div class="text-gray-400 space-y-1">
-            <div>• WordPress / PHP / MySQL</div>
-            <div>• cPanel / Fornex Hosting / Terminal</div>
-            <div>• Cloudflare DNS & SSL / Pages</div>
-          </div>
-        </div>
-        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800">
-          <div class="text-white font-bold mb-2">Ads, Analytics & Integrations</div>
-          <div class="text-gray-400 space-y-1">
-            <div>• Google Tag Manager / GA4</div>
-            <div>• Google Ads (Search, PMax, Smart Bidding)</div>
-            <div>• LiqPay / Telegram Bots / Нова Пошта</div>
-          </div>
-        </div>
+        <div class="project-grid" id="project-grid"></div>
       </div>
     </section>
 
-    <footer class="border-t border-gray-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-      <div>© 2026 Arsenii Leno. All rights reserved.</div>
-      <div class="flex gap-4">
-        <a href="https://t.me/Arsen_Kozaque" target="_blank" class="text-blue-400 hover:text-blue-300 font-semibold">Telegram ↗</a>
-        <a href="mailto:xlenoa@stuba.sk" class="hover:text-white transition">xlenoa@stuba.sk</a>
-        <a href="https://github.com/arsenii-leno" target="_blank" class="hover:text-white transition">GitHub</a>
-        <a href="https://linkedin.com/in/arsenii-leno" target="_blank" class="hover:text-white transition">LinkedIn</a>
+    <section class="section section--credential">
+      <div class="shell">
+        <article class="credential-card">
+          <div class="credential-seal" aria-hidden="true"><span>G</span><i>✓</i></div>
+          <div class="credential-card__copy">
+            <p class="eyebrow" data-i18n="projects.credential.eyebrow">Перевірювана кваліфікація</p>
+            <h2 data-i18n="projects.credential.title">AI-Powered Performance Ads Certification</h2>
+            <p data-i18n="projects.credential.body">Кваліфікація Google Skillshop з AI-powered кампаній, Smart Bidding, Performance Max і вимірювання результативності.</p>
+            <dl class="credential-meta">
+              <div><dt data-i18n="projects.credential.issuerLabel">Issuer</dt><dd>Google Skillshop</dd></div>
+              <div><dt data-i18n="projects.credential.idLabel">Credential ID</dt><dd>966f96a1-99c6-4a13-b928-80732c562d8d</dd></div>
+            </dl>
+          </div>
+          <a class="button button--amber" href="https://www.credential.net/966f96a1-99c6-4a13-b928-80732c562d8d" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.credential.verify">Перевірити credential</span><span aria-hidden="true">↗</span></a>
+        </article>
       </div>
-    </footer>
+    </section>
 
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="projects.stack.eyebrow">Capability matrix</p>
+          <h2 data-i18n="projects.stack.title">Стек підбирається під вузьке місце.</h2>
+          <p data-i18n="projects.stack.intro">Технологія — не офер. Вона має спрощувати delivery, вимірювання й подальше володіння системою.</p>
+        </div>
+        <div class="stack-grid" id="stack-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="shell">
+        <div class="cta-panel">
+          <div><p class="eyebrow" data-i18n="projects.cta.eyebrow">Є задача зі схожою складністю?</p><h2 data-i18n="projects.cta.title">Покажіть поточну систему — я знайду точку найбільшого впливу.</h2></div>
+          <a class="button button--primary" href="index.html#contact"><span data-i18n="projects.cta.button">Запросити діагностику</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><a class="footer-brand" href="index.html">Arsenii Leno</a><p data-i18n="global.footer.tagline">Цифрова інфраструктура для бізнесу, який рахує результат.</p></div>
+      <div class="footer-links">
+        <a href="index.html" data-i18n="global.nav.services">Послуги</a>
+        <a href="about.html" data-i18n="global.nav.about">Про мене</a>
+        <a href="index.html#privacy" data-i18n="global.footer.privacy">Приватність</a>
+        <a href="mailto:xlenoa@stuba.sk">Email</a>
+        <a href="https://github.com/arsenii-leno" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/arsenii-leno" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <div class="footer-meta"><span data-i18n="global.footer.location">Bratislava · Uzhhorod · Remote</span><span>© <span data-current-year>2026</span> Arsenii Leno</span></div>
+    </div>
+  </footer>
 </body>
 </html>

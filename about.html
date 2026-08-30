@@ -1,120 +1,176 @@
-<!DOCTYPE html>
-<html lang="uk" class="dark">
+<!doctype html>
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Про мене | Arsenii Leno</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: '#3b82f6',
-            darkBg: '#0b0f19',
-            cardBg: '#111827',
-            borderCol: '#1f2937'
-          }
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b12">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Інженерний, аналітичний і правосвідомий підхід Арсенія Лено до цифрової інфраструктури для клінік і B2B-компаній.">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Arsenii Leno">
+  <meta property="og:title" content="Про підхід — Arsenii Leno">
+  <meta property="og:description" content="Software engineering, вимірюване зростання та privacy-aware delivery в одній практиці.">
+  <meta property="og:url" content="https://arsenii-leno.github.io/about.html">
+  <meta property="og:image" content="https://arsenii-leno.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Про підхід — Arsenii Leno">
+  <meta name="twitter:description" content="Software engineering, вимірюване зростання та privacy-aware delivery в одній практиці.">
+  <meta name="twitter:image" content="https://arsenii-leno.github.io/og.png">
+  <link rel="canonical" href="https://arsenii-leno.github.io/about.html">
+  <link rel="alternate" hreflang="uk" href="https://arsenii-leno.github.io/about.html">
+  <link rel="alternate" hreflang="sk" href="https://arsenii-leno.github.io/about.html?lang=sk">
+  <link rel="alternate" hreflang="en" href="https://arsenii-leno.github.io/about.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://arsenii-leno.github.io/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Про підхід — Arsenii Leno</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "url": "https://arsenii-leno.github.io/about.html",
+      "name": "About Arsenii Leno",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Arsenii Leno",
+        "url": "https://arsenii-leno.github.io/",
+        "jobTitle": "Digital Infrastructure & Growth Engineer",
+        "sameAs": [
+          "https://github.com/arsenii-leno",
+          "https://linkedin.com/in/arsenii-leno"
+        ]
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b0f19; color: #e5e7eb; }
-  </style>
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
+<body data-page="about">
+  <a class="skip-link" href="#main" data-i18n="global.skip">Перейти до основного вмісту</a>
+  <div class="page-glow page-glow--one" aria-hidden="true"></div>
+  <div class="page-glow page-glow--two" aria-hidden="true"></div>
 
-  <main class="max-w-4xl mx-auto px-6 py-12 w-full">
-    
-    <nav class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-12">
-      <a href="index.html" class="text-xl font-extrabold text-white tracking-tight flex items-center gap-2">
-        <span>Arsenii Leno</span>
-        <span class="text-xs px-2 py-0.5 rounded bg-blue-900/40 text-blue-400 border border-blue-800/50">Engineering & Growth</span>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Arsenii Leno — home">
+        <span class="brand-mark" aria-hidden="true">AL</span>
+        <span class="brand-copy"><strong>Arsenii Leno</strong><small data-i18n="global.brandTag">Infrastructure &amp; Growth</small></span>
       </a>
-      <div class="flex items-center gap-6 text-sm font-semibold">
-        <a href="index.html" class="text-gray-400 hover:text-white transition">Послуги & Прайсинг</a>
-        <a href="about.html" class="text-blue-400 border-b-2 border-blue-400 pb-0.5">Про мене</a>
-        <a href="projects.html" class="text-gray-400 hover:text-white transition">Кейси & Технічний стек</a>
+      <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria-label="global.navLabel">
+        <a class="nav-link" href="index.html" data-i18n="global.nav.services">Послуги</a>
+        <a class="nav-link is-active" href="about.html" aria-current="page" data-i18n="global.nav.about">Про мене</a>
+        <a class="nav-link" href="projects.html" data-i18n="global.nav.projects">Проєкти</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="global.languageLabel">
+          <button class="language-button is-active" type="button" data-language="uk" aria-pressed="true">UA</button>
+          <button class="language-button" type="button" data-language="sk" aria-pressed="false">SK</button>
+          <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="button button--small button--ghost header-cta" href="index.html#contact" data-i18n="global.nav.consultation">Консультація</a>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <header class="mb-12">
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-        Інженерія, Аналітика та Системне Мислення
-      </h1>
-      <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
-        Мене звати Арсеній Лено. Я поєдную глибоку інженерну підготовку в розробці високонавантажених систем із юридичною експертизою та аналітичним маркетингом.
-      </p>
-    </header>
-
-    <section class="mb-14">
-      <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-        <span class="text-blue-500">🎓</span> Освіта та фундаментальний бекграунд
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        
-        <div class="p-6 rounded-xl bg-gray-900/60 border border-gray-800">
-          <div class="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-1">Інженерний напрям</div>
-          <h3 class="text-lg font-bold text-white mb-2">FIIT STU Bratislava</h3>
-          <p class="text-xs text-gray-400 mb-3 font-medium">Faculty of Informatics and Information Technologies</p>
-          <p class="text-sm text-gray-300 leading-relaxed">
-            Спеціалізація: Software Engineering, архітектура додатків, низькорівнева оптимізація, алгоритми та асинхронні системи.
-          </p>
+  <main id="main">
+    <section class="section page-hero">
+      <div class="shell page-hero__grid">
+        <div>
+          <p class="eyebrow" data-i18n="about.hero.eyebrow">Інженерія з комерційним контекстом</p>
+          <h1><span data-i18n="about.hero.title">Технічна глибина.</span> <span class="gradient-text" data-i18n="about.hero.titleAccent">Відповідальність за весь шлях.</span></h1>
+          <p class="page-hero__lede" data-i18n="about.hero.lede">Я будую цифрові системи на перетині програмної інженерії, вимірюваного маркетингу та правосвідомого delivery — без ілюзії, що один інструмент вирішує бізнес-задачу.</p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="index.html#contact"><span data-i18n="about.hero.cta">Обговорити задачу</span><span aria-hidden="true">↗</span></a>
+            <a class="button button--ghost" href="projects.html"><span data-i18n="about.hero.secondaryCta">Переглянути проєкти</span><span aria-hidden="true">→</span></a>
+          </div>
         </div>
 
-        <div class="p-6 rounded-xl bg-gray-900/60 border border-gray-800">
-          <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-1">Правовий напрям</div>
-          <h3 class="text-lg font-bold text-white mb-2">Ужгородський національний університет (УжНУ)</h3>
-          <p class="text-xs text-gray-400 mb-3 font-medium">Юридичний факультет</p>
-          <p class="text-sm text-gray-300 leading-relaxed">
-            Спеціалізація: IT-право, право інтелектуальної власності, договірна база та юридична безпека комерційної інфраструктури.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="mb-14">
-      <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-        <span class="text-emerald-400">⚡</span> Мої принципи у роботі з клієнтами
-      </h2>
-      <div class="space-y-4">
-        <div class="p-5 rounded-xl bg-gray-900/60 border border-gray-800">
-          <h3 class="font-bold text-white text-base mb-1">1. Жодних здогадок — тільки точні дані (Data-Driven)</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            Будь-яка рекламна дія чи зміна інтерфейсу базується на показниках аналітики GTM/GA4 та вимірюваних конверсіях, а не на суб'єктивній думці.
-          </p>
-        </div>
-        <div class="p-5 rounded-xl bg-gray-900/60 border border-gray-800">
-          <h3 class="font-bold text-white text-base mb-1">2. Zero-JS та максимальна швидкість</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            Сайти не перевантажуються непотрібними скриптами. Що швидше вантажиться сторінка, то нижча ціна за клік у Google Ads і вища підсумкова конверсія.
-          </p>
-        </div>
-        <div class="p-5 rounded-xl bg-gray-900/60 border border-gray-800">
-          <h3 class="font-bold text-white text-base mb-1">3. Комплексна відповідальність</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            Вам не потрібно шукати окремо верстальника, програміста, таргетолога та інтегратора. Вся зв'язка налаштовується як єдиний безперебійний механізм.
-          </p>
-        </div>
+        <aside class="profile-card">
+          <div class="profile-card__monogram" aria-hidden="true">AL</div>
+          <div>
+            <span class="profile-card__label" data-i18n="about.profile.label">Профіль практики</span>
+            <h2>Arsenii Leno</h2>
+            <p data-i18n="about.profile.role">Digital Infrastructure &amp; Growth Engineer</p>
+          </div>
+          <dl class="profile-facts" id="profile-facts"></dl>
+          <div class="profile-card__status"><span class="status-dot" aria-hidden="true"></span><span data-i18n="about.profile.status">Bratislava · Uzhhorod · Remote</span></div>
+        </aside>
       </div>
     </section>
 
-    <footer class="border-t border-gray-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-      <div>© 2026 Arsenii Leno. All rights reserved.</div>
-      <div class="flex gap-4">
-        <a href="https://t.me/Arsen_Kozaque" target="_blank" class="text-blue-400 hover:text-blue-300 font-semibold">Telegram ↗</a>
-        <a href="mailto:xlenoa@stuba.sk" class="hover:text-white transition">xlenoa@stuba.sk</a>
-        <a href="https://github.com/arsenii-leno" target="_blank" class="hover:text-white transition">GitHub</a>
-        <a href="https://linkedin.com/in/arsenii-leno" target="_blank" class="hover:text-white transition">LinkedIn</a>
+    <section class="section section--muted">
+      <div class="shell">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow" data-i18n="about.tracks.eyebrow">Три дисципліни, одна система мислення</p>
+            <h2 data-i18n="about.tracks.title">Освіта, що змінює спосіб delivery.</h2>
+          </div>
+          <p data-i18n="about.tracks.intro">Це поточні напрями навчання, а не заяви про ліцензовану юридичну практику. Їхня цінність — у кращих технічних, договірних і комерційних рішеннях.</p>
+        </div>
+        <div class="track-grid" id="track-grid"></div>
       </div>
-    </footer>
+    </section>
 
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="about.principles.eyebrow">Робоча філософія</p>
+          <h2 data-i18n="about.principles.title">Три принципи, що переживають зміну стеку.</h2>
+        </div>
+        <div class="principle-grid" id="principle-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="shell process-layout">
+        <div class="process-layout__intro">
+          <p class="eyebrow" data-i18n="about.process.eyebrow">Як виглядає робота</p>
+          <h2 data-i18n="about.process.title">Від діагностики до контрольованого запуску.</h2>
+          <p data-i18n="about.process.intro">Кожен етап має рішення, артефакт і критерій завершення. Це знижує ризик нескінченних правок та неочікуваних витрат.</p>
+        </div>
+        <ol class="process-list" id="process-list"></ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow" data-i18n="about.safeguards.eyebrow">Стандарти співпраці</p>
+            <h2 data-i18n="about.safeguards.title">Менше обіцянок. Більше зафіксованих умов.</h2>
+          </div>
+          <p data-i18n="about.safeguards.intro">Формат захисту залежить від юрисдикції та проєкту; для регульованих питань документи мають пройти перевірку кваліфікованого юриста.</p>
+        </div>
+        <div class="safeguard-grid" id="safeguard-grid"></div>
+        <p class="legal-note"><strong data-i18n="about.safeguards.noteTitle">Важливо:</strong> <span data-i18n="about.safeguards.note">юридична освіта допомагає виявляти ризики й готувати матеріали до review, але не замінює адвоката чи ліцензовану правову консультацію.</span></p>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="shell">
+        <div class="cta-panel">
+          <div><p class="eyebrow" data-i18n="about.cta.eyebrow">Потрібен один відповідальний контур?</p><h2 data-i18n="about.cta.title">Зберімо інженерію, дані й зростання в одну дорожню карту.</h2></div>
+          <a class="button button--primary" href="index.html#contact"><span data-i18n="about.cta.button">Почати з діагностики</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><a class="footer-brand" href="index.html">Arsenii Leno</a><p data-i18n="global.footer.tagline">Цифрова інфраструктура для бізнесу, який рахує результат.</p></div>
+      <div class="footer-links">
+        <a href="index.html" data-i18n="global.nav.services">Послуги</a>
+        <a href="projects.html" data-i18n="global.nav.projects">Проєкти</a>
+        <a href="index.html#privacy" data-i18n="global.footer.privacy">Приватність</a>
+        <a href="mailto:xlenoa@stuba.sk">Email</a>
+        <a href="https://github.com/arsenii-leno" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/arsenii-leno" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <div class="footer-meta"><span data-i18n="global.footer.location">Bratislava · Uzhhorod · Remote</span><span>© <span data-current-year>2026</span> Arsenii Leno</span></div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,165 +1,311 @@
-<!DOCTYPE html>
-<html lang="uk" class="dark">
+<!doctype html>
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arsenii Leno | Цифрова Інфраструктура, Веб-розробка та Трафік</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: '#3b82f6',
-            darkBg: '#0b0f19',
-            cardBg: '#111827',
-            borderCol: '#1f2937'
-          }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b12">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Цифрова інфраструктура для клінік і B2B: швидкі веб-платформи, точна аналітика, Google Ads, автоматизація та прозорі умови передачі.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Arsenii Leno">
+  <meta property="og:title" content="Arsenii Leno — Digital Infrastructure &amp; Growth Engineering">
+  <meta property="og:description" content="Швидкі веб-платформи, аналітика, реклама й автоматизація — одна відповідальна система для клінік і B2B.">
+  <meta property="og:url" content="https://arsenii-leno.github.io/">
+  <meta property="og:image" content="https://arsenii-leno.github.io/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Arsenii Leno — Digital Infrastructure &amp; Growth Engineering">
+  <meta name="twitter:description" content="Швидкі веб-платформи, аналітика, реклама й автоматизація — одна відповідальна система для клінік і B2B.">
+  <meta name="twitter:image" content="https://arsenii-leno.github.io/og.png">
+  <link rel="canonical" href="https://arsenii-leno.github.io/">
+  <link rel="alternate" hreflang="uk" href="https://arsenii-leno.github.io/">
+  <link rel="alternate" hreflang="sk" href="https://arsenii-leno.github.io/?lang=sk">
+  <link rel="alternate" hreflang="en" href="https://arsenii-leno.github.io/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://arsenii-leno.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Arsenii Leno — Цифрова інфраструктура та зростання</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://arsenii-leno.github.io/#person",
+          "name": "Arsenii Leno",
+          "url": "https://arsenii-leno.github.io/",
+          "email": "mailto:xlenoa@stuba.sk",
+          "jobTitle": "Digital Infrastructure & Growth Engineer",
+          "sameAs": [
+            "https://github.com/arsenii-leno",
+            "https://linkedin.com/in/arsenii-leno"
+          ],
+          "knowsAbout": [
+            "Web performance",
+            "Cloudflare edge infrastructure",
+            "Google Ads",
+            "Google Analytics 4",
+            "Serverless automation",
+            "IT law and intellectual property"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://arsenii-leno.github.io/#website",
+          "name": "Arsenii Leno",
+          "url": "https://arsenii-leno.github.io/",
+          "inLanguage": ["uk", "sk", "en"],
+          "publisher": { "@id": "https://arsenii-leno.github.io/#person" }
         }
-      }
+      ]
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b0f19; color: #e5e7eb; }
-  </style>
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
+<body data-page="home">
+  <a class="skip-link" href="#main" data-i18n="global.skip">Перейти до основного вмісту</a>
+  <div class="page-glow page-glow--one" aria-hidden="true"></div>
+  <div class="page-glow page-glow--two" aria-hidden="true"></div>
 
-  <main class="max-w-4xl mx-auto px-6 py-12 w-full">
-    
-    <nav class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-12">
-      <a href="index.html" class="text-xl font-extrabold text-white tracking-tight flex items-center gap-2">
-        <span>Arsenii Leno</span>
-        <span class="text-xs px-2 py-0.5 rounded bg-blue-900/40 text-blue-400 border border-blue-800/50">Engineering & Growth</span>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Arsenii Leno — home">
+        <span class="brand-mark" aria-hidden="true">AL</span>
+        <span class="brand-copy">
+          <strong>Arsenii Leno</strong>
+          <small data-i18n="global.brandTag">Infrastructure &amp; Growth</small>
+        </span>
       </a>
-      <div class="flex items-center gap-6 text-sm font-semibold">
-        <a href="index.html" class="text-blue-400 border-b-2 border-blue-400 pb-0.5">Послуги & Прайсинг</a>
-        <a href="about.html" class="text-gray-400 hover:text-white transition">Про мене</a>
-        <a href="projects.html" class="text-gray-400 hover:text-white transition">Кейси & Технічний стек</a>
-      </div>
-    </nav>
 
-    <header class="mb-14">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-950/60 text-emerald-400 border border-emerald-800/50 mb-4">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2 animate-pulse"></span>
-        Відкрито для замовлень на розробку та запуск інфраструктури
-      </div>
-      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
-        Створення цифрової інфраструктури, яка конвертує трафік у клієнтів
-      </h1>
-      <p class="text-lg text-gray-300 leading-relaxed max-w-3xl">
-        Повний цикл для бізнесу: від розробки надшвидких веб-платформ (Astro, Tailwind, кастомний WordPress) до наскрізної аналітики (GTM, GA4), реклами Google Ads (Smart Bidding) та автоматизації оплат і сповіщень.
-      </p>
-    </header>
+      <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria-label="global.navLabel">
+        <a class="nav-link is-active" href="index.html" aria-current="page" data-i18n="global.nav.services">Послуги</a>
+        <a class="nav-link" href="about.html" data-i18n="global.nav.about">Про мене</a>
+        <a class="nav-link" href="projects.html" data-i18n="global.nav.projects">Проєкти</a>
+      </nav>
 
-    <section class="mb-16">
-      <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-        <span class="text-blue-500">🛠️</span> Чому комплексний підхід?
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div class="p-5 rounded-xl bg-gray-900/60 border border-gray-800">
-          <div class="text-blue-400 font-bold mb-2">1. Швидкість & Архітектура</div>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            Чистий HTML5, Tailwind, Astro або оптимізований WordPress. Максимальні оцінки в Core Web Vitals (95-100), миттєве завантаження на Edge CDN.
-          </p>
+      <div class="header-actions">
+        <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="global.languageLabel">
+          <button class="language-button is-active" type="button" data-language="uk" aria-pressed="true">UA</button>
+          <button class="language-button" type="button" data-language="sk" aria-pressed="false">SK</button>
+          <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
         </div>
-        <div class="p-5 rounded-xl bg-gray-900/60 border border-gray-800">
-          <div class="text-emerald-400 font-bold mb-2">2. Точна Аналітика</div>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            Налаштування Google Tag Manager, GA4 та точне відстеження конверсій. Алгоритми реклами оптимізуються під реальні заявки, а не порожні кліки.
-          </p>
+        <a class="button button--small button--ghost header-cta" href="#contact" data-i18n="global.nav.consultation">Консультація</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section section--hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="home.hero.status">Відкритий до обмеженої кількості нових проєктів</span>
+          </div>
+          <p class="eyebrow" data-i18n="home.hero.eyebrow">Для клінік, юридичних фірм і B2B-сервісів</p>
+          <h1>
+            <span data-i18n="home.hero.title">Не просто сайт.</span>
+            <span class="gradient-text" data-i18n="home.hero.titleAccent">Система, що перетворює увагу на заявки.</span>
+          </h1>
+          <p class="hero-lede" data-i18n="home.hero.lede">Об’єдную швидку веб-інженерію, точну аналітику, Google Ads і автоматизацію в одну керовану цифрову інфраструктуру.</p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#contact">
+              <span data-i18n="home.hero.primaryCta">Обговорити запуск</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button--ghost" href="#pillars">
+              <span data-i18n="home.hero.secondaryCta">Переглянути систему</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <ul class="hero-trust" aria-label="Service assurances" data-i18n-aria-label="home.hero.trustLabel">
+            <li><span aria-hidden="true">✓</span><span data-i18n="home.hero.trust.0">Прозорий обсяг робіт</span></li>
+            <li><span aria-hidden="true">✓</span><span data-i18n="home.hero.trust.1">Передача IP</span></li>
+            <li><span aria-hidden="true">✓</span><span data-i18n="home.hero.trust.2">30 днів після запуску</span></li>
+          </ul>
         </div>
-        <div class="p-5 rounded-xl bg-gray-900/60 border border-gray-800">
-          <div class="text-purple-400 font-bold mb-2">3. Headless & Автоматизація</div>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            Пряма інтеграція платіжних систем (LiqPay), миттєві сповіщення лідів у Telegram-боти, синхронізація логістики (Нова Пошта).
-          </p>
+
+        <aside class="system-card" aria-label="Infrastructure system overview" data-i18n-aria-label="home.system.ariaLabel">
+          <div class="system-card__topline">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span data-i18n="home.system.label">growth-infrastructure.live</span>
+            <span class="live-label"><i aria-hidden="true"></i><span data-i18n="home.system.live">LIVE</span></span>
+          </div>
+          <div class="system-flow" id="system-flow"></div>
+          <div class="system-metrics" id="system-metrics"></div>
+          <p class="system-footnote"><span aria-hidden="true">●</span> <span data-i18n="home.system.note">Одна відповідальна система замість розрізнених підрядників.</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Specialisms" data-i18n-aria-label="home.proofLabel">
+      <div class="shell proof-strip__inner">
+        <span data-i18n="home.proof.0">Performance-first web</span>
+        <i aria-hidden="true"></i>
+        <span data-i18n="home.proof.1">Measurement that informs spend</span>
+        <i aria-hidden="true"></i>
+        <span data-i18n="home.proof.2">Founder-led delivery</span>
+        <i aria-hidden="true"></i>
+        <span data-i18n="home.proof.3">UA · SK · EN</span>
+      </div>
+    </section>
+
+    <section class="section" id="pillars">
+      <div class="shell">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow" data-i18n="home.pillars.eyebrow">Чотири рівні однієї системи</p>
+            <h2 data-i18n="home.pillars.title">Від першого кліку до переданої заявки.</h2>
+          </div>
+          <p data-i18n="home.pillars.intro">Кожен рівень працює не окремо, а підсилює наступний: швидкість покращує досвід, вимірювання — рішення, автоматизація — реакцію команди.</p>
+        </div>
+        <div class="pillar-grid" id="pillar-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="case-study">
+      <div class="shell">
+        <div class="case-study">
+          <div class="case-study__intro">
+            <p class="eyebrow" data-i18n="home.case.eyebrow">Флагманський кейс · med.uz.ua</p>
+            <h2 data-i18n="home.case.title">Від legacy WordPress до керованої edge-платформи.</h2>
+            <p data-i18n="home.case.intro">Повний цикл для приватної офтальмологічної клініки: стабілізація успадкованої системи, міграція, мультимовний контент, аналітика та рекламна інфраструктура.</p>
+            <a class="text-link" href="https://med.uz.ua" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="home.case.visit">Відкрити live-проєкт</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="transformation" aria-label="Before and after transformation" data-i18n-aria-label="home.case.comparisonLabel">
+            <div class="transformation-card transformation-card--before">
+              <span class="transformation-card__label" data-i18n="home.case.beforeLabel">До</span>
+              <h3 data-i18n="home.case.beforeTitle">Крихка legacy-система</h3>
+              <ul id="case-before"></ul>
+            </div>
+            <span class="transformation-arrow" aria-hidden="true">→</span>
+            <div class="transformation-card transformation-card--after">
+              <span class="transformation-card__label" data-i18n="home.case.afterLabel">Після</span>
+              <h3 data-i18n="home.case.afterTitle">Edge-first інфраструктура</h3>
+              <ul id="case-after"></ul>
+            </div>
+          </div>
+
+          <div class="case-metrics" id="case-metrics"></div>
+          <p class="claim-note" data-i18n="home.case.claimNote">Live-архітектура й мультимовність перевіряються на публічному сайті. Performance-оцінки та рекламні результати варто публікувати лише з датованим звітом і погодженим періодом порівняння.</p>
         </div>
       </div>
     </section>
 
-    <section class="mb-16">
-      <h2 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
-        <span class="text-amber-400">💎</span> Пакети послуг та прайсинг
-      </h2>
-      <p class="text-sm text-gray-400 mb-6">Прозорі ціни без прихованих платежів під конкретні потреби вашого бізнесу.</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <div class="p-6 rounded-xl bg-gray-900/60 border border-gray-800 flex flex-col justify-between">
+    <section class="section" id="pricing">
+      <div class="shell">
+        <div class="section-heading section-heading--split section-heading--pricing">
           <div>
-            <div class="text-xs font-semibold uppercase text-gray-400 mb-1">Базовий</div>
-            <h3 class="text-xl font-bold text-white mb-2">Fast Web Platform</h3>
-            <div class="text-2xl font-extrabold text-blue-400 mb-4">$250 – $400</div>
-            <p class="text-xs text-gray-400 mb-4 leading-relaxed">
-              Ідеально для швидкого запуску презентації послуги, лендінгу чи модернізації застарілого сайту.
-            </p>
-            <ul class="text-xs text-gray-300 space-y-2 mb-6">
-              <li class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> Розробка на Astro / Tailwind або WP</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> Адаптивність 100% під мобільні</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> Core Web Vitals 95–100</li>
-              <li class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> Базовий On-Page SEO</li>
-            </ul>
+            <p class="eyebrow" data-i18n="home.pricing.eyebrow">Інвестиція без туманних кошторисів</p>
+            <h2 data-i18n="home.pricing.title">Оберіть стартову конфігурацію.</h2>
           </div>
-          <a href="https://t.me/Arsen_Kozaque" target="_blank" class="w-full text-center py-2 px-4 rounded-lg bg-gray-800 hover:bg-gray-700 text-white font-semibold text-xs transition">Замовити розробку</a>
-        </div>
-
-        <div class="p-6 rounded-xl bg-gradient-to-b from-blue-950/40 to-gray-900/80 border-2 border-blue-500/60 flex flex-col justify-between relative shadow-lg shadow-blue-950/30">
-          <div class="absolute -top-3 right-4 px-2 py-0.5 rounded bg-blue-600 text-white text-[10px] font-bold uppercase tracking-wider">Популярний</div>
-          <div>
-            <div class="text-xs font-semibold uppercase text-blue-400 mb-1">Оптимальний</div>
-            <h3 class="text-xl font-bold text-white mb-2">Growth & Ads Engine</h3>
-            <div class="text-2xl font-extrabold text-white mb-4">$500 – $750</div>
-            <p class="text-xs text-gray-300 mb-4 leading-relaxed">
-              Повноцінна комерційна зв'язка: швидкий сайт + налаштована реклама + точна аналітика.
-            </p>
-            <ul class="text-xs text-gray-200 space-y-2 mb-6">
-              <li class="flex items-center gap-1.5"><span class="text-blue-400">✓</span> Усе з пакету Fast Web Platform</li>
-              <li class="flex items-center gap-1.5"><span class="text-blue-400">✓</span> GTM + GA4 + повна конверсійна воронка</li>
-              <li class="flex items-center gap-1.5"><span class="text-blue-400">✓</span> Запуск Google Ads (Search / PMax)</li>
-              <li class="flex items-center gap-1.5"><span class="text-blue-400">✓</span> Налаштування мінус-слів & Smart Bidding</li>
-              <li class="flex items-center gap-1.5"><span class="text-blue-400">✓</span> Підключення Cloudflare CDN & SSL</li>
-            </ul>
+          <div class="pricing-toggle" role="group" aria-label="Pricing mode" data-i18n-aria-label="home.pricing.toggleLabel">
+            <button type="button" class="pricing-toggle__button is-active" data-pricing-mode="build" aria-pressed="true" data-i18n="home.pricing.buildToggle">Разовий запуск</button>
+            <button type="button" class="pricing-toggle__button" data-pricing-mode="growth" aria-pressed="false" data-i18n="home.pricing.growthToggle">Запуск + супровід</button>
           </div>
-          <a href="https://t.me/Arsen_Kozaque" target="_blank" class="w-full text-center py-2 px-4 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs transition">Запустити систему</a>
         </div>
-
-        <div class="p-6 rounded-xl bg-gray-900/60 border border-gray-800 flex flex-col justify-between">
-          <div>
-            <div class="text-xs font-semibold uppercase text-purple-400 mb-1">Максимальний</div>
-            <h3 class="text-xl font-bold text-white mb-2">Full Infrastructure</h3>
-            <div class="text-2xl font-extrabold text-purple-400 mb-4">$850+</div>
-            <p class="text-xs text-gray-400 mb-4 leading-relaxed">
-              Індивідуальна цифрова екосистема з автоматизацією всіх бізнес-процесів та платежів.
-            </p>
-            <ul class="text-xs text-gray-300 space-y-2 mb-6">
-              <li class="flex items-center gap-1.5"><span class="text-purple-400">✓</span> Усе з пакету Growth & Ads Engine</li>
-              <li class="flex items-center gap-1.5"><span class="text-purple-400">✓</span> Headless backend інтеграції (LiqPay)</li>
-              <li class="flex items-center gap-1.5"><span class="text-purple-400">✓</span> Telegram-бот для миттєвих лідів</li>
-              <li class="flex items-center gap-1.5"><span class="text-purple-400">✓</span> Інтеграція служб доставки (Нова Пошта)</li>
-              <li class="flex items-center gap-1.5"><span class="text-purple-400">✓</span> Повний аудит та технічний супровід</li>
-            </ul>
-          </div>
-          <a href="https://t.me/Arsen_Kozaque" target="_blank" class="w-full text-center py-2 px-4 rounded-lg bg-gray-800 hover:bg-gray-700 text-white font-semibold text-xs transition">Обговорити проєкт</a>
-        </div>
-
+        <div class="pricing-grid" id="pricing-grid"></div>
+        <p class="pricing-note" data-i18n="home.pricing.note">Фінальна пропозиція залежить від обсягу. Рекламний бюджет, хостинг, платні ліцензії, контент, переклад і податки оплачуються окремо.</p>
       </div>
     </section>
 
-    <footer class="border-t border-gray-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-      <div>© 2026 Arsenii Leno. Digital Systems & Ads Growth.</div>
-      <div class="flex gap-4">
-        <a href="https://t.me/Arsen_Kozaque" target="_blank" class="text-blue-400 hover:text-blue-300 font-semibold">Telegram ↗</a>
-        <a href="mailto:xlenoa@stuba.sk" class="hover:text-white transition">xlenoa@stuba.sk</a>
-        <a href="https://github.com/arsenii-leno" target="_blank" class="hover:text-white transition">GitHub</a>
-        <a href="https://linkedin.com/in/arsenii-leno" target="_blank" class="hover:text-white transition">LinkedIn</a>
-      </div>
-    </footer>
+    <section class="section section--contact" id="contact">
+      <div class="shell contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow" data-i18n="home.contact.eyebrow">Наступний крок</p>
+          <h2 data-i18n="home.contact.title">Почнімо з задачі, а не з технології.</h2>
+          <p data-i18n="home.contact.intro">Опишіть бізнес, ціль і головне вузьке місце. Я повернуся з доречними питаннями та чесною оцінкою формату роботи.</p>
+          <div class="contact-expectation">
+            <span class="contact-expectation__number">01</span>
+            <p><strong data-i18n="home.contact.stepOneTitle">Коротка діагностика</strong><span data-i18n="home.contact.stepOneBody">Зіставляємо ціль, дані та поточну інфраструктуру.</span></p>
+          </div>
+          <div class="contact-expectation">
+            <span class="contact-expectation__number">02</span>
+            <p><strong data-i18n="home.contact.stepTwoTitle">Чіткий наступний крок</strong><span data-i18n="home.contact.stepTwoBody">Отримуєте рекомендований обсяг, строки й стартову вартість.</span></p>
+          </div>
+          <div class="direct-links">
+            <a href="mailto:xlenoa@stuba.sk">xlenoa@stuba.sk</a>
+            <a href="https://t.me/Arsen_Kozaque" target="_blank" rel="noopener noreferrer">Telegram · @Arsen_Kozaque</a>
+          </div>
+        </div>
 
+        <form class="lead-form" id="lead-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name" data-i18n="home.contact.nameLabel">Ім’я</label>
+              <input id="name" name="name" type="text" autocomplete="name" minlength="2" required data-i18n-placeholder="home.contact.namePlaceholder" placeholder="Як до вас звертатися?">
+            </div>
+            <div class="field">
+              <label for="company" data-i18n="home.contact.companyLabel">Компанія</label>
+              <input id="company" name="company" type="text" autocomplete="organization" data-i18n-placeholder="home.contact.companyPlaceholder" placeholder="Назва або сфера">
+            </div>
+          </div>
+          <div class="field">
+            <label for="contact-value" data-i18n="home.contact.contactLabel">Email або Telegram</label>
+            <input id="contact-value" name="contact" type="text" autocomplete="email" minlength="3" required data-i18n-placeholder="home.contact.contactPlaceholder" placeholder="name@company.com або @username">
+          </div>
+          <div class="field">
+            <label for="service" data-i18n="home.contact.serviceLabel">Що потрібно запустити?</label>
+            <select id="service" name="service" required></select>
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="home.contact.messageLabel">Контекст задачі</label>
+            <textarea id="message" name="message" rows="5" minlength="10" required data-i18n-placeholder="home.contact.messagePlaceholder" placeholder="Поточна ситуація, ціль і бажаний строк"></textarea>
+          </div>
+          <label class="consent-field">
+            <input type="checkbox" name="consent" required>
+            <span data-i18n="home.contact.consent">Погоджуюся передати ці дані Арсенію для відповіді на запит. На цьому сайті дані не зберігаються.</span>
+          </label>
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="button button--primary button--full" type="submit">
+            <span data-i18n="home.contact.submit">Продовжити в Telegram</span><span aria-hidden="true">↗</span>
+          </button>
+          <p class="form-note" data-i18n="home.contact.note">Відкриється Telegram із готовим повідомленням — ви зможете перевірити його перед відправленням.</p>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+          <details class="privacy-details" id="privacy">
+            <summary data-i18n="home.contact.privacySummary">Як обробляється ваш запит</summary>
+            <div>
+              <p data-i18n="home.contact.privacyController">Контролер: Arsenii Leno, xlenoa@stuba.sk.</p>
+              <p data-i18n="home.contact.privacyPurpose">Мета й підстава: відповідь на ваш B2B-запит та кроки до можливої співпраці. Листування зберігається лише стільки, скільки потрібно для запиту й обов’язкових бізнес-записів.</p>
+              <p data-i18n="home.contact.privacyTelegram">Сайт не надсилає й не зберігає форму: він створює чернетку, яку ви самі надсилаєте через Telegram. Після відправлення дані також обробляє Telegram за власними умовами.</p>
+              <p data-i18n="home.contact.privacyRights">Щоб отримати, виправити або видалити дані з листування, напишіть на email вище. Не надсилайте дані пацієнтів, медичну чи іншу чутливу інформацію.</p>
+            </div>
+          </details>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">Arsenii Leno</a>
+        <p data-i18n="global.footer.tagline">Цифрова інфраструктура для бізнесу, який рахує результат.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html" data-i18n="global.nav.about">Про мене</a>
+        <a href="projects.html" data-i18n="global.nav.projects">Проєкти</a>
+        <a href="index.html#privacy" data-i18n="global.footer.privacy">Приватність</a>
+        <a href="mailto:xlenoa@stuba.sk">Email</a>
+        <a href="https://github.com/arsenii-leno" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/arsenii-leno" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <div class="footer-meta">
+        <span data-i18n="global.footer.location">Bratislava · Uzhhorod · Remote</span>
+        <span>© <span data-current-year>2026</span> Arsenii Leno</span>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript-note">Для перемикання мови й форми контакту потрібен JavaScript. Напишіть напряму: xlenoa@stuba.sk.</div>
+  </noscript>
 </body>
 </html>
