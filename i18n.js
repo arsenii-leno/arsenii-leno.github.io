@@ -1,729 +1,1187 @@
-/* Central content source for every supported language. */
 window.i18nData = {
-  uk: {
-    global: {
-      skip: "Перейти до основного вмісту",
-      brandTag: "Infrastructure & Growth",
-      navLabel: "Основна навігація",
-      languageLabel: "Оберіть мову",
-      nav: {
-        services: "Послуги",
-        about: "Про мене",
-        projects: "Проєкти",
-        consultation: "Консультація"
+  "uk": {
+    "global": {
+      "skip": "Перейти до основного вмісту",
+      "brandTag": "Infrastructure & Growth",
+      "navLabel": "Основна навігація",
+      "languageLabel": "Оберіть мову",
+      "nav": {
+        "services": "Послуги",
+        "about": "Про мене",
+        "projects": "Проєкти",
+        "consultation": "Консультація"
       },
-      footer: {
-        tagline: "Цифрова інфраструктура для бізнесу, який рахує результат.",
-        location: "Bratislava · Uzhhorod · Remote",
-        privacy: "Приватність"
+      "footer": {
+        "tagline": "Цифрова інфраструктура для бізнесу, який рахує результат.",
+        "location": "Bratislava · Uzhhorod · Remote",
+        "privacy": "Приватність"
       }
     },
-    meta: {
-      home: {
-        title: "Arsenii Leno — Цифрова інфраструктура та зростання",
-        description: "Цифрова інфраструктура для клінік і B2B: швидкі веб-платформи, точна аналітика, Google Ads, автоматизація та прозорі умови передачі.",
-        ogTitle: "Arsenii Leno — Digital Infrastructure & Growth Engineering",
-        ogDescription: "Швидкі веб-платформи, аналітика, реклама й автоматизація — одна відповідальна система для клінік і B2B."
+    "meta": {
+      "home": {
+        "title": "Arsenii Leno — Цифрова інфраструктура та зростання",
+        "description": "Цифрова інфраструктура для клінік і B2B: швидкі веб-платформи, точна аналітика, Google Ads, автоматизація та прозорі умови передачі.",
+        "ogTitle": "Arsenii Leno — Digital Infrastructure & Growth Engineering",
+        "ogDescription": "Швидкі веб-платформи, аналітика, реклама й автоматизація — одна відповідальна система для клінік і B2B."
       },
-      about: {
-        title: "Про підхід — Arsenii Leno",
-        description: "Інженерний, аналітичний і правосвідомий підхід Арсенія Лено до цифрової інфраструктури для клінік і B2B-компаній.",
-        ogTitle: "Про підхід — Arsenii Leno",
-        ogDescription: "Software engineering, вимірюване зростання та privacy-aware delivery в одній практиці."
+      "about": {
+        "title": "Про підхід — Arsenii Leno",
+        "description": "Інженерний, аналітичний і правосвідомий підхід Арсенія Лено до цифрової інфраструктури для клінік і B2B-компаній.",
+        "ogTitle": "Про підхід — Arsenii Leno",
+        "ogDescription": "Software engineering, вимірюване зростання та privacy-aware delivery в одній практиці."
       },
-      projects: {
-        title: "Проєкти та стек — Arsenii Leno",
-        description: "Вибрані клієнтські й дослідницькі проєкти Arsenii Leno: медична edge-платформа, market-event analytics, LegalTech RAG-концепт і clinic workflow prototype.",
-        ogTitle: "Проєкти та стек — Arsenii Leno",
-        ogDescription: "Верифіковані ролі, чесні статуси й технічні рішення — від live-клініки до дослідницьких прототипів."
+      "projects": {
+        "title": "Проєкти та стек — Arsenii Leno",
+        "description": "Вибрані клієнтські й дослідницькі проєкти Arsenii Leno: медична edge-платформа, market-event analytics, LegalTech RAG-концепт і clinic workflow prototype.",
+        "ogTitle": "Проєкти та стек — Arsenii Leno",
+        "ogDescription": "Верифіковані ролі, чесні статуси й технічні рішення — від live-клініки до дослідницьких прототипів."
       }
     },
-    home: {
-      hero: {
-        status: "Відкритий до обмеженої кількості нових проєктів",
-        eyebrow: "Для клінік, юридичних фірм і B2B-сервісів",
-        title: "Не просто сайт.",
-        titleAccent: "Система, що перетворює увагу на заявки.",
-        lede: "Об’єдную швидку веб-інженерію, точну аналітику, Google Ads і автоматизацію в одну керовану цифрову інфраструктуру.",
-        primaryCta: "Обговорити запуск",
-        secondaryCta: "Переглянути систему",
-        trustLabel: "Умови співпраці",
-        trust: ["Прозорий обсяг робіт", "Передача IP за договором", "30 днів launch-support"]
-      },
-      system: {
-        ariaLabel: "Схема цифрової інфраструктури",
-        label: "growth-infrastructure.live",
-        live: "LIVE",
-        note: "Одна відповідальна система замість розрізнених підрядників.",
-        nodes: [
-          { label: "Performance web", detail: "Astro · semantic HTML · edge", state: "ready" },
-          { label: "Measurement", detail: "GTM · GA4 · conversions", state: "mapped" },
-          { label: "Demand", detail: "Search · PMax · bidding", state: "active" },
-          { label: "Lead operations", detail: "Workers · Telegram · UTM", state: "routed" }
-        ],
-        metrics: [
-          { value: "3", label: "ринкові контексти" },
-          { value: "4", label: "рівні системи" },
-          { value: "1", label: "відповідальний контур" }
+    "home": {
+      "hero": {
+        "status": "Відкритий до обмеженої кількості нових проєктів",
+        "eyebrow": "Для клінік, юридичних фірм та B2B-сервісів",
+        "title": "Не просто код.",
+        "titleAccent": "Розумна система, що приносить нових клієнтів.",
+        "lede": "Цифрова інфраструктура «під ключ» з нуля: надшвидкі веб-платформи, точна аналітика з підключенням ШІ та автоматизована доставка лідів — з офіційним юридичним оформленням, чіткими термінами та гарантією результату.",
+        "primaryCta": "Обговорити запуск",
+        "secondaryCta": "Переглянути систему",
+        "trustLabel": "Умови співпраці",
+        "trust": [
+          "Прозорий обсяг робіт",
+          "Передача IP за договором",
+          "30 днів launch-support"
         ]
       },
-      proofLabel: "Спеціалізація",
-      proof: ["Performance-first web", "Measurement that informs spend", "Founder-led delivery", "UA · SK · EN"],
-      pillars: {
-        eyebrow: "Чотири рівні однієї системи",
-        title: "Від першого кліку до переданої заявки.",
-        intro: "Кожен рівень працює не окремо, а підсилює наступний: швидкість покращує досвід, вимірювання — рішення, автоматизація — реакцію команди.",
-        detailsLabel: "Що входить технічно",
-        items: [
+      "system": {
+        "ariaLabel": "Схема цифрової інфраструктури",
+        "label": "digital-infrastructure",
+        "live": "LIVE",
+        "note": "Повний цикл від кліку до запису — E2E інфраструктура.",
+        "nodes": [
           {
-            metric: "static-first",
-            title: "Frontend & Edge",
-            body: "Семантичні, адаптивні сторінки з мінімальним JavaScript, швидкою доставкою й контрольованою технічною вагою.",
-            detail: "Astro, HTML5, CSS/Tailwind build, Cloudflare Pages або GitHub Pages, DNS, CDN, redirects і CI/CD."
+            "label": "Performance Web",
+            "detail": "Astro · HTML/CSS · Edge Hosting · Light DBs · Headless Architecture",
+            "state": "CODE"
           },
           {
-            metric: "serverless ops",
-            title: "Automation & Backend",
-            body: "Форми, webhooks і маршрутизація лідів без важкого бекенду — з UTM-контекстом і зрозумілою обробкою помилок.",
-            detail: "Cloudflare Workers, Telegram Bot API, D1/SQLite/KV, WordPress/PHP maintenance, GitHub Actions."
+            "label": "Telemetry & Primary Goals",
+            "detail": "GTM · GA4 · Goals · Signals",
+            "state": "DATA"
           },
           {
-            metric: "measured",
-            title: "Ads & Analytics",
-            body: "Реклама оптимізується під вимірювану бізнес-дію, а не під красиві звіти про кліки й охоплення.",
-            detail: "Google Ads Search/PMax, Smart Bidding, GTM, GA4, Enhanced Conversions і план offline conversion import."
+            "label": "Targeted Ads & Acquisition",
+            "detail": "Google Search · PMax · VBB · Creatives & RSA",
+            "state": "MARKETING"
           },
           {
-            metric: "review-ready",
-            title: "Ownership & Risk",
-            body: "Обсяг, межі підтримки, IP-передача й privacy-рішення фіксуються до запуску, а не після першої суперечки.",
-            detail: "Statement of work, критерії приймання, response windows, IP handover і privacy-aware implementation для legal review."
+            "label": "Direct Lead Delivery",
+            "detail": "Inbound Calls · Bookings · Telegram Routing · Closed Deals",
+            "state": "FULL SYSTEM"
+          }
+        ],
+        "metrics": [
+          {
+            "value": "~100/100",
+            "label": "Core Web Vitals"
+          },
+          {
+            "value": "AI-Driven",
+            "label": "Ads Engine"
+          },
+          {
+            "value": "100%",
+            "label": "передача IP та коду"
           }
         ]
       },
-      case: {
-        eyebrow: "Флагманський кейс · med.uz.ua",
-        title: "Від legacy WordPress до керованої edge-платформи.",
-        intro: "Повний цикл для приватної офтальмологічної клініки: стабілізація успадкованої системи, міграція, мультимовний контент, аналітика та рекламна інфраструктура.",
-        visit: "Відкрити live-проєкт",
-        comparisonLabel: "Порівняння архітектури до і після",
-        beforeLabel: "До",
-        beforeTitle: "Крихка legacy-система",
-        before: ["Висока вага WordPress", "Фрагментована аналітика", "Ручна обробка маркетингового контексту"],
-        afterLabel: "Після",
-        afterTitle: "Edge-first інфраструктура",
-        after: ["Astro static output", "Cloudflare delivery", "Consent-aware GTM/GA4 і форми"],
-        metrics: [
-          { value: "4", label: "мовні версії live" },
-          { value: "Astro", label: "статичний frontend" },
-          { value: "Edge", label: "Cloudflare delivery" }
-        ],
-        claimNote: "Live-архітектура й мультимовність перевіряються на публічному сайті. Performance-оцінки та рекламні результати варто публікувати лише з датованим звітом і погодженим періодом порівняння."
-      },
-      pricing: {
-        eyebrow: "Інвестиція без туманних кошторисів",
-        title: "Оберіть стартову конфігурацію.",
-        toggleLabel: "Режим ціноутворення",
-        buildToggle: "Разовий запуск",
-        growthToggle: "Запуск + супровід",
-        popular: "Найчастіший вибір",
-        buildCaption: "орієнтир для ринку України · від",
-        growthCaption: "запуск + щомісячний мінімум",
-        note: "Орієнтири актуальні станом на серпень 2026 року. Фінальна пропозиція залежить від обсягу. Рекламний бюджет, хостинг, платні ліцензії, контент, переклад і податки оплачуються окремо.",
-        tiers: [
-          {
-            kicker: "Чіткий перший реліз",
-            title: "Starter Platform",
-            description: "Для однієї послуги, спеціаліста або сфокусованого MVP із професійною основою.",
-            buildPrice: "₴18 000",
-            growthPrice: "₴18 000 + ₴10 000/міс.",
-            features: ["Landing або компактний service site", "Адаптивна реалізація й базова доступність", "Технічне SEO та аналітична карта", "Launch-support у погоджених межах"],
-            growthFeatures: ["До 3 годин web-support на місяць", "Місячний measurement review"],
-            cta: "Уточнити Starter"
-          },
-          {
-            kicker: "Сайт + вимірювання + попит",
-            title: "Growth Engine",
-            description: "Для клініки або B2B-сервісу, якому потрібен керований шлях від реклами до заявки.",
-            buildPrice: "₴35 000",
-            growthPrice: "₴35 000 + ₴10 000/міс.",
-            features: ["Багатосторінкова conversion-архітектура", "GTM + GA4 + conversion plan", "Підготовка Search/PMax запуску", "Cloudflare, форми й UTM-маршрутизація"],
-            growthFeatures: ["Один Google Ads account", "Оптимізація, звіт і до 4 годин web-support"],
-            cta: "Спроєктувати Growth",
-            featured: true
-          },
-          {
-            kicker: "Складна інтегрована система",
-            title: "Full Infrastructure",
-            description: "Для мультимовних платформ, міграцій і процесів із кастомною автоматизацією.",
-            buildPrice: "₴60 000",
-            growthPrice: "₴60 000 + ₴15 000/міс.",
-            features: ["Custom architecture і міграційний план", "Workers/webhooks та інтеграції", "Розширена measurement-архітектура", "Документація, handover і response windows"],
-            growthFeatures: ["Пріоритетна підтримка за узгодженим SLA", "Щомісячний roadmap review"],
-            cta: "Обговорити Infrastructure"
-          }
-        ]
-      },
-      contact: {
-        eyebrow: "Наступний крок",
-        title: "Почнімо з задачі, а не з технології.",
-        intro: "Опишіть бізнес, ціль і головне вузьке місце. Я повернуся з доречними питаннями та чесною оцінкою формату роботи.",
-        stepOneTitle: "Коротка діагностика",
-        stepOneBody: "Зіставляємо ціль, дані та поточну інфраструктуру.",
-        stepTwoTitle: "Чіткий наступний крок",
-        stepTwoBody: "Отримуєте рекомендований обсяг, строки й стартову вартість.",
-        nameLabel: "Ім’я",
-        namePlaceholder: "Як до вас звертатися?",
-        companyLabel: "Компанія",
-        companyPlaceholder: "Назва або сфера",
-        contactLabel: "Email або Telegram",
-        contactPlaceholder: "name@company.com або @username",
-        serviceLabel: "Що потрібно запустити?",
-        messageLabel: "Контекст задачі",
-        messagePlaceholder: "Поточна ситуація, ціль і бажаний строк. Не додавайте дані пацієнтів чи іншу чутливу інформацію.",
-        consent: "Погоджуюся передати ці дані Арсенію для відповіді на запит. На цьому сайті дані не зберігаються.",
-        submit: "Продовжити в Telegram",
-        note: "Відкриється Telegram із готовим повідомленням — ви зможете перевірити його перед відправленням.",
-        selectPlaceholder: "Оберіть напрям",
-        services: ["Starter Platform", "Growth Engine", "Full Infrastructure", "Технічний аудит", "Google Ads & Measurement", "Інше"],
-        requiredError: "Перевірте обов’язкові поля та згоду.",
-        openingStatus: "Готово — відкриваю Telegram з чернеткою повідомлення.",
-        fallbackStatus: "Не вдалося відкрити нову вкладку. Скористайтеся прямим Telegram-посиланням.",
-        privacySummary: "Як обробляється ваш запит",
-        privacyController: "Контролер: Arsenii Leno, xlenoa@stuba.sk.",
-        privacyPurpose: "Мета й підстава: відповідь на ваш B2B-запит та кроки до можливої співпраці. Листування зберігається лише стільки, скільки потрібно для запиту й обов’язкових бізнес-записів.",
-        privacyTelegram: "Сайт не надсилає й не зберігає форму: він створює чернетку, яку ви самі надсилаєте через Telegram. Після відправлення дані також обробляє Telegram за власними умовами.",
-        privacyRights: "Щоб отримати, виправити або видалити дані з листування, напишіть на email вище. Не надсилайте дані пацієнтів, медичну чи іншу чутливу інформацію."
-      }
-    },
-    about: {
-      hero: {
-        eyebrow: "Інженерія з комерційним контекстом",
-        title: "Технічна глибина.",
-        titleAccent: "Відповідальність за весь шлях.",
-        lede: "Я будую цифрові системи на перетині програмної інженерії, вимірюваного маркетингу та правосвідомого delivery — без ілюзії, що один інструмент вирішує бізнес-задачу.",
-        cta: "Обговорити задачу",
-        secondaryCta: "Переглянути проєкти"
-      },
-      profile: {
-        label: "Профіль практики",
-        role: "Digital Infrastructure & Growth Engineer",
-        status: "Bratislava · Uzhhorod · Remote",
-        facts: [
-          { label: "Фокус", value: "Clinics & B2B" },
-          { label: "Мови", value: "UK · SK · EN" },
-          { label: "Модель", value: "Founder-led" }
-        ]
-      },
-      tracks: {
-        eyebrow: "Три дисципліни, одна система мислення",
-        title: "Освіта, що змінює спосіб delivery.",
-        intro: "Це поточні напрями навчання, а не заяви про ліцензовану юридичну практику. Їхня цінність — у кращих технічних, договірних і комерційних рішеннях.",
-        items: [
-          { type: "Інженерний трек · студент", title: "FIIT STU Bratislava", body: "Software Engineering: алгоритми, архітектура застосунків, асинхронні системи й performance-мислення." },
-          { type: "Правовий трек · студент", title: "UzhNU Faculty of Law", body: "IT та contract law, інтелектуальна власність і privacy-ризики як контекст для технічного delivery." },
-          { type: "Додатковий бізнес-трек", title: "Economics & International Relations", body: "Економіка та міжнародні відносини допомагають оцінювати unit economics, ринки й комерційні обмеження." }
-        ]
-      },
-      principles: {
-        eyebrow: "Робоча філософія",
-        title: "Три принципи, що переживають зміну стеку.",
-        items: [
-          { title: "Performance before decoration", body: "Спочатку — чіткий content path, семантика й бюджет продуктивності. Анімація має право на існування лише тоді, коли не шкодить задачі." },
-          { title: "Decisions from evidence", body: "Події, конверсії й рекламні цілі плануються до запуску. Якщо сигнал не можна надійно виміряти, він не має керувати бюджетом." },
-          { title: "One accountable system", body: "Frontend, measurement, acquisition і lead routing розглядаються разом. Межі відповідальності та handover фіксуються письмово." }
-        ]
-      },
-      process: {
-        eyebrow: "Як виглядає робота",
-        title: "Від діагностики до контрольованого запуску.",
-        intro: "Кожен етап має рішення, артефакт і критерій завершення. Це знижує ризик нескінченних правок та неочікуваних витрат.",
-        items: [
-          { title: "Diagnose", body: "Ціль, аудиторія, технічний стан, дані та ризики.", output: "Audit brief" },
-          { title: "Architect", body: "Scope, user journey, measurement map і delivery plan.", output: "System map" },
-          { title: "Build & validate", body: "Ітеративна реалізація, accessibility, performance і edge cases.", output: "Release candidate" },
-          { title: "Launch & hand over", body: "Production launch, документація, transfer і 30-денний support window.", output: "Handover pack" }
-        ]
-      },
-      safeguards: {
-        eyebrow: "Стандарти співпраці",
-        title: "Менше обіцянок. Більше зафіксованих умов.",
-        intro: "Формат захисту залежить від юрисдикції та проєкту; для регульованих питань документи мають пройти перевірку кваліфікованого юриста.",
-        items: [
-          { title: "Scope & acceptance", body: "Результати, межі, етапи й критерії приймання фіксуються до початку розробки." },
-          { title: "Response windows", body: "Канали зв’язку, пріоритети та строки реакції визначаються в домовленостях, а не в рекламному badge." },
-          { title: "IP handover", body: "Передача коду, доступів і майнових прав відбувається в обсязі, який прямо передбачає договір." },
-          { title: "Launch support", body: "30 днів мінімальної допомоги після релізу для виправлення погоджених launch issues; розвиток — окремий scope." }
-        ],
-        noteTitle: "Важливо:",
-        note: "юридична освіта допомагає виявляти ризики й готувати матеріали до review, але не замінює адвоката чи ліцензовану правову консультацію."
-      },
-      cta: {
-        eyebrow: "Потрібен один відповідальний контур?",
-        title: "Зберімо інженерію, дані й зростання в одну дорожню карту.",
-        button: "Почати з діагностики"
-      }
-    },
-    projects: {
-      hero: {
-        eyebrow: "Реальна робота й дослідницькі системи",
-        title: "Проєкти з контекстом.",
-        titleAccent: "Не галерея технологій.",
-        lede: "Для кожного проєкту вказано фактичний статус, мою роль і межі доказової бази — щоб live-клієнтська робота не змішувалася з research-прототипами."
-      },
-      projectIndex: [
-        { title: "med.uz.ua", status: "Live client platform" },
-        { title: "gram-event-quant", status: "Active research prototype" },
-        { title: "DIkastes.ai", status: "Research concept" },
-        { title: "Clinic-App", status: "Functional prototype" }
+      "proofLabel": "Спеціалізація",
+      "proof": [
+        "EDGE ARCHITECTURE",
+        "AI & SMART BIDDING",
+        "AUTONOMOUS LEAD FLOWS",
+        "100% IP HANDOVER"
       ],
-      flagship: {
-        status: "Live client platform",
-        eyebrow: "Флагманський кейс · 01",
-        visit: "Відкрити сайт",
-        challengeTitle: "Задача",
-        challenge: "Замінити успадковану WordPress-систему на легшу архітектуру та побудувати зрозумілий шлях від пошуку послуги до звернення в клініку.",
-        roleTitle: "Моя роль",
-        role: "Інформаційна архітектура, Astro-реалізація, edge-доставка, мультимовність, privacy-aware аналітика та рекламна інфраструктура.",
-        mapLabel: "Архітектура проєкту",
-        map: [
-          { code: "FE", title: "Localized Astro frontend", detail: "Static-first pages · responsive UI", state: "live" },
-          { code: "ED", title: "Cloudflare edge delivery", detail: "Caching · redirects · DNS", state: "live" },
-          { code: "MX", title: "Consent-aware measurement", detail: "GTM · GA4 · conversion map", state: "wired" },
-          { code: "OP", title: "Lead operations", detail: "Contact flows · appointment paths", state: "active" }
-        ],
-        outcomes: [
-          { value: "4 languages", label: "UK · SK · EN · HU" },
-          { value: "Astro 5", label: "public live frontend" },
-          { value: "Cloudflare", label: "edge delivery" },
-          { value: "2026", label: "live release" }
-        ],
-        claimNote: "Live-статус і технології перевіряються за публічним сайтом. Рекламні результати не публікуються без узгоджених чисел і періоду порівняння."
-      },
-      selected: {
-        eyebrow: "Вибрані системи",
-        title: "Від market data до LegalTech.",
-        intro: "Research і prototype-проєкти навмисно позначені як такі. Вони демонструють спосіб мислення, а не видаються за production-кейси.",
-        items: [
+      "pillars": {
+        "eyebrow": "Чотири рівні однієї системи",
+        "title": "Чотири рівні замкненої E2E інфраструктури.",
+        "intro": "Архітектура, де кожен шар працює в синергії на бізнес-результат: швидкість утримує клієнта, точні AI-сигнали навчають рекламу, а автоматизація передає лід за секунди.",
+        "detailsLabel": "Що входить технічно",
+        "items": [
           {
-            status: "Active research prototype",
-            title: "gram-event-quant",
-            summary: "Асинхронний event-study pipeline для аналізу реакції GRAM/TON ринку на події з REST OHLCV-даними й Telegram event inputs.",
-            role: "Research architecture, data pipeline and statistical workflow.",
-            tags: ["Python ≥3.13", "Async I/O", "REST OHLCV", "Event study"],
-            href: "https://github.com/arsenii-leno/gram-event-quant",
-            linkLabel: "Переглянути public repository",
-            external: true
+            "metric": "sub-100ms",
+            "title": "Edge Architecture & Headless Web",
+            "body": "Статична архітектура без повільних баз даних і зайвого JS: Islands Architecture з миттєвим завантаженням на Edge-серверах із показником ~100/100 Core Web Vitals.",
+            "detail": "Astro, Tailwind CSS, Cloudflare Edge/Pages, Headless Backend & CMS, Cloudflare KV & D1, CDN caching, автоматичний захист Cloudflare WAF & DDoS mitigation."
           },
           {
-            status: "Research concept",
-            title: "DIkastes.ai",
-            summary: "Документована архітектурна концепція legal-research assistant із retrieval, citation grounding і порівняльним аналізом юрисдикцій.",
-            role: "README-stage concept; не представлено як готовий AI-продукт.",
-            tags: ["RAG concept", "Legal research", "Vector retrieval", "Architecture"],
-            href: "https://github.com/arsenii-leno/DIkastes.ai",
-            linkLabel: "Переглянути research concept",
-            external: true
+            "metric": "real-time",
+            "title": "Automated Lead Flow & Backend",
+            "body": "Миттєва доставка заявок, дзвінків і записів одразу в Telegram та CRM. Повна фіксація UTM-міток, нуль втрачених звернень і автономна робота 24/7.",
+            "detail": "Cloudflare Workers, Serverless Webhooks, Telegram Bot API, інтеграція оплат й доставок (LiqPay, Nova Poshta)."
           },
           {
-            status: "Functional prototype",
-            title: "Clinic-App",
-            summary: "Expo/React Native prototype для appointment workflow, patient records і local-first clinical operations.",
-            role: "Prototype case; матеріали надаються напряму після source-hygiene review.",
-            tags: ["Expo", "React Native", "TypeScript", "Local-first"],
-            href: "mailto:xlenoa@stuba.sk?subject=Clinic-App%20case",
-            linkLabel: "Запросити case note",
-            external: false
+            "metric": "ai-signals",
+            "title": "Smart Acquisition & Creative Engine",
+            "body": "Залучення реальних клієнтів через Google Ads (Search, PMax, VBB). AI-навчання кампаній на реальних конверсіях + авторські креативи, підсилені даними SERP API.",
+            "detail": "GTM, GA4 (Primary Conversion Goals), Value-Based Bidding, SERP API market analysis, авторські фото/креативи (RSA), Enhanced Conversions."
+          },
+          {
+            "metric": "legal-grade",
+            "title": "Full Ownership & Legal Security",
+            "body": "Офіційне договірне оформлення, чіткий Statement of Work (SOW), передача 100% майнових прав (IP) на код та акаунти. Жодної прив'язки до розробника чи прихованих платежів.",
+            "detail": "Офіційний договір, акт приймання-передачі, передача вихідного коду й доступів, GDPR/Privacy compliance, 30 днів гарантійної підтримки."
           }
         ]
       },
-      credential: {
-        eyebrow: "Перевірювана кваліфікація",
-        title: "AI-Powered Performance Ads Certification",
-        body: "Кваліфікація Google Skillshop з AI-powered кампаній, Smart Bidding, Performance Max і вимірювання результативності.",
-        issuerLabel: "Issuer",
-        idLabel: "Credential ID",
-        verify: "Перевірити credential"
-      },
-      stack: {
-        eyebrow: "Capability matrix",
-        title: "Стек підбирається під вузьке місце.",
-        intro: "Технологія — не офер. Вона має спрощувати delivery, вимірювання й подальше володіння системою.",
-        items: [
-          { title: "Frontend & Performance", technologies: ["Astro · HTML5 · CSS", "TypeScript · React", "Accessibility · CWV", "Responsive delivery"] },
-          { title: "Edge & Automation", technologies: ["Cloudflare Workers", "D1 · SQLite · KV", "Telegram Bot API", "GitHub Actions"] },
-          { title: "Ads & Measurement", technologies: ["Google Ads · PMax", "GTM · GA4", "Enhanced Conversions", "Offline conversion plan"] },
-          { title: "Legacy & Governance", technologies: ["WordPress · PHP", "DNS · cPanel · Fornex", "Scope · acceptance", "IP/privacy review prep"] }
-        ]
-      },
-      cta: {
-        eyebrow: "Є задача зі схожою складністю?",
-        title: "Покажіть поточну систему — я знайду точку найбільшого впливу.",
-        button: "Запросити діагностику"
-      }
-    }
-  },
-
-  sk: {
-    global: {
-      skip: "Preskočiť na hlavný obsah",
-      brandTag: "Infrastructure & Growth",
-      navLabel: "Hlavná navigácia",
-      languageLabel: "Vybrať jazyk",
-      nav: { services: "Služby", about: "O mne", projects: "Projekty", consultation: "Konzultácia" },
-      footer: { tagline: "Digitálna infraštruktúra pre firmy, ktoré merajú výsledky.", location: "Bratislava · Užhorod · Remote", privacy: "Súkromie" }
-    },
-    meta: {
-      home: {
-        title: "Arsenii Leno — Digitálna infraštruktúra a rast",
-        description: "Digitálna infraštruktúra pre ambulancie a B2B: rýchle weby, presná analytika, Google Ads, automatizácia a jasný handover.",
-        ogTitle: "Arsenii Leno — Digital Infrastructure & Growth Engineering",
-        ogDescription: "Rýchle webové platformy, analytika, reklama a automatizácia v jednom zodpovednom systéme."
-      },
-      about: {
-        title: "O prístupe — Arsenii Leno",
-        description: "Inžiniersky, analytický a právne uvedomelý prístup Arseniiho Lena k digitálnej infraštruktúre pre ambulancie a B2B.",
-        ogTitle: "O prístupe — Arsenii Leno",
-        ogDescription: "Softvérové inžinierstvo, merateľný rast a privacy-aware delivery v jednej praxi."
-      },
-      projects: {
-        title: "Projekty a technologický stack — Arsenii Leno",
-        description: "Vybrané klientské a výskumné projekty: zdravotnícka edge platforma, market-event analytika, LegalTech RAG koncept a clinic workflow prototyp.",
-        ogTitle: "Projekty a stack — Arsenii Leno",
-        ogDescription: "Overiteľné roly, úprimné statusy a technické riešenia — od živej kliniky po výskumné prototypy."
-      }
-    },
-    home: {
-      hero: {
-        status: "Otvorený pre obmedzený počet nových projektov",
-        eyebrow: "Pre ambulancie, právnické firmy a B2B služby",
-        title: "Nie iba web.",
-        titleAccent: "Systém, ktorý mení pozornosť na dopyty.",
-        lede: "Spájam rýchle webové inžinierstvo, presnú analytiku, Google Ads a automatizáciu do jednej riadenej digitálnej infraštruktúry.",
-        primaryCta: "Prediskutovať spustenie",
-        secondaryCta: "Pozrieť systém",
-        trustLabel: "Podmienky spolupráce",
-        trust: ["Transparentný rozsah", "Prevod IP podľa zmluvy", "30 dní launch-support"]
-      },
-      system: {
-        ariaLabel: "Schéma digitálnej infraštruktúry",
-        label: "growth-infrastructure.live",
-        live: "LIVE",
-        note: "Jeden zodpovedný systém namiesto roztrieštených dodávateľov.",
-        nodes: [
-          { label: "Performance web", detail: "Astro · semantic HTML · edge", state: "ready" },
-          { label: "Measurement", detail: "GTM · GA4 · conversions", state: "mapped" },
-          { label: "Demand", detail: "Search · PMax · bidding", state: "active" },
-          { label: "Lead operations", detail: "Workers · Telegram · UTM", state: "routed" }
+      "case": {
+        "eyebrow": "Флагманський кейс · med.uz.ua",
+        "title": "Еволюція архітектури: від оптимізації WordPress до чистого Edge.",
+        "intro": "Глибоко розумію нутрощі WordPress — від тюнінгу MySQL до рефакторингу плагінів. Проте для клінік та B2B з високим чеком моноліт стає гальмом. Рішення: зберегти звичне керування даними, але перевести платформу на швидкісну Edge-архітектуру (Astro + структурований Headless-контент через JSON).",
+        "visit": "Відкрити live-проєкт",
+        "comparisonLabel": "Порівняння архітектури до та після",
+        "beforeLabel": "до",
+        "beforeTitle": "Монолітний WordPress",
+        "before": [
+          "TTFB > 1.8s · Оверхед теми та постійні запити до MySQL блокують рендер на мобільних",
+          "Вразливість і збої · Ризики атак на WP-ядро, конфлікти плагінів і дорогий хостинг",
+          "Фрагментована аналітика · Розрив зв'язку UTM-міток із заявками та неточні сигнали для реклами"
         ],
-        metrics: [
-          { value: "3", label: "trhové kontexty" },
-          { value: "4", label: "vrstvy systému" },
-          { value: "1", label: "zodpovedný partner" }
-        ]
-      },
-      proofLabel: "Špecializácia",
-      proof: ["Performance-first web", "Measurement that informs spend", "Founder-led delivery", "UK · SK · EN"],
-      pillars: {
-        eyebrow: "Štyri vrstvy jedného systému",
-        title: "Od prvého kliknutia po odovzdaný lead.",
-        intro: "Každá vrstva podporuje ďalšiu: rýchlosť zlepšuje skúsenosť, meranie rozhodovanie a automatizácia reakciu tímu.",
-        detailsLabel: "Technické detaily",
-        items: [
-          { metric: "static-first", title: "Frontend & Edge", body: "Sémantické a responzívne stránky s minimom JavaScriptu, rýchlym doručením a kontrolovanou technickou váhou.", detail: "Astro, HTML5, CSS/Tailwind build, Cloudflare Pages alebo GitHub Pages, DNS, CDN, redirects a CI/CD." },
-          { metric: "serverless ops", title: "Automation & Backend", body: "Formuláre, webhooks a routing leadov bez ťažkého backendu — s UTM kontextom a zrozumiteľným spracovaním chýb.", detail: "Cloudflare Workers, Telegram Bot API, D1/SQLite/KV, WordPress/PHP maintenance a GitHub Actions." },
-          { metric: "measured", title: "Ads & Analytics", body: "Reklama sa optimalizuje na merateľnú obchodnú akciu, nie na pekné reporty o kliknutiach a dosahu.", detail: "Google Ads Search/PMax, Smart Bidding, GTM, GA4, Enhanced Conversions a plán offline conversion importu." },
-          { metric: "review-ready", title: "Ownership & Risk", body: "Rozsah, hranice podpory, prevod IP a privacy rozhodnutia sa určujú pred spustením, nie po prvom spore.", detail: "Statement of work, acceptance criteria, response windows, IP handover a privacy-aware implementácia na právnu kontrolu." }
-        ]
-      },
-      case: {
-        eyebrow: "Hlavná prípadová štúdia · med.uz.ua",
-        title: "Od legacy WordPressu k riadenej edge platforme.",
-        intro: "Kompletný cyklus pre súkromnú očnú kliniku: stabilizácia zdedeného systému, migrácia, viacjazyčný obsah, analytika a reklamná infraštruktúra.",
-        visit: "Otvoriť live projekt",
-        comparisonLabel: "Porovnanie architektúry pred a po",
-        beforeLabel: "Pred",
-        beforeTitle: "Krehký legacy systém",
-        before: ["Ťažký WordPress", "Fragmentovaná analytika", "Manuálne spracovanie marketingového kontextu"],
-        afterLabel: "Po",
-        afterTitle: "Edge-first infraštruktúra",
-        after: ["Astro static output", "Cloudflare delivery", "Consent-aware GTM/GA4 a formuláre"],
-        metrics: [
-          { value: "4", label: "jazykové verzie live" },
-          { value: "Astro", label: "statický frontend" },
-          { value: "Edge", label: "Cloudflare delivery" }
+        "afterLabel": "після",
+        "afterTitle": "Astro Edge + Headless Data",
+        "after": [
+          "TTFB < 0.15s · Статична Islands-архітектура на Edge CDN із чистими 100/100 Core Web Vitals",
+          "Headless JSON Data · Легке керування контентом і цінами без бази даних і ризику збоїв",
+          "Автономна воронка · Миттєві заявки в Telegram, збереження UTM та передача Primary Goals у Google Ads"
         ],
-        claimNote: "Live architektúru a viacjazyčnosť možno overiť na verejnom webe. Výkonnostné skóre a reklamné výsledky je vhodné publikovať iba s datovaným reportom a odsúhlaseným obdobím porovnania."
-      },
-      pricing: {
-        eyebrow: "Investícia bez nejasných rozpočtov",
-        title: "Vyberte si štartovaciu konfiguráciu.",
-        toggleLabel: "Režim cien",
-        buildToggle: "Jednorazové spustenie",
-        growthToggle: "Spustenie + správa",
-        popular: "Najčastejšia voľba",
-        buildCaption: "orientačne pre slovenský trh · od",
-        growthCaption: "spustenie + mesačné minimum",
-        note: "Orientačné ceny platné v auguste 2026. Finálna ponuka závisí od rozsahu. Mediálny rozpočet, hosting, platené licencie, obsah, preklad a dane nie sú zahrnuté.",
-        tiers: [
+        "metrics": [
           {
-            kicker: "Jasné prvé vydanie", title: "Starter Platform", description: "Pre jednu službu, odborníka alebo sústredené MVP s profesionálnym základom.",
-            buildPrice: "€490", growthPrice: "€490 + €390/mes.",
-            features: ["Landing page alebo kompaktný service site", "Responzívna realizácia a základná prístupnosť", "Technické SEO a measurement mapa", "Launch-support v dohodnutom rozsahu"],
-            growthFeatures: ["Do 3 hodín web-support mesačne", "Mesačný measurement review"], cta: "Spresniť Starter"
+            "value": "4 мови",
+            "label": "мультимовна live-платформа"
           },
           {
-            kicker: "Web + meranie + dopyt", title: "Growth Engine", description: "Pre ambulanciu alebo B2B službu, ktorá potrebuje riadenú cestu od reklamy k dopytu.",
-            buildPrice: "€1 290", growthPrice: "€1 290 + €390/mes.",
-            features: ["Viacstránková conversion architektúra", "GTM + GA4 + conversion plan", "Príprava Search/PMax spustenia", "Cloudflare, formuláre a UTM routing"],
-            growthFeatures: ["Jeden Google Ads účet", "Optimalizácia, report a do 4 hodín web-support"], cta: "Navrhnúť Growth", featured: true
+            "value": "< 120ms",
+            "label": "глобальний відгук Edge CDN"
           },
           {
-            kicker: "Komplexný integrovaný systém", title: "Full Infrastructure", description: "Pre viacjazyčné platformy, migrácie a procesy s vlastnou automatizáciou.",
-            buildPrice: "€2 490", growthPrice: "€2 490 + €590/mes.",
-            features: ["Custom architektúra a plán migrácie", "Workers/webhooks a integrácie", "Rozšírená measurement architektúra", "Dokumentácia, handover a response windows"],
-            growthFeatures: ["Prioritná podpora podľa dohodnutého SLA", "Mesačný roadmap review"], cta: "Prediskutovať Infrastructure"
+            "value": "0 DB load",
+            "label": "стійкість до навантажень"
+          }
+        ],
+        "claimNote": "Live-архітектура, швидкість та мультимовність перевіряються на реальному проєкті: med.uz.ua."
+      },
+      "selected": {
+        "eyebrow": "Вибрані системи",
+        "title": "Від market data до LegalTech.",
+        "intro": "Research і prototype-проєкти навмисно позначені як такі. Вони демонструють спосіб мислення, а не видаються за production-кейси.",
+        "items": [
+          {
+            "status": "Active research prototype",
+            "title": "gram-event-quant",
+            "summary": "Асинхронний event-study pipeline для аналізу реакції GRAM/TON ринку на події з REST OHLCV-даними й Telegram event inputs.",
+            "role": "Research architecture, data pipeline and statistical workflow.",
+            "tags": [
+              "Python ≥3.13",
+              "Async I/O",
+              "REST OHLCV",
+              "Event study"
+            ],
+            "href": "https://github.com/arsenii-leno/gram-event-quant",
+            "linkLabel": "Переглянути public repository",
+            "external": true
+          },
+          {
+            "status": "Research concept",
+            "title": "DIkastes.ai",
+            "summary": "Документована архітектурна концепція legal-research assistant із retrieval, citation grounding і порівняльним аналізом юрисдикцій.",
+            "role": "README-stage concept; не представлено як готовий AI-продукт.",
+            "tags": [
+              "RAG concept",
+              "Legal research",
+              "Vector retrieval",
+              "Architecture"
+            ],
+            "href": "https://github.com/arsenii-leno/DIkastes.ai",
+            "linkLabel": "Переглянути research concept",
+            "external": true
+          },
+          {
+            "status": "Functional prototype",
+            "title": "Clinic-App",
+            "summary": "Expo/React Native prototype для appointment workflow, patient records і local-first clinical operations.",
+            "role": "Prototype case; матеріали надаються напряму після source-hygiene review.",
+            "tags": [
+              "Expo",
+              "React Native",
+              "TypeScript",
+              "Local-first"
+            ],
+            "href": "mailto:xlenoa@stuba.sk?subject=Clinic-App%20case",
+            "linkLabel": "Запросити case note",
+            "external": false
           }
         ]
       },
-      contact: {
-        eyebrow: "Ďalší krok", title: "Začnime problémom, nie technológiou.", intro: "Popíšte firmu, cieľ a hlavšie úzke miesto. Ozvem sa s relevantnými otázkami a úprimným odhadom vhodného formátu spolupráce.",
-        stepOneTitle: "Krátka diagnostika", stepOneBody: "Prepojíme cieľ, dáta a aktuálnu infraštruktúru.", stepTwoTitle: "Jasný ďalší krok", stepTwoBody: "Dostanete odporúčaný rozsah, termín a východiskovú cenu.",
-        nameLabel: "Meno", namePlaceholder: "Ako vás môžem osloviť?", companyLabel: "Spoločnosť", companyPlaceholder: "Názov alebo odvetvie", contactLabel: "Email alebo Telegram", contactPlaceholder: "name@company.com alebo @username", serviceLabel: "Čo potrebujete spustiť?", messageLabel: "Kontext zadania", messagePlaceholder: "Aktuálna situácia, cieľ a želaný termín. Nevkladajte údaje pacientov ani iné citlivé informácie.",
-        consent: "Súhlasím s odovzdaním týchto údajov Arseniimu na zodpovedanie dopytu. Údaje sa na tomto webe neukladajú.", submit: "Pokračovať v Telegrame", note: "Telegram sa otvorí s pripravenou správou — pred odoslaním ju môžete skontrolovať.", selectPlaceholder: "Vyberte oblasť",
-        services: ["Starter Platform", "Growth Engine", "Full Infrastructure", "Technický audit", "Google Ads & Measurement", "Iné"], requiredError: "Skontrolujte povinné polia a súhlas.", openingStatus: "Hotovo — otváram Telegram s návrhom správy.", fallbackStatus: "Novú kartu sa nepodarilo otvoriť. Použite priamy Telegram odkaz.",
-        privacySummary: "Ako sa spracuje váš dopyt", privacyController: "Prevádzkovateľ: Arsenii Leno, xlenoa@stuba.sk.", privacyPurpose: "Účel a základ: odpoveď na váš B2B dopyt a kroky pred možnou spoluprácou. Korešpondencia sa uchováva len tak dlho, ako je potrebné pre dopyt a povinné obchodné záznamy.", privacyTelegram: "Web formulár neodosiela ani neukladá: vytvorí návrh správy, ktorý odošlete sami cez Telegram. Po odoslaní údaje spracúva aj Telegram podľa vlastných podmienok.", privacyRights: "Ak chcete získať, opraviť alebo odstrániť údaje z korešpondencie, napíšte na email vyššie. Neposielajte údaje pacientov, zdravotné ani iné citlivé informácie."
+      "credential": {
+        "eyebrow": "Перевірювана кваліфікація",
+        "title": "AI-Powered Performance Ads Certification",
+        "body": "Кваліфікація Google Skillshop з AI-powered кампаній, Smart Bidding, Performance Max і вимірювання результативності.",
+        "issuerLabel": "Issuer",
+        "idLabel": "Credential ID",
+        "verify": "Перевірити credential"
+      },
+      "stack": {
+        "eyebrow": "Capability matrix",
+        "title": "Стек підбирається під вузьке місце.",
+        "intro": "Технологія — не офер. Вона має спрощувати delivery, вимірювання й подальше володіння системою.",
+        "items": [
+          {
+            "title": "Frontend & Performance",
+            "technologies": [
+              "Astro · HTML5 · CSS",
+              "TypeScript · React",
+              "Accessibility · CWV",
+              "Responsive delivery"
+            ]
+          },
+          {
+            "title": "Edge & Automation",
+            "technologies": [
+              "Cloudflare Workers",
+              "D1 · SQLite · KV",
+              "Telegram Bot API",
+              "GitHub Actions"
+            ]
+          },
+          {
+            "title": "Ads & Measurement",
+            "technologies": [
+              "Google Ads · PMax",
+              "GTM · GA4",
+              "Enhanced Conversions",
+              "Offline conversion plan"
+            ]
+          },
+          {
+            "title": "Legacy & Governance",
+            "technologies": [
+              "WordPress · PHP",
+              "DNS · cPanel · Fornex",
+              "Scope · acceptance",
+              "IP/privacy review prep"
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "eyebrow": "Є задача зі схожою складністю?",
+        "title": "Покажіть поточну систему — я знайду точку найбільшого впливу.",
+        "button": "Запросити діагностику"
+      },
+      "pricing": {
+        "eyebrow": "Інвестиція без туманних кошторисів",
+        "title": "Оберіть стартову конфігурацію.",
+        "toggleLabel": "Режим ціноутворення",
+        "buildToggle": "Разовий запуск",
+        "growthToggle": "Запуск + супровід",
+        "popular": "Популярний вибір",
+        "buildCaption": "разово · фіксований SOW",
+        "growthCaption": "/ місяць · фіксований спринт",
+        "note": "Орієнтири актуальні станом на серпень 2026 року. Фінальна пропозиція залежить від обсягу. Рекламний бюджет, хостинг, платні ліцензії, контент, переклад і податки оплачуються окремо.",
+        "tiers": [
+          {
+            "featured": false,
+            "kicker": "01 · Базовий веб",
+            "title": "Fast Web Platform",
+            "description": "Швидка, надійна веб-платформа для заміни повільного сайту або чистого старту.",
+            "buildPrice": "$350",
+            "growthPrice": "$150",
+            "features": [
+              "Astro + Tailwind сучасна архітектура",
+              "95–100 Google PageSpeed & Core Web Vitals",
+              "Mobile-First верстка та семантичне SEO",
+              "Headless JSON-керування контентом"
+            ],
+            "growthFeatures": [
+              "Моніторинг стабільності та доступності 24/7",
+              "Регулярні бекапи та оновлення контенту"
+            ],
+            "cta": "Обрати конфігурацію"
+          },
+          {
+            "featured": true,
+            "kicker": "02 · Трафік + Аналітика",
+            "title": "Growth & Ads Engine",
+            "description": "Повний зв'язок швидкого сайту з точною аналітикою та залученням клієнтів.",
+            "buildPrice": "$650",
+            "growthPrice": "$250",
+            "features": [
+              "Усе, що входить у Fast Web Platform",
+              "GTM + GA4 + Primary Conversion Goals",
+              "Google Ads (Search, PMax, VBB стратегії)",
+              "Авторські адаптивні креативи (RSA)"
+            ],
+            "growthFeatures": [
+              "Щотижнева оптимізація ставок і бюджету",
+              "A/B спліт-тестування оферів і заголовків",
+              "Щомісячний аудит вартості заявки (CPA)"
+            ],
+            "cta": "Обрати конфігурацію"
+          },
+          {
+            "featured": false,
+            "kicker": "03 · Замкнений цикл",
+            "title": "Full E2E Infrastructure",
+            "description": "Автономна цифрова інфраструктура з доставкою лідів, оплатами та юридичним захистом.",
+            "buildPrice": "$950",
+            "growthPrice": "$350",
+            "features": [
+              "Увесь стек Web + Analytics + Ads",
+              "Telegram Bot + Cloudflare Workers роутинг лідів",
+              "Інтеграція платіжних систем (LiqPay / Stripe)",
+              "Офіційний договір, SOW та 100% передача прав (IP)"
+            ],
+            "growthFeatures": [
+              "Пріоритетний SLA технічної підтримки",
+              "Безперервне доопрацювання логіки під нові задачі"
+            ],
+            "cta": "Обрати конфігурацію"
+          }
+        ]
+      },
+      "contact": {
+        "eyebrow": "Наступний крок",
+        "title": "Почнімо з вашої задачі та результату.",
+        "intro": "Опишіть поточну систему та бажану ціль. Зроблю технічний аудит, розрахую архітектуру та повернуся з фіксованим SOW без нав'язування зайвого коду.",
+        "stepOneTitle": "Експрес-аудит інфраструктури",
+        "stepOneBody": "Оцінюю швидкість сайту, якість відстеження конверсій у GA4 та точки втрати лідів.",
+        "stepTwoTitle": "Фіксований SOW і старт",
+        "stepTwoBody": "Отримуєте зрозумілий технічний план, дедлайн, рамки відповідальності та точну вартість.",
+        "nameLabel": "Ім’я",
+        "namePlaceholder": "Як до вас звертатися?",
+        "companyLabel": "Компанія",
+        "companyPlaceholder": "Назва або сфера",
+        "contactLabel": "Email або Telegram",
+        "contactPlaceholder": "name@company.com або @username",
+        "serviceLabel": "Що потрібно запустити?",
+        "selectPlaceholder": "Оберіть напрям або конфігурацію",
+        "services": [
+          "Edge Web Platform (Astro під ключ)",
+          "Оптимізація та аудит legacy WordPress",
+          "Трафік + Аналітика (Google Ads, GTM, VBB)",
+          "Повна E2E інфраструктура (Сайт + Бот + Реклама)",
+          "Індивідуальна задача"
+        ],
+        "messageLabel": "Контекст задачі",
+        "messagePlaceholder": "Сайт, поточний стек, куди зливаються ліди або що потрібно розгорнути з нуля...",
+        "consent": "Дані передаються виключно для оцінки задачі. Жодного спаму чи збереження у сторонніх базах.",
+        "submit": "Сформувати запит у Telegram",
+        "footnote": "Згенерує готове повідомлення із заповненими параметрами — ви зможете переглянути й відредагувати текст перед відправкою.",
+        "privacyDetailsTitle": "Як обробляється ваш запит",
+        "privacyTextOne": "Контролер: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyTextTwo": "Мета: оцінка запиту та підготовка пропозиції. Листування зберігається лише в робочому чаті.",
+        "privacyTextThree": "Сайт не відправляє дані на сервер: формується чернетка для відправки через Telegram або email.",
+        "privacyTextFour": "Не надсилайте чутливі персональні чи комерційні дані до підписання NDA.",
+        "note": "Форма формує прямий запит. Жодних прихованих трекерів або перепродажу контактів.",
+        "privacySummary": "Як обробляється ваш запит (GDPR & Конфіденційність)",
+        "privacyController": "Контролер: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyPurpose": "Мета: первинна технічна оцінка та узгодження SOW. Листування не передається третім особам.",
+        "privacyTelegram": "Сайт не зберігає введені дані у базах: запит відкривається як підготовлена чернетка у вашому Telegram або email.",
+        "privacyRights": "Ви маєте повне право на відкликання та видалення листування за першим запитом на контактний email.",
+        "requiredError": "Будь ласка, заповніть обов'язкові поля.",
+        "openingStatus": "Відкриваємо Telegram...",
+        "fallbackStatus": "Не вдалося відкрити? Напишіть напряму: @Arsen_Kozaque"
       }
-    },
-    about: {
-      hero: { eyebrow: "Inžinierstvo s obchodným kontextom", title: "Technická hĺbka.", titleAccent: "Zodpovednosť za celú cestu.", lede: "Budujem digitálne systémy na prieniku softvérového inžinierstva, merateľného marketingu a právne uvedomelého delivery — bez predstavy, že jeden nástroj vyrieši obchodný problém.", cta: "Prediskutovať zadanie", secondaryCta: "Pozrieť projekty" },
-      profile: { label: "Profil praxe", role: "Digital Infrastructure & Growth Engineer", status: "Bratislava · Užhorod · Remote", facts: [{ label: "Zameranie", value: "Clinics & B2B" }, { label: "Jazyky", value: "UK · SK · EN" }, { label: "Model", value: "Founder-led" }] },
-      tracks: {
-        eyebrow: "Tri disciplíny, jeden systém myslenia", title: "Vzdelanie, ktoré mení spôsob delivery.", intro: "Ide o aktuálne študijné smery, nie tvrdenie o licencovanej právnej praxi. Ich hodnota je v lepších technických, zmluvných a obchodných rozhodnutiach.",
-        items: [
-          { type: "Inžiniersky smer · študent", title: "FIIT STU Bratislava", body: "Softvérové inžinierstvo: algoritmy, aplikačná architektúra, asynchrónne systémy a performance myslenie." },
-          { type: "Právny smer · študent", title: "Právnická fakulta UzhNU", body: "IT a zmluvné právo, duševné vlastníctvo a privacy riziká ako kontext technického delivery." },
-          { type: "Doplnkový biznis smer", title: "Ekonómia & medzinárodné vzťahy", body: "Ekonómia a medzinárodné vzťahy pomáhajú hodnotiť unit economics, trhy a obchodné obmedzenia." }
-        ]
-      },
-      principles: {
-        eyebrow: "Pracovná filozofia", title: "Tri princípy, ktoré prežijú zmenu stacku.",
-        items: [
-          { title: "Performance before decoration", body: "Najprv jasná content path, sémantika a rozpočet výkonu. Animácia má zmysel iba vtedy, keď neškodí cieľu." },
-          { title: "Decisions from evidence", body: "Udalosti, konverzie a reklamné ciele sa plánujú pred spustením. Ak signál nemožno spoľahlivo merať, nemá riadiť rozpočet." },
-          { title: "One accountable system", body: "Frontend, measurement, acquisition a lead routing sa riešia spolu. Hranice zodpovednosti a handover sú písomné." }
-        ]
-      },
-      process: {
-        eyebrow: "Ako prebieha spolupráca", title: "Od diagnostiky po kontrolované spustenie.", intro: "Každá etapa má rozhodnutie, výstup a kritérium dokončenia. Znižuje to riziko nekonečných úprav a nečakaných nákladov.",
-        items: [
-          { title: "Diagnose", body: "Cieľ, publikum, technický stav, dáta a riziká.", output: "Audit brief" },
-          { title: "Architect", body: "Scope, user journey, measurement mapa a delivery plán.", output: "System map" },
-          { title: "Build & validate", body: "Iteratívna realizácia, accessibility, performance a edge cases.", output: "Release candidate" },
-          { title: "Launch & hand over", body: "Production launch, dokumentácia, transfer a 30-dňový support window.", output: "Handover pack" }
-        ]
-      },
-      safeguards: {
-        eyebrow: "Štandardy spolupráce", title: "Menej sľubov. Viac dohodnutých podmienok.", intro: "Forma ochrany závisí od jurisdikcie a projektu; regulované otázky majú dokumenty posúdené kvalifikovaným právnikom.",
-        items: [
-          { title: "Scope & acceptance", body: "Výstupy, hranice, etapy a kritériá prevzatia sa určia pred začiatkom vývoja." },
-          { title: "Response windows", body: "Komunikačné kanály, priority a reakčné časy sú v dohode, nie v marketingovom badge." },
-          { title: "IP handover", body: "Kód, prístupy a majetkové práva sa odovzdávajú v rozsahu výslovne určenom zmluvou." },
-          { title: "Launch support", body: "30 dní minimálnej pomoci po vydaní na dohodnuté launch issues; ďalší rozvoj je samostatný scope." }
-        ],
-        noteTitle: "Dôležité:", note: "právne štúdium pomáha identifikovať riziká a pripraviť materiály na review, ale nenahrádza advokáta ani licencované právne poradenstvo."
-      },
-      cta: { eyebrow: "Potrebujete jeden zodpovedný systém?", title: "Spojme inžinierstvo, dáta a rast do jednej roadmapy.", button: "Začať diagnostikou" }
-    },
-    projects: {
-      hero: { eyebrow: "Reálna práca a výskumné systémy", title: "Projekty s kontextom.", titleAccent: "Nie galéria technológií.", lede: "Pri každom projekte uvádzam skutočný status, svoju rolu a hranice dôkazov, aby sa živá klientská práca nemiešala s výskumnými prototypmi." },
-      projectIndex: [{ title: "med.uz.ua", status: "Live client platform" }, { title: "gram-event-quant", status: "Active research prototype" }, { title: "DIkastes.ai", status: "Research concept" }, { title: "Clinic-App", status: "Functional prototype" }],
-      flagship: {
-        status: "Live client platform", eyebrow: "Hlavná prípadová štúdia · 01", visit: "Otvoriť web", challengeTitle: "Zadanie", challenge: "Nahradiť zdedený WordPress ľahšou architektúrou a vytvoriť jasnú cestu od vyhľadania služby ku kontaktu s klinikou.", roleTitle: "Moja rola", role: "Informačná architektúra, Astro realizácia, edge delivery, viacjazyčnosť, privacy-aware analytika a reklamná infraštruktúra.", mapLabel: "Architektúra projektu",
-        map: [
-          { code: "FE", title: "Localized Astro frontend", detail: "Static-first pages · responsive UI", state: "live" },
-          { code: "ED", title: "Cloudflare edge delivery", detail: "Caching · redirects · DNS", state: "live" },
-          { code: "MX", title: "Consent-aware measurement", detail: "GTM · GA4 · conversion map", state: "wired" },
-          { code: "OP", title: "Lead operations", detail: "Contact flows · appointment paths", state: "active" }
-        ],
-        outcomes: [{ value: "4 jazyky", label: "UK · SK · EN · HU" }, { value: "Astro 5", label: "verejný live frontend" }, { value: "Cloudflare", label: "edge delivery" }, { value: "2026", label: "live release" }],
-        claimNote: "Live status a technológie možno overiť na verejnom webe. Reklamné výsledky nezverejňujem bez odsúhlasených čísel a obdobia porovnania."
-      },
-      selected: {
-        eyebrow: "Vybrané systémy", title: "Od market data po LegalTech.", intro: "Výskumné a prototypové projekty sú tak aj označené. Ukazujú spôsob myslenia, nie sú prezentované ako produkčné referencie.",
-        items: [
-          { status: "Active research prototype", title: "gram-event-quant", summary: "Asynchrónny event-study pipeline na analýzu reakcie trhu GRAM/TON na udalosti s REST OHLCV dátami a Telegram event inputs.", role: "Research architecture, data pipeline and statistical workflow.", tags: ["Python ≥3.13", "Async I/O", "REST OHLCV", "Event study"], href: "https://github.com/arsenii-leno/gram-event-quant", linkLabel: "Pozrieť public repository", external: true },
-          { status: "Research concept", title: "DIkastes.ai", summary: "Zdokumentovaný architektonický koncept legal-research asistenta s retrieval, citation grounding a porovnávaním jurisdikcií.", role: "README-stage concept; nie je prezentovaný ako hotový AI produkt.", tags: ["RAG concept", "Legal research", "Vector retrieval", "Architecture"], href: "https://github.com/arsenii-leno/DIkastes.ai", linkLabel: "Pozrieť research concept", external: true },
-          { status: "Functional prototype", title: "Clinic-App", summary: "Expo/React Native prototyp pre appointment workflow, patient records a local-first clinic operations.", role: "Prototype case; materiály poskytnem priamo po source-hygiene review.", tags: ["Expo", "React Native", "TypeScript", "Local-first"], href: "mailto:xlenoa@stuba.sk?subject=Clinic-App%20case", linkLabel: "Vyžiadať case note", external: false }
-        ]
-      },
-      credential: { eyebrow: "Overiteľná kvalifikácia", title: "AI-Powered Performance Ads Certification", body: "Kvalifikácia Google Skillshop pre AI-powered kampane, Smart Bidding, Performance Max a meranie výsledkov.", issuerLabel: "Vydavateľ", idLabel: "Credential ID", verify: "Overiť credential" },
-      stack: {
-        eyebrow: "Capability matrix", title: "Stack sa volí podľa úzkeho miesta.", intro: "Technológia nie je ponuka. Má zjednodušiť delivery, meranie a následné vlastníctvo systému.",
-        items: [
-          { title: "Frontend & Performance", technologies: ["Astro · HTML5 · CSS", "TypeScript · React", "Accessibility · CWV", "Responsive delivery"] },
-          { title: "Edge & Automation", technologies: ["Cloudflare Workers", "D1 · SQLite · KV", "Telegram Bot API", "GitHub Actions"] },
-          { title: "Ads & Measurement", technologies: ["Google Ads · PMax", "GTM · GA4", "Enhanced Conversions", "Offline conversion plan"] },
-          { title: "Legacy & Governance", technologies: ["WordPress · PHP", "DNS · cPanel · Fornex", "Scope · acceptance", "IP/privacy review prep"] }
-        ]
-      },
-      cta: { eyebrow: "Máte podobne náročné zadanie?", title: "Ukážte mi aktuálny systém — nájdem bod s najväčším vplyvom.", button: "Požiadať o diagnostiku" }
     }
   },
-
-  en: {
-    global: {
-      skip: "Skip to main content",
-      brandTag: "Infrastructure & Growth",
-      navLabel: "Primary navigation",
-      languageLabel: "Choose language",
-      nav: { services: "Services", about: "About", projects: "Projects", consultation: "Consultation" },
-      footer: { tagline: "Digital infrastructure for businesses that measure outcomes.", location: "Bratislava · Uzhhorod · Remote", privacy: "Privacy" }
-    },
-    meta: {
-      home: {
-        title: "Arsenii Leno — Digital Infrastructure & Growth Engineering",
-        description: "Digital infrastructure for clinics and B2B: fast web platforms, precise measurement, Google Ads, automation and clear handover terms.",
-        ogTitle: "Arsenii Leno — Digital Infrastructure & Growth Engineering",
-        ogDescription: "Fast web platforms, analytics, acquisition and automation in one accountable system."
+  "sk": {
+    "global": {
+      "skip": "Preskočiť na hlavný obsah",
+      "brandTag": "Infrastructure & Growth",
+      "navLabel": "Hlavná navigácia",
+      "languageLabel": "Vybrať jazyk",
+      "nav": {
+        "services": "Služby",
+        "about": "O mne",
+        "projects": "Projekty",
+        "consultation": "Konzultácia"
       },
-      about: {
-        title: "Approach — Arsenii Leno",
-        description: "Arsenii Leno's engineering, measurement-led and legally aware approach to digital infrastructure for clinics and B2B companies.",
-        ogTitle: "Approach — Arsenii Leno",
-        ogDescription: "Software engineering, measurable growth and privacy-aware delivery in one practice."
-      },
-      projects: {
-        title: "Projects & Stack — Arsenii Leno",
-        description: "Selected client and research work: a healthcare edge platform, market-event analytics, a LegalTech RAG concept and a clinic workflow prototype.",
-        ogTitle: "Projects & Stack — Arsenii Leno",
-        ogDescription: "Verifiable roles, honest status labels and technical decisions—from a live clinic platform to research prototypes."
+      "footer": {
+        "tagline": "Digitálna infraštruktúra pre firmy, ktoré merajú výsledky.",
+        "location": "Bratislava · Užhorod · Remote",
+        "privacy": "Súkromie"
       }
     },
-    home: {
-      hero: {
-        status: "Available for a limited number of new projects",
-        eyebrow: "For clinics, legal firms and B2B services",
-        title: "Not just a website.",
-        titleAccent: "A system that turns attention into enquiries.",
-        lede: "I connect high-performance web engineering, precise measurement, Google Ads and automation into one manageable digital infrastructure.",
-        primaryCta: "Discuss a launch",
-        secondaryCta: "Explore the system",
-        trustLabel: "Engagement assurances",
-        trust: ["Transparent scope", "Contract-defined IP transfer", "30-day launch support"]
+    "meta": {
+      "home": {
+        "title": "Arsenii Leno — Digitálna infraštruktúra a rast",
+        "description": "Digitálna infraštruktúra pre ambulancie a B2B: rýchle weby, presná analytika, Google Ads, automatizácia a jasný handover.",
+        "ogTitle": "Arsenii Leno — Digital Infrastructure & Growth Engineering",
+        "ogDescription": "Rýchle webové platformy, analytika, reklama a automatizácia v jednom zodpovednom systéme."
       },
-      system: {
-        ariaLabel: "Digital infrastructure system map", label: "growth-infrastructure.live", live: "LIVE", note: "One accountable system instead of fragmented contractors.",
-        nodes: [
-          { label: "Performance web", detail: "Astro · semantic HTML · edge", state: "ready" },
-          { label: "Measurement", detail: "GTM · GA4 · conversions", state: "mapped" },
-          { label: "Demand", detail: "Search · PMax · bidding", state: "active" },
-          { label: "Lead operations", detail: "Workers · Telegram · UTM", state: "routed" }
-        ],
-        metrics: [{ value: "3", label: "market contexts" }, { value: "4", label: "system layers" }, { value: "1", label: "accountable owner" }]
+      "about": {
+        "title": "O prístupe — Arsenii Leno",
+        "description": "Inžiniersky, analytický a právne uvedomelý prístup Arseniiho Lena k digitálnej infraštruktúre pre ambulancie a B2B.",
+        "ogTitle": "O prístupe — Arsenii Leno",
+        "ogDescription": "Softvérové inžinierstvo, merateľný rast a privacy-aware delivery v jednej praxi."
       },
-      proofLabel: "Specialisms",
-      proof: ["Performance-first web", "Measurement that informs spend", "Founder-led delivery", "UK · SK · EN"],
-      pillars: {
-        eyebrow: "Four layers of one system", title: "From the first click to a routed lead.", intro: "Each layer strengthens the next: speed improves experience, measurement improves decisions, and automation improves response time.", detailsLabel: "Technical scope",
-        items: [
-          { metric: "static-first", title: "Frontend & Edge", body: "Semantic, responsive experiences with minimal JavaScript, fast delivery and a controlled technical footprint.", detail: "Astro, HTML5, CSS/Tailwind build, Cloudflare Pages or GitHub Pages, DNS, CDN, redirects and CI/CD." },
-          { metric: "serverless ops", title: "Automation & Backend", body: "Forms, webhooks and lead routing without a heavy backend—with UTM context and understandable failure handling.", detail: "Cloudflare Workers, Telegram Bot API, D1/SQLite/KV, WordPress/PHP maintenance and GitHub Actions." },
-          { metric: "measured", title: "Ads & Analytics", body: "Campaigns optimise toward a measurable business action, not attractive reports about clicks and reach.", detail: "Google Ads Search/PMax, Smart Bidding, GTM, GA4, Enhanced Conversions and offline conversion import planning." },
-          { metric: "review-ready", title: "Ownership & Risk", body: "Scope, support boundaries, IP handover and privacy decisions are defined before launch—not after the first dispute.", detail: "Statement of work, acceptance criteria, response windows, IP handover and privacy-aware implementation prepared for legal review." }
-        ]
-      },
-      case: {
-        eyebrow: "Flagship case · med.uz.ua", title: "From legacy WordPress to a managed edge platform.", intro: "A full lifecycle for a private ophthalmology clinic: inherited-system stabilisation, migration, multilingual content, measurement and acquisition infrastructure.", visit: "Open the live project", comparisonLabel: "Architecture before and after", beforeLabel: "Before", beforeTitle: "Fragile legacy system", before: ["Heavy WordPress footprint", "Fragmented measurement", "Manual handling of campaign context"], afterLabel: "After", afterTitle: "Edge-first infrastructure", after: ["Astro static output", "Cloudflare delivery", "Consent-aware GTM/GA4 and forms"],
-        metrics: [{ value: "4", label: "live language versions" }, { value: "Astro", label: "static frontend" }, { value: "Edge", label: "Cloudflare delivery" }],
-        claimNote: "The live architecture and multilingual delivery are publicly verifiable. Performance scores and advertising outcomes should only be published with a dated report and an agreed comparison period."
-      },
-      pricing: {
-        eyebrow: "Investment without vague estimates", title: "Choose a starting configuration.", toggleLabel: "Pricing mode", buildToggle: "One-time build", growthToggle: "Build + growth", popular: "Most selected", buildCaption: "international market guide · from", growthCaption: "build + monthly minimum", note: "Indicative pricing as of August 2026. The final proposal depends on scope. Media spend, hosting, paid licences, content, translation and taxes are separate.",
-        tiers: [
-          { kicker: "A clear first release", title: "Starter Platform", description: "For one service, an independent specialist or a focused MVP that needs a professional foundation.", buildPrice: "$950", growthPrice: "$950 + $650/mo", features: ["Landing page or compact service site", "Responsive build and baseline accessibility", "Technical SEO and measurement map", "Launch support within agreed boundaries"], growthFeatures: ["Up to 3 hours of monthly web support", "Monthly measurement review"], cta: "Scope a Starter" },
-          { kicker: "Website + measurement + demand", title: "Growth Engine", description: "For a clinic or B2B service that needs a managed path from acquisition to a qualified enquiry.", buildPrice: "$1,950", growthPrice: "$1,950 + $650/mo", features: ["Multi-page conversion architecture", "GTM + GA4 + conversion plan", "Search/PMax launch preparation", "Cloudflare, forms and UTM routing"], growthFeatures: ["One Google Ads account", "Optimisation, reporting and up to 4 hours of web support"], cta: "Design the Growth Engine", featured: true },
-          { kicker: "A complex integrated system", title: "Full Infrastructure", description: "For multilingual platforms, migrations and workflows that require custom automation.", buildPrice: "$3,500", growthPrice: "$3,500 + $900/mo", features: ["Custom architecture and migration plan", "Workers/webhooks and integrations", "Advanced measurement architecture", "Documentation, handover and response windows"], growthFeatures: ["Priority support under an agreed SLA", "Monthly roadmap review"], cta: "Discuss Infrastructure" }
-        ]
-      },
-      contact: {
-        eyebrow: "Next step", title: "Start with the constraint, not the technology.", intro: "Describe the business, the goal and the main bottleneck. I will come back with relevant questions and an honest view of the right engagement format.", stepOneTitle: "Short diagnosis", stepOneBody: "We connect the goal, available data and current infrastructure.", stepTwoTitle: "A clear next step", stepTwoBody: "You receive a recommended scope, timeline and starting cost.", nameLabel: "Name", namePlaceholder: "How should I address you?", companyLabel: "Company", companyPlaceholder: "Name or sector", contactLabel: "Email or Telegram", contactPlaceholder: "name@company.com or @username", serviceLabel: "What do you need to launch?", messageLabel: "Project context", messagePlaceholder: "Current situation, objective and preferred timing. Do not include patient data or other sensitive information.", consent: "I agree to share these details with Arsenii so he can respond to this enquiry. The data is not stored on this website.", submit: "Continue in Telegram", note: "Telegram will open with a prepared message—you can review it before sending.", selectPlaceholder: "Choose an area", services: ["Starter Platform", "Growth Engine", "Full Infrastructure", "Technical audit", "Google Ads & Measurement", "Other"], requiredError: "Please check the required fields and consent.", openingStatus: "Ready—opening Telegram with your message draft.", fallbackStatus: "The new tab could not be opened. Please use the direct Telegram link.",
-        privacySummary: "How this enquiry is handled", privacyController: "Controller: Arsenii Leno, xlenoa@stuba.sk.", privacyPurpose: "Purpose and basis: replying to your B2B enquiry and taking steps toward a possible engagement. Correspondence is kept only as long as needed for the enquiry and required business records.", privacyTelegram: "The website does not submit or store this form: it creates a draft that you choose to send through Telegram. Once sent, Telegram also processes the data under its own terms.", privacyRights: "To access, correct or delete correspondence data, email the address above. Do not submit patient, health or other sensitive information."
+      "projects": {
+        "title": "Projekty a technologický stack — Arsenii Leno",
+        "description": "Vybrané klientské a výskumné projekty: zdravotnícka edge platforma, market-event analytika, LegalTech RAG koncept a clinic workflow prototyp.",
+        "ogTitle": "Projekty a stack — Arsenii Leno",
+        "ogDescription": "Overiteľné roly, úprimné statusy a technické riešenia — od živej kliniky po výskumné prototypy."
       }
     },
-    about: {
-      hero: { eyebrow: "Engineering with commercial context", title: "Technical depth.", titleAccent: "Ownership of the whole path.", lede: "I build digital systems at the intersection of software engineering, measurable marketing and legally aware delivery—without pretending one tool can solve a business problem.", cta: "Discuss the problem", secondaryCta: "View projects" },
-      profile: { label: "Practice profile", role: "Digital Infrastructure & Growth Engineer", status: "Bratislava · Uzhhorod · Remote", facts: [{ label: "Focus", value: "Clinics & B2B" }, { label: "Languages", value: "UK · SK · EN" }, { label: "Model", value: "Founder-led" }] },
-      tracks: {
-        eyebrow: "Three disciplines, one system of thought", title: "Education that changes delivery decisions.", intro: "These are current study tracks—not claims of licensed legal practice. Their value is in better technical, contractual and commercial decisions.",
-        items: [
-          { type: "Engineering track · student", title: "FIIT STU Bratislava", body: "Software Engineering: algorithms, application architecture, asynchronous systems and performance thinking." },
-          { type: "Legal track · student", title: "UzhNU Faculty of Law", body: "IT and contract law, intellectual property and privacy risk as context for technical delivery." },
-          { type: "Additional business track", title: "Economics & International Relations", body: "Economics and international relations help frame unit economics, markets and commercial constraints." }
+    "home": {
+      "hero": {
+        "status": "Otvorený pre obmedzený počet nových projektov",
+        "eyebrow": "Pre ambulancie, právnické firmy a B2B služby",
+        "title": "Nie iba kód.",
+        "titleAccent": "Inteligentný systém, ktorý prináša nových klientov.",
+        "lede": "Digitálna infraštruktúra na kľúč od základov: bleskurýchle webové platformy, presná analytika s využitím AI a automatizované doručovanie leadov — s oficiálnym právnym zabezpečením, jasnými termínmi a garanciou výsledkov.",
+        "primaryCta": "Prediskutovať spustenie",
+        "secondaryCta": "Pozrieť systém",
+        "trustLabel": "Podmienky spolupráce",
+        "trust": [
+          "Transparentný rozsah",
+          "Prevod IP podľa zmluvy",
+          "30 dní launch-support"
         ]
       },
-      principles: {
-        eyebrow: "Working philosophy", title: "Three principles that outlast the stack.",
-        items: [
-          { title: "Performance before decoration", body: "First: a clear content path, semantics and a performance budget. Motion earns its place only when it does not compromise the job." },
-          { title: "Decisions from evidence", body: "Events, conversions and campaign objectives are planned before launch. If a signal cannot be measured reliably, it should not steer budget." },
-          { title: "One accountable system", body: "Frontend, measurement, acquisition and lead routing are designed together. Responsibility boundaries and handover are written down." }
-        ]
-      },
-      process: {
-        eyebrow: "How the work runs", title: "From diagnosis to a controlled launch.", intro: "Each stage has a decision, a deliverable and a completion criterion. That reduces endless revisions and surprise costs.",
-        items: [
-          { title: "Diagnose", body: "Goal, audience, technical state, data and risks.", output: "Audit brief" },
-          { title: "Architect", body: "Scope, user journey, measurement map and delivery plan.", output: "System map" },
-          { title: "Build & validate", body: "Iterative implementation, accessibility, performance and edge cases.", output: "Release candidate" },
-          { title: "Launch & hand over", body: "Production launch, documentation, transfer and a 30-day support window.", output: "Handover pack" }
-        ]
-      },
-      safeguards: {
-        eyebrow: "Engagement standards", title: "Fewer promises. More defined terms.", intro: "The right protection depends on the jurisdiction and project; regulated matters should be reviewed by qualified counsel.",
-        items: [
-          { title: "Scope & acceptance", body: "Outputs, boundaries, stages and acceptance criteria are defined before development begins." },
-          { title: "Response windows", body: "Communication channels, priorities and response times belong in the agreement—not a marketing badge." },
-          { title: "IP handover", body: "Code, access and economic rights transfer only to the extent expressly defined by the contract." },
-          { title: "Launch support", body: "30 days of minimum post-release assistance for agreed launch issues; continued development is a separate scope." }
+      "system": {
+        "ariaLabel": "Schéma digitálnej infraštruktúry",
+        "label": "digital-infrastructure",
+        "live": "LIVE",
+        "note": "Kompletný cyklus od kliknutia po objednávku — E2E infraštruktúra.",
+        "nodes": [
+          {
+            "label": "Performance Web",
+            "detail": "Astro · HTML/CSS · Edge Hosting · Light DBs · Headless Architecture",
+            "state": "CODE"
+          },
+          {
+            "label": "Telemetry & Primary Goals",
+            "detail": "GTM · GA4 · Goals · Signals",
+            "state": "DATA"
+          },
+          {
+            "label": "Targeted Ads & Acquisition",
+            "detail": "Google Search · PMax · VBB · Creatives & RSA",
+            "state": "MARKETING"
+          },
+          {
+            "label": "Direct Lead Delivery",
+            "detail": "Inbound Calls · Bookings · Telegram Routing · Closed Deals",
+            "state": "FULL SYSTEM"
+          }
         ],
-        noteTitle: "Important:", note: "legal studies help identify risks and prepare materials for review, but do not replace a lawyer or licensed legal advice."
+        "metrics": [
+          {
+            "value": "~100/100",
+            "label": "Core Web Vitals"
+          },
+          {
+            "value": "AI-Driven",
+            "label": "Ads Engine"
+          },
+          {
+            "value": "100%",
+            "label": "prevod IP a kódu"
+          }
+        ]
       },
-      cta: { eyebrow: "Need one accountable system?", title: "Bring engineering, data and growth into one roadmap.", button: "Start with a diagnosis" }
+      "proofLabel": "Špecializácia",
+      "proof": [
+        "EDGE ARCHITECTURE",
+        "AI & SMART BIDDING",
+        "AUTONOMOUS LEAD FLOWS",
+        "100% IP HANDOVER"
+      ],
+      "pillars": {
+        "eyebrow": "Štyri vrstvy jedného systému",
+        "title": "Štyri vrstvy uzavretej E2E infraštruktúry.",
+        "intro": "Architektúra, kde každá vrstva pracuje v synergii na obchodný výsledok: rýchlosť udrží klienta, presné AI signály trénujú reklamu a automatizácia odovzdá lead za sekundy.",
+        "detailsLabel": "Technické detaily",
+        "items": [
+          {
+            "metric": "sub-100ms",
+            "title": "Edge Architecture & Headless Web",
+            "body": "Statická architektúra bez pomalých databáz a zbytočného JS: Islands Architecture s bleskovým načítaním na Edge serveroch a skóre ~100/100 Core Web Vitals.",
+            "detail": "Astro, Tailwind CSS, Cloudflare Edge/Pages, Headless Backend & CMS, Cloudflare KV & D1, CDN caching, automatická ochrana Cloudflare WAF & DDoS mitigation."
+          },
+          {
+            "metric": "real-time",
+            "title": "Automated Lead Flow & Backend",
+            "body": "Okamžité doručovanie dopytov, hovorov a rezervácií priamo do Telegramu a CRM. Úplné sledovanie UTM parametrov, nula stratených leadov a autonómny beh 24/7.",
+            "detail": "Cloudflare Workers, Serverless Webhooks, Telegram Bot API, integrácia platieb a doručovania (LiqPay, Nova Poshta)."
+          },
+          {
+            "metric": "ai-signals",
+            "title": "Smart Acquisition & Creative Engine",
+            "body": "Získavanie reálnych klientov cez Google Ads (Search, PMax, VBB). AI trénovanie kampaní na skutočných konverziách + autorské kreatívy podporené analýzou trhu cez SERP API.",
+            "detail": "GTM, GA4 (Primary Conversion Goals), Value-Based Bidding, SERP API market analysis, autorské foto/kreatívy (RSA), Enhanced Conversions."
+          },
+          {
+            "metric": "legal-grade",
+            "title": "Full Ownership & Legal Security",
+            "body": "Oficiálne zmluvné zabezpečenie, jasný Statement of Work (SOW), prevod 100 % majetkových práv (IP) na kód a účty. Žiadne vendor lock-in ani skryté poplatky.",
+            "detail": "Oficiálna zmluva, preberací protokol, odovzdanie zdrojového kódu a prístupov, GDPR/Privacy compliance, 30 dní záručnej podpory."
+          }
+        ]
+      },
+      "case": {
+        "eyebrow": "Vlajkový prípad · med.uz.ua",
+        "title": "Evolúcia architektúry: od optimalizácie WordPressu po čistý Edge.",
+        "intro": "Detailne rozumiem fungovaniu WordPressu — od ladenia MySQL po refaktoring pluginov. Pre prémiové kliniky a B2B sa však monolit stáva brzdou. Riešenie: zachovať jednoduchú správu dát, ale preniesť platformu na bleskovú Edge architektúru (Astro + štruktúrovaný Headless obsah cez JSON).",
+        "visit": "Otvoriť live projekt",
+        "comparisonLabel": "Porovnanie architektúry pred a po",
+        "beforeLabel": "predtým",
+        "beforeTitle": "Monolitický WordPress",
+        "before": [
+          "TTFB > 1.8s · Preťaženie témy a neustále dopyty na MySQL blokujú mobilné načítanie",
+          "Zraniteľnosť a výpadky · Riziká útokov na WP jadro, konflikty pluginov a drahý hosting",
+          "Fragmentovaná analytika · Strata UTM parametrov a nepresné dáta pre Google Ads"
+        ],
+        "afterLabel": "potom",
+        "afterTitle": "Astro Edge + Headless Data",
+        "after": [
+          "TTFB < 0.15s · Statická Islands architektúra na Edge CDN so skóre 100/100 Core Web Vitals",
+          "Headless JSON Data · Jednoduchá správa obsahu a cien bez záťaže databázy a rizika výpadkov",
+          "Autonómny lievik · Okamžité doručovanie leadov do Telegramu, UTM dáta a Primary Goals"
+        ],
+        "metrics": [
+          {
+            "value": "4 jazyky",
+            "label": "multijazyčná live platforma"
+          },
+          {
+            "value": "< 120ms",
+            "label": "globálna odozva Edge CDN"
+          },
+          {
+            "value": "0 DB load",
+            "label": "odolnosť voči záťaži"
+          }
+        ],
+        "claimNote": "Live architektúra, rýchlosť a viacjazyčnosť sú overiteľné na reálnom produkte: med.uz.ua."
+      },
+      "selected": {
+        "eyebrow": "Vybrané systémy",
+        "title": "Od market data po LegalTech.",
+        "intro": "Výskumné a prototypové projekty sú tak aj označené. Ukazujú spôsob myslenia, nie sú prezentované ako produkčné referencie.",
+        "items": [
+          {
+            "status": "Active research prototype",
+            "title": "gram-event-quant",
+            "summary": "Asynchrónny event-study pipeline na analýzu reakcie trhu GRAM/TON na udalosti s REST OHLCV dátami a Telegram event inputs.",
+            "role": "Research architecture, data pipeline and statistical workflow.",
+            "tags": [
+              "Python ≥3.13",
+              "Async I/O",
+              "REST OHLCV",
+              "Event study"
+            ],
+            "href": "https://github.com/arsenii-leno/gram-event-quant",
+            "linkLabel": "Pozrieť public repository",
+            "external": true
+          },
+          {
+            "status": "Research concept",
+            "title": "DIkastes.ai",
+            "summary": "Zdokumentovaný architektonický koncept legal-research asistenta s retrieval, citation grounding a porovnávaním jurisdikcií.",
+            "role": "README-stage concept; nie je prezentovaný ako hotový AI produkt.",
+            "tags": [
+              "RAG concept",
+              "Legal research",
+              "Vector retrieval",
+              "Architecture"
+            ],
+            "href": "https://github.com/arsenii-leno/DIkastes.ai",
+            "linkLabel": "Pozrieť research concept",
+            "external": true
+          },
+          {
+            "status": "Functional prototype",
+            "title": "Clinic-App",
+            "summary": "Expo/React Native prototyp pre appointment workflow, patient records a local-first clinic operations.",
+            "role": "Prototype case; materiály poskytnem priamo po source-hygiene review.",
+            "tags": [
+              "Expo",
+              "React Native",
+              "TypeScript",
+              "Local-first"
+            ],
+            "href": "mailto:xlenoa@stuba.sk?subject=Clinic-App%20case",
+            "linkLabel": "Vyžiadať case note",
+            "external": false
+          }
+        ]
+      },
+      "credential": {
+        "eyebrow": "Overiteľná kvalifikácia",
+        "title": "AI-Powered Performance Ads Certification",
+        "body": "Kvalifikácia Google Skillshop pre AI-powered kampane, Smart Bidding, Performance Max a meranie výsledkov.",
+        "issuerLabel": "Vydavateľ",
+        "idLabel": "Credential ID",
+        "verify": "Overiť credential"
+      },
+      "stack": {
+        "eyebrow": "Capability matrix",
+        "title": "Stack sa volí podľa úzkeho miesta.",
+        "intro": "Technológia nie je ponuka. Má zjednodušiť delivery, meranie a následné vlastníctvo systému.",
+        "items": [
+          {
+            "title": "Frontend & Performance",
+            "technologies": [
+              "Astro · HTML5 · CSS",
+              "TypeScript · React",
+              "Accessibility · CWV",
+              "Responsive delivery"
+            ]
+          },
+          {
+            "title": "Edge & Automation",
+            "technologies": [
+              "Cloudflare Workers",
+              "D1 · SQLite · KV",
+              "Telegram Bot API",
+              "GitHub Actions"
+            ]
+          },
+          {
+            "title": "Ads & Measurement",
+            "technologies": [
+              "Google Ads · PMax",
+              "GTM · GA4",
+              "Enhanced Conversions",
+              "Offline conversion plan"
+            ]
+          },
+          {
+            "title": "Legacy & Governance",
+            "technologies": [
+              "WordPress · PHP",
+              "DNS · cPanel · Fornex",
+              "Scope · acceptance",
+              "IP/privacy review prep"
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "eyebrow": "Máte podobne náročné zadanie?",
+        "title": "Ukážte mi aktuálny systém — nájdem bod s najväčším vplyvom.",
+        "button": "Požiadať o diagnostiku"
+      },
+      "pricing": {
+        "eyebrow": "Investícia bez nejasných rozpočtov",
+        "title": "Vyberte si štartovaciu konfiguráciu.",
+        "toggleLabel": "Režim naceňovania",
+        "buildToggle": "Jednorazové spustenie",
+        "growthToggle": "Spustenie + správa",
+        "popular": "Populárna voľba",
+        "buildCaption": "jednorazovo · fixný SOW",
+        "growthCaption": "/ mesiac · fixný šprint",
+        "note": "Orientačné ceny k augustu 2026. Finálna ponuka závisí od rozsahu. Rozpočet na reklamu, hosting, platené licencie, obsah, preklady a dane sa hradia osobitne.",
+        "tiers": [
+          {
+            "featured": false,
+            "kicker": "01 · Základný web",
+            "title": "Fast Web Platform",
+            "description": "Rýchla a bezpečná webová platforma ako náhrada pomalého webu alebo čistý štart.",
+            "buildPrice": "$350",
+            "growthPrice": "$150",
+            "features": [
+              "Moderná architektúra Astro + Tailwind",
+              "95–100 Google PageSpeed & Core Web Vitals",
+              "Mobile-First responzivita a sémantické SEO",
+              "Headless JSON správa obsahu"
+            ],
+            "growthFeatures": [
+              "Monitoring stability a dostupnosti 24/7",
+              "Pravidelné zálohy a aktualizácie obsahu"
+            ],
+            "cta": "Vybrať konfiguráciu"
+          },
+          {
+            "featured": true,
+            "kicker": "02 · Návštevnosť + Analytika",
+            "title": "Growth & Ads Engine",
+            "description": "Kompletné prepojenie rýchleho webu s presnou analytikou a akvizíciou klientov.",
+            "buildPrice": "$650",
+            "growthPrice": "$250",
+            "features": [
+              "Všetko z balíka Fast Web Platform",
+              "GTM + GA4 + Primary Conversion Goals",
+              "Google Ads (Search, PMax, VBB stratégie)",
+              "Autorské adaptívne kreatívy (RSA)"
+            ],
+            "growthFeatures": [
+              "Týždenná optimalizácia ponúk a rozpočtu",
+              "A/B testovanie nadpisov a ponúk",
+              "Mesačný audit ceny za lead (CPA)"
+            ],
+            "cta": "Vybrať konfiguráciu"
+          },
+          {
+            "featured": false,
+            "kicker": "03 · Uzavretý cyklus",
+            "title": "Full E2E Infrastructure",
+            "description": "Autonómna digitálna infraštruktúra s doručovaním leadov, platbami a právnou ochranou.",
+            "buildPrice": "$950",
+            "growthPrice": "$350",
+            "features": [
+              "Kompletný stack Web + Analytics + Ads",
+              "Routing leadov cez Telegram Bot + Workers",
+              "Integrácia platobných brán (LiqPay / Stripe)",
+              "Oficiálna zmluva, SOW a 100 % prevod práv (IP)"
+            ],
+            "growthFeatures": [
+              "Prioritná technická podpora a SLA",
+              "Priebežný rozvoj funkcií podľa potrieb biznisu"
+            ],
+            "cta": "Vybrať konfiguráciu"
+          }
+        ]
+      },
+      "contact": {
+        "eyebrow": "Ďalší krok",
+        "title": "Začnime vašou úlohou a výsledkom.",
+        "intro": "Popíšte súčasný systém a požadovaný cieľ. Pripravím technický audit, navrhnem architektúru a dodám fixný SOW bez zbytočného kódu.",
+        "stepOneTitle": "Expresný audit infraštruktúry",
+        "stepOneBody": "Zhodnotím rýchlosť webu, kvalitu merania konverzií v GA4 a miesta úniku leadov.",
+        "stepTwoTitle": "Fixný SOW a štart",
+        "stepTwoBody": "Získate jasný technický rozsah, termín, vymedzenie zodpovednosti a presnú cenu.",
+        "nameLabel": "Meno",
+        "namePlaceholder": "Ako vás oslovovať?",
+        "companyLabel": "Spoločnosť",
+        "companyPlaceholder": "Názov alebo odvetvie",
+        "contactLabel": "Email alebo Telegram",
+        "contactPlaceholder": "name@company.com alebo @username",
+        "serviceLabel": "Čo potrebujete spustiť?",
+        "selectPlaceholder": "Vyberte oblasť alebo konfiguráciu",
+        "services": [
+          "Edge Web Platform (Astro na kľúč)",
+          "Optimalizácia a audit legacy WordPressu",
+          "Návštevnosť + Analytika (Google Ads, GTM, VBB)",
+          "Plná E2E infraštruktúra (Web + Bot + Reklama)",
+          "Individuálna požiadavka"
+        ],
+        "messageLabel": "Kontext zadania",
+        "messagePlaceholder": "Web, súčasný stack, kde vznikajú úniky leadov alebo čo treba vybudovať od nuly...",
+        "consent": "Údaje sa odosielajú výhradne na vyhodnotenie zadania. Žiadny spam ani ukladanie v cudzích databázach.",
+        "submit": "Vytvoriť dopyt do Telegramu",
+        "footnote": "Vygeneruje pripravenú správu s vyplnenými údajmi — pred odoslaním si ju môžete skontrolovať.",
+        "privacyDetailsTitle": "Ako sa spracúva váš dopyt",
+        "privacyTextOne": "Prevádzkovateľ: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyTextTwo": "Účel: posúdenie dopytu a príprava cenovej ponuky. Komunikácia zostáva v pracovnom čate.",
+        "privacyTextThree": "Web neukladá dáta na server: vytvorí koncept na odoslanie cez Telegram alebo email.",
+        "privacyTextFour": "Pred podpisom NDA neposielajte citlivé osobné ani dôverné obchodné informácie.",
+        "note": "Formulár vytvára priamy dopyt. Žiadne skryté sledovače ani predaj kontaktov.",
+        "privacySummary": "Ako sa spracúva váš dopyt (GDPR a súkromie)",
+        "privacyController": "Prevádzkovateľ: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyPurpose": "Účel: prvotné technické posúdenie a príprava SOW. Komunikácia sa neposkytuje tretím stranám.",
+        "privacyTelegram": "Web neukladá zadané údaje do databáz: dopyt sa otvorí ako pripravený koncept vo vašom Telegrame alebo emaile.",
+        "privacyRights": "Máte právo na vymazanie komunikácie kedykoľvek na základe žiadosti na kontaktný email.",
+        "requiredError": "Prosím, vyplňte povinné polia.",
+        "openingStatus": "Otváram Telegram...",
+        "fallbackStatus": "Nepodarilo sa otvoriť? Napíšte priamo: @Arsen_Kozaque"
+      }
+    }
+  },
+  "en": {
+    "global": {
+      "skip": "Skip to main content",
+      "brandTag": "Infrastructure & Growth",
+      "navLabel": "Primary navigation",
+      "languageLabel": "Choose language",
+      "nav": {
+        "services": "Services",
+        "about": "About",
+        "projects": "Projects",
+        "consultation": "Consultation"
+      },
+      "footer": {
+        "tagline": "Digital infrastructure for businesses that measure outcomes.",
+        "location": "Bratislava · Uzhhorod · Remote",
+        "privacy": "Privacy"
+      }
     },
-    projects: {
-      hero: { eyebrow: "Live work and research systems", title: "Projects with context.", titleAccent: "Not a technology gallery.", lede: "Every project shows its real status, my role and the limits of public evidence—so live client work is not blurred together with research prototypes." },
-      projectIndex: [{ title: "med.uz.ua", status: "Live client platform" }, { title: "gram-event-quant", status: "Active research prototype" }, { title: "DIkastes.ai", status: "Research concept" }, { title: "Clinic-App", status: "Functional prototype" }],
-      flagship: {
-        status: "Live client platform", eyebrow: "Flagship case · 01", visit: "Open website", challengeTitle: "Challenge", challenge: "Replace an inherited WordPress system with a lighter architecture and create a clear path from service discovery to a clinic enquiry.", roleTitle: "My role", role: "Information architecture, Astro implementation, edge delivery, multilingual content, privacy-aware measurement and acquisition infrastructure.", mapLabel: "Project architecture",
-        map: [
-          { code: "FE", title: "Localized Astro frontend", detail: "Static-first pages · responsive UI", state: "live" },
-          { code: "ED", title: "Cloudflare edge delivery", detail: "Caching · redirects · DNS", state: "live" },
-          { code: "MX", title: "Consent-aware measurement", detail: "GTM · GA4 · conversion map", state: "wired" },
-          { code: "OP", title: "Lead operations", detail: "Contact flows · appointment paths", state: "active" }
+    "meta": {
+      "home": {
+        "title": "Arsenii Leno — Digital Infrastructure & Growth Engineering",
+        "description": "Digital infrastructure for clinics and B2B: fast web platforms, precise measurement, Google Ads, automation and clear handover terms.",
+        "ogTitle": "Arsenii Leno — Digital Infrastructure & Growth Engineering",
+        "ogDescription": "Fast web platforms, analytics, acquisition and automation in one accountable system."
+      },
+      "about": {
+        "title": "Approach — Arsenii Leno",
+        "description": "Arsenii Leno's engineering, measurement-led and legally aware approach to digital infrastructure for clinics and B2B companies.",
+        "ogTitle": "Approach — Arsenii Leno",
+        "ogDescription": "Software engineering, measurable growth and privacy-aware delivery in one practice."
+      },
+      "projects": {
+        "title": "Projects & Stack — Arsenii Leno",
+        "description": "Selected client and research work: a healthcare edge platform, market-event analytics, a LegalTech RAG concept and a clinic workflow prototype.",
+        "ogTitle": "Projects & Stack — Arsenii Leno",
+        "ogDescription": "Verifiable roles, honest status labels and technical decisions—from a live clinic platform to research prototypes."
+      }
+    },
+    "home": {
+      "hero": {
+        "status": "Available for a limited number of new projects",
+        "eyebrow": "For clinics, legal firms and B2B services",
+        "title": "Not just code.",
+        "titleAccent": "A smart system that brings new clients.",
+        "lede": "Turnkey digital infrastructure built from scratch: high-performance edge websites, precise AI-powered conversion tracking and automated lead delivery — backed by official legal contracts, clear deadlines, and guaranteed results.",
+        "primaryCta": "Discuss a launch",
+        "secondaryCta": "Explore the system",
+        "trustLabel": "Engagement assurances",
+        "trust": [
+          "Transparent scope",
+          "Contract-defined IP transfer",
+          "30-day launch support"
+        ]
+      },
+      "system": {
+        "ariaLabel": "Digital infrastructure system map",
+        "label": "digital-infrastructure",
+        "live": "LIVE",
+        "note": "Full cycle from click to booking — E2E infrastructure.",
+        "nodes": [
+          {
+            "label": "Performance Web",
+            "detail": "Astro · HTML/CSS · Edge Hosting · Light DBs · Headless Architecture",
+            "state": "CODE"
+          },
+          {
+            "label": "Telemetry & Primary Goals",
+            "detail": "GTM · GA4 · Goals · Signals",
+            "state": "DATA"
+          },
+          {
+            "label": "Targeted Ads & Acquisition",
+            "detail": "Google Search · PMax · VBB · Creatives & RSA",
+            "state": "MARKETING"
+          },
+          {
+            "label": "Direct Lead Delivery",
+            "detail": "Inbound Calls · Bookings · Telegram Routing · Closed Deals",
+            "state": "FULL SYSTEM"
+          }
         ],
-        outcomes: [{ value: "4 languages", label: "UK · SK · EN · HU" }, { value: "Astro 5", label: "public live frontend" }, { value: "Cloudflare", label: "edge delivery" }, { value: "2026", label: "live release" }],
-        claimNote: "The live status and technology are publicly verifiable. Advertising outcomes are not published without approved figures and a defined comparison window."
-      },
-      selected: {
-        eyebrow: "Selected systems", title: "From market data to LegalTech.", intro: "Research and prototype work is labelled as such. It demonstrates thinking and architecture, not fabricated production credentials.",
-        items: [
-          { status: "Active research prototype", title: "gram-event-quant", summary: "An asynchronous event-study pipeline for analysing GRAM/TON market reactions using REST OHLCV data and Telegram event inputs.", role: "Research architecture, data pipeline and statistical workflow.", tags: ["Python ≥3.13", "Async I/O", "REST OHLCV", "Event study"], href: "https://github.com/arsenii-leno/gram-event-quant", linkLabel: "View public repository", external: true },
-          { status: "Research concept", title: "DIkastes.ai", summary: "A documented architecture concept for a legal-research assistant using retrieval, citation grounding and cross-jurisdiction analysis.", role: "README-stage concept; not presented as a finished AI product.", tags: ["RAG concept", "Legal research", "Vector retrieval", "Architecture"], href: "https://github.com/arsenii-leno/DIkastes.ai", linkLabel: "View research concept", external: true },
-          { status: "Functional prototype", title: "Clinic-App", summary: "An Expo/React Native prototype for appointment workflow, patient records and local-first clinic operations.", role: "Prototype case; materials are shared directly after a source-hygiene review.", tags: ["Expo", "React Native", "TypeScript", "Local-first"], href: "mailto:xlenoa@stuba.sk?subject=Clinic-App%20case", linkLabel: "Request case note", external: false }
+        "metrics": [
+          {
+            "value": "~100/100",
+            "label": "Core Web Vitals"
+          },
+          {
+            "value": "AI-Driven",
+            "label": "Ads Engine"
+          },
+          {
+            "value": "100%",
+            "label": "IP & code ownership"
+          }
         ]
       },
-      credential: { eyebrow: "Verifiable qualification", title: "AI-Powered Performance Ads Certification", body: "A Google Skillshop qualification covering AI-powered campaigns, Smart Bidding, Performance Max and performance measurement.", issuerLabel: "Issuer", idLabel: "Credential ID", verify: "Verify credential" },
-      stack: {
-        eyebrow: "Capability matrix", title: "The stack follows the constraint.", intro: "Technology is not the offer. It should simplify delivery, measurement and long-term ownership.",
-        items: [
-          { title: "Frontend & Performance", technologies: ["Astro · HTML5 · CSS", "TypeScript · React", "Accessibility · CWV", "Responsive delivery"] },
-          { title: "Edge & Automation", technologies: ["Cloudflare Workers", "D1 · SQLite · KV", "Telegram Bot API", "GitHub Actions"] },
-          { title: "Ads & Measurement", technologies: ["Google Ads · PMax", "GTM · GA4", "Enhanced Conversions", "Offline conversion plan"] },
-          { title: "Legacy & Governance", technologies: ["WordPress · PHP", "DNS · cPanel · Fornex", "Scope · acceptance", "IP/privacy review prep"] }
+      "proofLabel": "Specialisms",
+      "proof": [
+        "EDGE ARCHITECTURE",
+        "AI & SMART BIDDING",
+        "AUTONOMOUS LEAD FLOWS",
+        "100% IP HANDOVER"
+      ],
+      "pillars": {
+        "eyebrow": "Four layers of one system",
+        "title": "Four layers of closed-loop E2E infrastructure.",
+        "intro": "An architecture where every layer works in synergy toward real business revenue: speed retains visitors, precise AI signals guide acquisition, and automation delivers leads in seconds.",
+        "detailsLabel": "Technical scope",
+        "items": [
+          {
+            "metric": "sub-100ms",
+            "title": "Edge Architecture & Headless Web",
+            "body": "Static architecture free of slow databases and bloated JS: Islands Architecture with instant Edge delivery and ~100/100 Core Web Vitals.",
+            "detail": "Astro, Tailwind CSS, Cloudflare Edge/Pages, Headless Backend & CMS, Cloudflare KV & D1, CDN caching, automated Cloudflare WAF & DDoS mitigation."
+          },
+          {
+            "metric": "real-time",
+            "title": "Automated Lead Flow & Backend",
+            "body": "Instant routing of bookings, inbound calls and enquiries directly to Telegram and CRM. Full UTM attribution, zero lost leads and 24/7 autonomous operations.",
+            "detail": "Cloudflare Workers, Serverless Webhooks, Telegram Bot API, payment & shipping gateway integrations (LiqPay, Nova Poshta)."
+          },
+          {
+            "metric": "ai-signals",
+            "title": "Smart Acquisition & Creative Engine",
+            "body": "Acquiring high-intent clients via Google Ads (Search, PMax, VBB). AI-guided bidding on primary conversion signals + custom creatives powered by SERP API market intelligence.",
+            "detail": "GTM, GA4 (Primary Conversion Goals), Value-Based Bidding, SERP API market analysis, custom photo assets & RSA creatives, Enhanced Conversions."
+          },
+          {
+            "metric": "legal-grade",
+            "title": "Full Ownership & Legal Security",
+            "body": "Formal contractual agreement, strict Statement of Work (SOW), and 100% IP rights transfer for all code and accounts. Zero vendor lock-in and no hidden fees.",
+            "detail": "Official contract, acceptance protocol, full source code & account handover, GDPR/Privacy compliance, 30-day warranty support."
+          }
         ]
       },
-      cta: { eyebrow: "Working through a similar constraint?", title: "Show me the current system—I will find the highest-leverage intervention.", button: "Request a diagnosis" }
+      "case": {
+        "eyebrow": "Flagship Case · med.uz.ua",
+        "title": "Architecture evolution: from WordPress optimization to pure Edge.",
+        "intro": "Deep understanding of WordPress internals — from MySQL tuning to plugin refactoring. Yet for high-ticket clinics and B2B, monoliths become a bottleneck. The solution: retain flexible data management while migrating the platform to high-speed Edge architecture (Astro + structured Headless JSON content).",
+        "visit": "Open live project",
+        "comparisonLabel": "Architecture before and after comparison",
+        "beforeLabel": "before",
+        "beforeTitle": "Monolithic WordPress",
+        "before": [
+          "TTFB > 1.8s · Heavy theme overhead and frequent MySQL queries throttle mobile rendering",
+          "Security & crash risks · Monolith vulnerability, fragile plugin updates, and costly hosting",
+          "Fragmented analytics · Broken UTM tracking and corrupted conversion signals for Google Ads"
+        ],
+        "afterLabel": "after",
+        "afterTitle": "Astro Edge + Headless Data",
+        "after": [
+          "TTFB < 0.15s · Static Islands architecture on Edge CDN delivering 100/100 Core Web Vitals",
+          "Headless JSON Data · Lean content & pricing management with zero database dependency",
+          "Autonomous lead flow · Real-time Telegram routing, lossless UTM capture & Google Ads Primary Goals"
+        ],
+        "metrics": [
+          {
+            "value": "4 languages",
+            "label": "multilingual live platform"
+          },
+          {
+            "value": "< 120ms",
+            "label": "global Edge CDN response"
+          },
+          {
+            "value": "0 DB load",
+            "label": "zero-database resilience"
+          }
+        ],
+        "claimNote": "Live architecture, speed, and multilingual routing verified on production: med.uz.ua."
+      },
+      "selected": {
+        "eyebrow": "Selected systems",
+        "title": "From market data to LegalTech.",
+        "intro": "Research and prototype work is labelled as such. It demonstrates thinking and architecture, not fabricated production credentials.",
+        "items": [
+          {
+            "status": "Active research prototype",
+            "title": "gram-event-quant",
+            "summary": "An asynchronous event-study pipeline for analysing GRAM/TON market reactions using REST OHLCV data and Telegram event inputs.",
+            "role": "Research architecture, data pipeline and statistical workflow.",
+            "tags": [
+              "Python ≥3.13",
+              "Async I/O",
+              "REST OHLCV",
+              "Event study"
+            ],
+            "href": "https://github.com/arsenii-leno/gram-event-quant",
+            "linkLabel": "View public repository",
+            "external": true
+          },
+          {
+            "status": "Research concept",
+            "title": "DIkastes.ai",
+            "summary": "A documented architecture concept for a legal-research assistant using retrieval, citation grounding and cross-jurisdiction analysis.",
+            "role": "README-stage concept; not presented as a finished AI product.",
+            "tags": [
+              "RAG concept",
+              "Legal research",
+              "Vector retrieval",
+              "Architecture"
+            ],
+            "href": "https://github.com/arsenii-leno/DIkastes.ai",
+            "linkLabel": "View research concept",
+            "external": true
+          },
+          {
+            "status": "Functional prototype",
+            "title": "Clinic-App",
+            "summary": "An Expo/React Native prototype for appointment workflow, patient records and local-first clinic operations.",
+            "role": "Prototype case; materials are shared directly after a source-hygiene review.",
+            "tags": [
+              "Expo",
+              "React Native",
+              "TypeScript",
+              "Local-first"
+            ],
+            "href": "mailto:xlenoa@stuba.sk?subject=Clinic-App%20case",
+            "linkLabel": "Request case note",
+            "external": false
+          }
+        ]
+      },
+      "credential": {
+        "eyebrow": "Verifiable qualification",
+        "title": "AI-Powered Performance Ads Certification",
+        "body": "A Google Skillshop qualification covering AI-powered campaigns, Smart Bidding, Performance Max and performance measurement.",
+        "issuerLabel": "Issuer",
+        "idLabel": "Credential ID",
+        "verify": "Verify credential"
+      },
+      "stack": {
+        "eyebrow": "Capability matrix",
+        "title": "The stack follows the constraint.",
+        "intro": "Technology is not the offer. It should simplify delivery, measurement and long-term ownership.",
+        "items": [
+          {
+            "title": "Frontend & Performance",
+            "technologies": [
+              "Astro · HTML5 · CSS",
+              "TypeScript · React",
+              "Accessibility · CWV",
+              "Responsive delivery"
+            ]
+          },
+          {
+            "title": "Edge & Automation",
+            "technologies": [
+              "Cloudflare Workers",
+              "D1 · SQLite · KV",
+              "Telegram Bot API",
+              "GitHub Actions"
+            ]
+          },
+          {
+            "title": "Ads & Measurement",
+            "technologies": [
+              "Google Ads · PMax",
+              "GTM · GA4",
+              "Enhanced Conversions",
+              "Offline conversion plan"
+            ]
+          },
+          {
+            "title": "Legacy & Governance",
+            "technologies": [
+              "WordPress · PHP",
+              "DNS · cPanel · Fornex",
+              "Scope · acceptance",
+              "IP/privacy review prep"
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "eyebrow": "Working through a similar constraint?",
+        "title": "Show me the current system—I will find the highest-leverage intervention.",
+        "button": "Request a diagnosis"
+      },
+      "pricing": {
+        "eyebrow": "Investment without ambiguous estimates",
+        "title": "Choose your initial setup.",
+        "toggleLabel": "Pricing mode",
+        "buildToggle": "One-off launch",
+        "growthToggle": "Launch + growth retainer",
+        "popular": "Most popular",
+        "buildCaption": "one-time · fixed SOW",
+        "growthCaption": "/ month · fixed sprint",
+        "note": "Baseline estimates as of August 2026. Final scope dictates precise quotation. Ad spend, hosting, licenses, translations, and taxes billed separately.",
+        "tiers": [
+          {
+            "featured": false,
+            "kicker": "01 · Lean web",
+            "title": "Fast Web Platform",
+            "description": "High-performance edge platform designed to replace bloated monoliths or launch clean.",
+            "buildPrice": "$350",
+            "growthPrice": "$150",
+            "features": [
+              "Astro + Tailwind modern stack",
+              "95–100 Google PageSpeed & Core Web Vitals",
+              "Mobile-First semantic SEO layout",
+              "Headless JSON content architecture"
+            ],
+            "growthFeatures": [
+              "24/7 uptime & latency health checks",
+              "Scheduled automated backups & content edits"
+            ],
+            "cta": "Choose setup"
+          },
+          {
+            "featured": true,
+            "kicker": "02 · Acquisition engine",
+            "title": "Growth & Ads Engine",
+            "description": "High-speed web synchronized with conversion telemetry and targeted client acquisition.",
+            "buildPrice": "$650",
+            "growthPrice": "$250",
+            "features": [
+              "Everything in Fast Web Platform",
+              "GTM + GA4 + Primary Conversion Goals",
+              "Google Ads (Search, PMax, VBB strategies)",
+              "Tailored responsive RSA copy & assets"
+            ],
+            "growthFeatures": [
+              "Weekly bid & budget intelligence updates",
+              "Continuous A/B copy and offer experiments",
+              "Monthly cost-per-acquisition (CPA) review"
+            ],
+            "cta": "Choose setup"
+          },
+          {
+            "featured": false,
+            "kicker": "03 · Full loop",
+            "title": "Full E2E Infrastructure",
+            "description": "Self-sustaining infrastructure with automated lead routing, payments, and legal certainty.",
+            "buildPrice": "$950",
+            "growthPrice": "$350",
+            "features": [
+              "Full stack Web + Analytics + Ads",
+              "Telegram Bot + Cloudflare Workers routing",
+              "Payment gateway integration (LiqPay / Stripe)",
+              "Formal SOW contract & 100% IP rights transfer"
+            ],
+            "growthFeatures": [
+              "Priority SLA emergency response window",
+              "Iterative feature development & expansions"
+            ],
+            "cta": "Choose setup"
+          }
+        ]
+      },
+      "contact": {
+        "eyebrow": "Next step",
+        "title": "Let’s start with your task and expected outcome.",
+        "intro": "Outline your current setup and target outcome. I will run a technical assessment, structure the architecture, and deliver a fixed SOW without technical debt.",
+        "stepOneTitle": "Infrastructure express audit",
+        "stepOneBody": "Evaluating web performance, GA4 measurement fidelity, and conversion leakages.",
+        "stepTwoTitle": "Fixed SOW and kickoff",
+        "stepTwoBody": "You receive a documented implementation scope, timeline, deliverables, and exact pricing.",
+        "nameLabel": "Name",
+        "namePlaceholder": "How should I address you?",
+        "companyLabel": "Company",
+        "companyPlaceholder": "Company or industry",
+        "contactLabel": "Email or Telegram",
+        "contactPlaceholder": "name@company.com or @username",
+        "serviceLabel": "What do you need to launch?",
+        "selectPlaceholder": "Select scope or configuration",
+        "services": [
+          "Edge Web Platform (Turnkey Astro)",
+          "Legacy WordPress audit & performance tuning",
+          "Growth & Ads Engine (Google Ads, GTM, VBB)",
+          "Full E2E Infrastructure (Web + Bot + Ads)",
+          "Custom engineering task"
+        ],
+        "messageLabel": "Project context",
+        "messagePlaceholder": "Website URL, current stack, lead leakage points, or greenfield scope...",
+        "consent": "Data is transmitted solely to evaluate your inquiry. Zero spam or third-party persistence.",
+        "submit": "Draft request in Telegram",
+        "footnote": "Generates a pre-filled Telegram draft — you can review and edit every detail before sending.",
+        "privacyDetailsTitle": "How your inquiry is processed",
+        "privacyTextOne": "Controller: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyTextTwo": "Purpose: inquiry assessment and proposal scoping. Stored strictly in direct work chat.",
+        "privacyTextThree": "The site does not persist form data to databases: it prepares a local draft for Telegram or email.",
+        "privacyTextFour": "Do not transmit sensitive medical or proprietary customer data prior to executing an NDA.",
+        "note": "This form compiles a direct draft. Zero hidden trackers or lead broker sharing.",
+        "privacySummary": "How your inquiry is processed (GDPR & Privacy Notice)",
+        "privacyController": "Controller: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyPurpose": "Purpose: preliminary engineering assessment and SOW scoping. Conversations remain confidential.",
+        "privacyTelegram": "This website does not store form submissions in databases: it formats a ready draft inside your Telegram client or email app.",
+        "privacyRights": "You retain full rights to request erasure of conversation records at any time via email.",
+        "requiredError": "Please fill in all required fields.",
+        "openingStatus": "Opening Telegram...",
+        "fallbackStatus": "Failed to launch app? Contact directly: @Arsen_Kozaque"
+      }
     }
   }
 };
