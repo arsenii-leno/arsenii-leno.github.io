@@ -12,7 +12,7 @@ window.i18nData = {
         "consultation": "Консультація"
       },
       "footer": {
-        "tagline": "Цифрова інфраструктура для бізнесу, який рахує результат.",
+        "tagline": "Цифрова інфраструктура для бізнесу.",
         "location": "Bratislava · Uzhhorod · Remote",
         "privacy": "Приватність"
       }
@@ -137,8 +137,8 @@ window.i18nData = {
       "case": {
         "eyebrow": "Флагманський кейс · med.uz.ua",
         "title": "Еволюція архітектури: від оптимізації WordPress до чистого Edge.",
-        "intro": "Глибоко розумію нутрощі WordPress — від тюнінгу MySQL до рефакторингу плагінів. Проте для клінік та B2B з високим чеком моноліт стає гальмом. Рішення: зберегти звичне керування даними, але перевести платформу на швидкісну Edge-архітектуру (Astro + структурований Headless-контент через JSON).",
-        "visit": "Відкрити live-проєкт",
+        "intro": "Аудит та рефакторинг legacy-моноліту: оптимізація запитів до MySQL, вичищення плагінного оверхеду та ліквідація блокуючого рендеру. Коли база даних стає вузьким місцем під трафіком, система переводиться на <strong>Astro Islands Architecture</strong>: статична доставка з Edge CDN та <strong>Headless JSON</strong> для швидкого редагування цін без ризику падіння бази.",
+        "visit": "Аудіювати live-проєкт",
         "comparisonLabel": "Порівняння архітектури до та після",
         "beforeLabel": "до",
         "beforeTitle": "Монолітний WordPress",
@@ -157,18 +157,18 @@ window.i18nData = {
         "metrics": [
           {
             "value": "4 мови",
-            "label": "мультимовна live-платформа"
+            "label": "L10n: i18n без рантайм-запитів до БД"
           },
           {
             "value": "< 120ms",
-            "label": "глобальний відгук Edge CDN"
+            "label": "глобальний TTFB на Edge CDN"
           },
           {
             "value": "0 DB load",
-            "label": "стійкість до навантажень"
+            "label": "нульове навантаження на сервери"
           }
         ],
-        "claimNote": "Live-архітектура, швидкість та мультимовність перевіряються на реальному проєкті: med.uz.ua."
+        "claimNote": "Верифікація в продакшені: телеметрія затримки, показники Core Web Vitals (100/100) та наскрізний трекінг заявок перевіряються наживо на med.uz.ua."
       },
       "selected": {
         "eyebrow": "Вибрані системи",
@@ -216,7 +216,7 @@ window.i18nData = {
               "TypeScript",
               "Local-first"
             ],
-            "href": "mailto:xlenoa@stuba.sk?subject=Clinic-App%20case",
+            "href": "mailto:arsenii.leno.digital@gmail.com?subject=Clinic-App%20case",
             "linkLabel": "Запросити case note",
             "external": false
           }
@@ -287,63 +287,67 @@ window.i18nData = {
         "popular": "Популярний вибір",
         "buildCaption": "разово · фіксований SOW",
         "growthCaption": "/ місяць · фіксований спринт",
-        "note": "Орієнтири актуальні станом на серпень 2026 року. Фінальна пропозиція залежить від обсягу. Рекламний бюджет, хостинг, платні ліцензії, контент, переклад і податки оплачуються окремо.",
+        "note": "Орієнтири актуальні станом на вересень 2026 року. Фінальна пропозиція залежить від обсягу. Рекламний бюджет, хостинг, платні ліцензії, контент, переклад і податки оплачуються окремо.",
         "tiers": [
           {
             "featured": false,
-            "kicker": "01 · Базовий веб",
-            "title": "Fast Web Platform",
-            "description": "Швидка, надійна веб-платформа для заміни повільного сайту або чистого старту.",
+            "kicker": "01 · Діагностика & Рефакторинг",
+            "title": "Legacy Rescue & Audit",
+            "description": "Порятунок і стабілізація моноліту: усунення вразливостей, розчищення кешу, тюнінг бази даних та підготовка до міграції.",
             "buildPrice": "$350",
             "growthPrice": "$150",
             "features": [
-              "Astro + Tailwind сучасна архітектура",
-              "95–100 Google PageSpeed & Core Web Vitals",
-              "Mobile-First верстка та семантичне SEO",
-              "Headless JSON-керування контентом"
+              "Статичний аудит коду PHP та ізоляція шкідливих модулів",
+              "Ліквідація блокувань кешу й оптимізація запитів до БД",
+              "Конфігурація безпеки wp-config, DNS та SSL-сертифікатів",
+              "Офіційний договір, SOW та повна передача документації"
             ],
             "growthFeatures": [
-              "Моніторинг стабільності та доступності 24/7",
-              "Регулярні бекапи та оновлення контенту"
+              "24/7 uptime & latency health-checks",
+              "Регулярне резервне копіювання та захист від атак",
+              "До 3 годин гарантованих інженерних робіт на місяць"
             ],
             "cta": "Обрати конфігурацію"
           },
           {
             "featured": true,
-            "kicker": "02 · Трафік + Аналітика",
-            "title": "Growth & Ads Engine",
-            "description": "Повний зв'язок швидкого сайту з точною аналітикою та залученням клієнтів.",
-            "buildPrice": "$650",
+            "kicker": "02 · Швидкісний веб",
+            "title": "High-Speed Edge Platform",
+            "description": "Розробка чистої веб-платформи з нуля на Astro: без важких баз даних, із миттєвим рендерингом на Edge CDN.",
+            "buildPrice": "$750",
             "growthPrice": "$250",
             "features": [
-              "Усе, що входить у Fast Web Platform",
-              "GTM + GA4 + Primary Conversion Goals",
-              "Google Ads (Search, PMax, VBB стратегії)",
-              "Авторські адаптивні креативи (RSA)"
+              "Astro + Tailwind CSS (Islands Architecture)",
+              "Стабільні 100/100 Core Web Vitals і суб-100ms LCP",
+              "Headless JSON-керування контентом без ризику падіння БД",
+              "Семантичне SEO, OpenGraph та технічна розмітка",
+              "Офіційний договір, SOW та 100% передача прав (IP)"
             ],
             "growthFeatures": [
-              "Щотижнева оптимізація ставок і бюджету",
-              "A/B спліт-тестування оферів і заголовків",
-              "Щомісячний аудит вартості заявки (CPA)"
+              "Моніторинг глобальної доступності Edge-мережі",
+              "A/B оновлення офферів і конверсійних блоків",
+              "До 6 годин інженерних доробок у межах щомісячного спринту"
             ],
             "cta": "Обрати конфігурацію"
           },
           {
             "featured": false,
-            "kicker": "03 · Замкнений цикл",
-            "title": "Full E2E Infrastructure",
-            "description": "Автономна цифрова інфраструктура з доставкою лідів, оплатами та юридичним захистом.",
-            "buildPrice": "$950",
-            "growthPrice": "$350",
+            "kicker": "03 · Замкнений цифровий контур",
+            "title": "Turnkey Growth Infrastructure",
+            "description": "Повна цифрова система під ключ: сайт на Edge, маршрутизація лідів через Workers, платіжки та Google Ads AI-кампанії.",
+            "buildPrice": "$1,350",
+            "growthPrice": "$450",
             "features": [
-              "Увесь стек Web + Analytics + Ads",
-              "Telegram Bot + Cloudflare Workers роутинг лідів",
-              "Інтеграція платіжних систем (LiqPay / Stripe)",
+              "Увесь стек Edge Web + Cloudflare Workers роутинг",
+              "Telegram Bot для миттєвої доставки заявок і дзвінків",
+              "Інтеграція оплат (LiqPay / Stripe) та вебхуків",
+              "GTM + GA4 з налаштуванням Primary Goals та VBB у Google Ads",
               "Офіційний договір, SOW та 100% передача прав (IP)"
             ],
             "growthFeatures": [
-              "Пріоритетний SLA технічної підтримки",
-              "Безперервне доопрацювання логіки під нові задачі"
+              "Щотижнева оптимізація Google Ads (ставки, VBB, мінус-слова)",
+              "Аналітика вартості залучення клієнта (CPA/ROAS)",
+              "Пріоритетний SLA: до 10 годин розробки на місяць"
             ],
             "cta": "Обрати конфігурацію"
           }
@@ -378,19 +382,150 @@ window.i18nData = {
         "submit": "Сформувати запит у Telegram",
         "footnote": "Згенерує готове повідомлення із заповненими параметрами — ви зможете переглянути й відредагувати текст перед відправкою.",
         "privacyDetailsTitle": "Як обробляється ваш запит",
-        "privacyTextOne": "Контролер: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyTextOne": "Контролер: Arsenii Leno, arsenii.leno.digital@gmail.com.",
         "privacyTextTwo": "Мета: оцінка запиту та підготовка пропозиції. Листування зберігається лише в робочому чаті.",
         "privacyTextThree": "Сайт не відправляє дані на сервер: формується чернетка для відправки через Telegram або email.",
         "privacyTextFour": "Не надсилайте чутливі персональні чи комерційні дані до підписання NDA.",
-        "note": "Форма формує прямий запит. Жодних прихованих трекерів або перепродажу контактів.",
+        "note": "Відкриється Telegram із готовим технічним брифом — ви зможете перевірити його перед відправленням.",
         "privacySummary": "Як обробляється ваш запит (GDPR & Конфіденційність)",
-        "privacyController": "Контролер: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyController": "Контролер: Arsenii Leno, arsenii.leno.digital@gmail.com.",
         "privacyPurpose": "Мета: первинна технічна оцінка та узгодження SOW. Листування не передається третім особам.",
         "privacyTelegram": "Сайт не зберігає введені дані у базах: запит відкривається як підготовлена чернетка у вашому Telegram або email.",
         "privacyRights": "Ви маєте повне право на відкликання та видалення листування за першим запитом на контактний email.",
         "requiredError": "Будь ласка, заповніть обов'язкові поля.",
         "openingStatus": "Відкриваємо Telegram...",
-        "fallbackStatus": "Не вдалося відкрити? Напишіть напряму: @Arsen_Kozaque"
+        "fallbackStatus": "Не вдалося відкрити? Напишіть напряму: @Arsen_Kozaque або WhatsApp: +380997063003"
+      }
+    },
+    "about": {
+      "hero": {
+        "eyebrow": "Інженерія з комерційним контекстом",
+        "title": "Технічна глибина.",
+        "titleAccent": "Відповідальність за весь шлях.",
+        "lede": "Я будую цифрові системи на перетині програмної інженерії, вимірюваного маркетингу та правосвідомого delivery — без ілюзії, що один інструмент вирішує бізнес-задачу.",
+        "cta": "Обговорити задачу",
+        "secondaryCta": "Переглянути проєкти"
+      },
+      "profile": {
+        "label": "Профіль практики",
+        "role": "Digital Infrastructure & Growth Engineer",
+        "status": "Bratislava · Uzhhorod · Remote",
+        "facts": [
+          {
+            "label": "Спеціалізація",
+            "value": "Infrastructure Developer"
+          },
+          {
+            "label": "Інженерна база",
+            "value": "FIIT STU (Software Eng.)"
+          },
+          {
+            "label": "Правова база",
+            "value": "УжНУ (Юриспруденція)"
+          },
+          {
+            "label": "Формат",
+            "value": "Fixed SOW · 100% IP Transfer"
+          }
+        ]
+      },
+      "notion": {
+        "badge": "ОФІЦІЙНИЙ РЕЄСТР",
+        "title": "Notion Workfolio",
+        "desc": "Первинні договори, SOW, схеми архітектури та верифікований беклог. Сайт — комерційний офер, Notion — інженерні докази."
+      },
+      "tracks": {
+        "eyebrow": "Три дисципліни, одна система мислення",
+        "title": "Освіта, що змінює спосіб delivery.",
+        "intro": "Це поточні напрями навчання, а не заяви про ліцензовану юридичну практику. Їхня цінність — у кращих технічних, договірних і комерційних рішеннях.",
+        "items": [
+          {
+            "type": "Програмна інженерія · FIIT STU",
+            "title": "Чиста архітектура та Edge-продуктивність",
+            "body": "Проектування систем без технічного боргу: перехід від важких CMS до легкого Edge (Astro, Workers), суб-100ms рендеринг і відмовостійкість."
+          },
+          {
+            "type": "Вимірюваний маркетинг · Growth Rig",
+            "title": "Телеметрія конверсій та таргетований трафік",
+            "body": "Пряма зв'язка сайту з бізнес-результатом: наскрізна аналітика (GTM/GA4), смарт-бідінг у Google Ads і точний трекінг вартості клієнта."
+          },
+          {
+            "type": "Правовий контекст · УжНУ Юрфак",
+            "title": "Юридична чистота та передача прав",
+            "body": "Прозорі умови співпраці: чіткий SOW, дотримання GDPR/ePrivacy та гарантована передача прав інтелектуальної власності (IP Transfer) клієнту."
+          }
+        ]
+      },
+      "principles": {
+        "eyebrow": "Робоча філософія",
+        "title": "Три принципи, що переживають зміну стеку.",
+        "items": [
+          {
+            "title": "Швидкість як бізнес-функція",
+            "body": "Кожна мілісекунда затримки — це втрачені конверсії та злитий рекламний бюджет. Будую рішення, які відкриваються миттєво."
+          },
+          {
+            "title": "Жодних чорних скриньок у даних",
+            "body": "Кожна заявка фіксується з UTM-джерелом і передається в Telegram чи CRM за лічені секунди. Рекламні алгоритми навчаються лише на чистих даних."
+          },
+          {
+            "title": "Повна автономність замовника",
+            "body": "Не створюю залежності від розробника. Після релізу ви володієте 100% коду, доступами та зрозумілою структурою для редагування."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Як виглядає робота",
+        "title": "Від діагностики до контрольованого запуску.",
+        "intro": "Кожен етап має рішення, артефакт і критерій завершення. Це знижує ризик нескінченних правок та неочікуваних витрат.",
+        "items": [
+          {
+            "title": "Діагностика та архітектурний аудит",
+            "body": "Аналізуємо поточний сайт, вузькі місця у завантаженні та точки втрати лідів.",
+            "output": "Технічний висновок та рекомендації"
+          },
+          {
+            "title": "Фіксація SOW та проектування",
+            "body": "Погоджуємо дедлайни, перелік модулів, інтеграцій та фіксовану вартість робіт.",
+            "output": "Підписаний SOW та структура"
+          },
+          {
+            "title": "Розробка, інтеграції та Edge-деплой",
+            "body": "Верстка на Astro + Tailwind, підключення Telegram-роутингу заявок та GTM/GA4.",
+            "output": "Робоча тестова версія на Edge"
+          },
+          {
+            "title": "Реліз, передача прав та моніторинг",
+            "body": "Перенесення на робочий домен, налаштування аналітики та повна передача репозиторію.",
+            "output": "Live-система та акт передачі IP"
+          }
+        ]
+      },
+      "safeguards": {
+        "eyebrow": "Стандарти співпраці",
+        "title": "Менше обіцянок. Більше зафіксованих умов.",
+        "intro": "Формат захисту залежить від юрисдикції та проєкту; для регульованих питань документи мають пройти перевірку кваліфікованого юриста.",
+        "noteTitle": "Важливо:",
+        "note": "юридична освіта допомагає виявляти ризики й готувати матеріали до review, але не замінює адвоката чи ліцензовану правову консультацію.",
+        "items": [
+          {
+            "title": "Фіксований обсяг робіт (SOW)",
+            "body": "Жодних непередбачених витрат: усі модулі, строки та очікувані результати зафіксовані перед початком розробки."
+          },
+          {
+            "title": "100% передача інтелектуальної власності",
+            "body": "Весь створений код, конфігурації та облікові записи відчужуються на користь клієнта без прихованих платежів."
+          },
+          {
+            "title": "Privacy & GDPR Compliance",
+            "body": "Форми збору лідів оптимізовані під регуляторні вимоги ЄС та України: прозорий consent і мінімізація збору даних."
+          }
+        ]
+      },
+      "cta": {
+        "eyebrow": "Потрібен один відповідальний контур?",
+        "title": "Зберімо інженерію, дані й зростання в одну дорожню карту.",
+        "button": "Почати з діагностики"
       }
     }
   },
@@ -407,7 +542,7 @@ window.i18nData = {
         "consultation": "Konzultácia"
       },
       "footer": {
-        "tagline": "Digitálna infraštruktúra pre firmy, ktoré merajú výsledky.",
+        "tagline": "Digitálna infraštruktúra pre firmy.",
         "location": "Bratislava · Užhorod · Remote",
         "privacy": "Súkromie"
       }
@@ -532,8 +667,8 @@ window.i18nData = {
       "case": {
         "eyebrow": "Vlajkový prípad · med.uz.ua",
         "title": "Evolúcia architektúry: od optimalizácie WordPressu po čistý Edge.",
-        "intro": "Detailne rozumiem fungovaniu WordPressu — od ladenia MySQL po refaktoring pluginov. Pre prémiové kliniky a B2B sa však monolit stáva brzdou. Riešenie: zachovať jednoduchú správu dát, ale preniesť platformu na bleskovú Edge architektúru (Astro + štruktúrovaný Headless obsah cez JSON).",
-        "visit": "Otvoriť live projekt",
+        "intro": "Audit a refaktoring legacy monolitu: optimalizácia dopytov do MySQL, odstránenie preťaženia z pluginov a eliminácia blokujúceho skriptovania. Riešenie: migrácia na <strong>Astro Islands Architecture</strong> na globálnom Edge CDN a <strong>Headless JSON</strong> vrstva pre jednoduchú správu cien a obsahu s nulovým rizikom výpadku databázy.",
+        "visit": "Auditovať live projekt",
         "comparisonLabel": "Porovnanie architektúry pred a po",
         "beforeLabel": "predtým",
         "beforeTitle": "Monolitický WordPress",
@@ -552,18 +687,18 @@ window.i18nData = {
         "metrics": [
           {
             "value": "4 jazyky",
-            "label": "multijazyčná live platforma"
+            "label": "L10n: i18n bez runtime réžie a dopytov na DB"
           },
           {
             "value": "< 120ms",
-            "label": "globálna odozva Edge CDN"
+            "label": "globálny TTFB na Edge CDN sieti"
           },
           {
             "value": "0 DB load",
-            "label": "odolnosť voči záťaži"
+            "label": "nulové zaťaženie databázového servera"
           }
         ],
-        "claimNote": "Live architektúra, rýchlosť a viacjazyčnosť sú overiteľné na reálnom produkte: med.uz.ua."
+        "claimNote": "Produkčná verifikácia: telemetria odozvy, 100/100 Core Web Vitals a doručovanie dopytov sú overiteľné naživo na med.uz.ua."
       },
       "selected": {
         "eyebrow": "Vybrané systémy",
@@ -611,7 +746,7 @@ window.i18nData = {
               "TypeScript",
               "Local-first"
             ],
-            "href": "mailto:xlenoa@stuba.sk?subject=Clinic-App%20case",
+            "href": "mailto:arsenii.leno.digital@gmail.com?subject=Clinic-App%20case",
             "linkLabel": "Vyžiadať case note",
             "external": false
           }
@@ -682,63 +817,67 @@ window.i18nData = {
         "popular": "Populárna voľba",
         "buildCaption": "jednorazovo · fixný SOW",
         "growthCaption": "/ mesiac · fixný šprint",
-        "note": "Orientačné ceny k augustu 2026. Finálna ponuka závisí od rozsahu. Rozpočet na reklamu, hosting, platené licencie, obsah, preklady a dane sa hradia osobitne.",
+        "note": "Orientačné ceny k septembru 2026. Finálna ponuka závisí od rozsahu. Rozpočet na reklamu, hosting, platené licencie, obsah, preklady a dane sa hradia osobitne.",
         "tiers": [
           {
             "featured": false,
-            "kicker": "01 · Základný web",
-            "title": "Fast Web Platform",
-            "description": "Rýchla a bezpečná webová platforma ako náhrada pomalého webu alebo čistý štart.",
+            "kicker": "01 · Diagnostika & Refaktoring",
+            "title": "Legacy Rescue & Audit",
+            "description": "Záchrana a stabilizácia monolitu: odstránenie zraniteľností, vyčistenie cache, tuning databázy a príprava na migráciu.",
             "buildPrice": "$350",
             "growthPrice": "$150",
             "features": [
-              "Moderná architektúra Astro + Tailwind",
-              "95–100 Google PageSpeed & Core Web Vitals",
-              "Mobile-First responzivita a sémantické SEO",
-              "Headless JSON správa obsahu"
+              "Statický audit PHP kódu a izolácia škodlivých modulov",
+              "Odstránenie blokovania cache a optimalizácia dopytov do DB",
+              "Konfigurácia bezpečnosti wp-config, DNS a SSL certifikátov",
+              "Oficiálna zmluva, SOW a kompletné odovzdanie dokumentácie"
             ],
             "growthFeatures": [
-              "Monitoring stability a dostupnosti 24/7",
-              "Pravidelné zálohy a aktualizácie obsahu"
+              "24/7 monitoring dostupnosti a latencie",
+              "Pravidelné zálohovanie a ochrana pred útokmi",
+              "Garantované do 3 hodín inžinierskych prác mesačne"
             ],
             "cta": "Vybrať konfiguráciu"
           },
           {
             "featured": true,
-            "kicker": "02 · Návštevnosť + Analytika",
-            "title": "Growth & Ads Engine",
-            "description": "Kompletné prepojenie rýchleho webu s presnou analytikou a akvizíciou klientov.",
-            "buildPrice": "$650",
+            "kicker": "02 · Rýchly web",
+            "title": "High-Speed Edge Platform",
+            "description": "Vývoj čistej webovej platformy od nuly na Astro: bez ťažkých databáz, s bleskovým vykresľovaním na Edge CDN.",
+            "buildPrice": "$750",
             "growthPrice": "$250",
             "features": [
-              "Všetko z balíka Fast Web Platform",
-              "GTM + GA4 + Primary Conversion Goals",
-              "Google Ads (Search, PMax, VBB stratégie)",
-              "Autorské adaptívne kreatívy (RSA)"
+              "Astro + Tailwind CSS (Islands Architecture)",
+              "Stabilné 100/100 Core Web Vitals a sub-100ms LCP",
+              "Headless JSON správa obsahu bez rizika výpadku DB",
+              "Sémantické SEO, OpenGraph a technická mikroštruktúra",
+              "Oficiálna zmluva, SOW a 100% prevod práv (IP)"
             ],
             "growthFeatures": [
-              "Týždenná optimalizácia ponúk a rozpočtu",
-              "A/B testovanie nadpisov a ponúk",
-              "Mesačný audit ceny za lead (CPA)"
+              "Monitoring globálnej dostupnosti Edge siete",
+              "A/B aktualizácie ponúk a konverzných blokov",
+              "Do 6 hodín inžinierskych úprav v rámci mesačného šprintu"
             ],
             "cta": "Vybrať konfiguráciu"
           },
           {
             "featured": false,
-            "kicker": "03 · Uzavretý cyklus",
-            "title": "Full E2E Infrastructure",
-            "description": "Autonómna digitálna infraštruktúra s doručovaním leadov, platbami a právnou ochranou.",
-            "buildPrice": "$950",
-            "growthPrice": "$350",
+            "kicker": "03 · Uzavretý systém",
+            "title": "Turnkey Growth Infrastructure",
+            "description": "Kompletný digitálny systém na kľúč: Edge web, smerovanie leadov cez Workers, platby a Google Ads AI kampane.",
+            "buildPrice": "$1,350",
+            "growthPrice": "$450",
             "features": [
-              "Kompletný stack Web + Analytics + Ads",
-              "Routing leadov cez Telegram Bot + Workers",
-              "Integrácia platobných brán (LiqPay / Stripe)",
-              "Oficiálna zmluva, SOW a 100 % prevod práv (IP)"
+              "Kompletný stack Edge Web + Cloudflare Workers routing",
+              "Telegram Bot pre okamžité doručovanie dopytov a hovorov",
+              "Integrácia platieb (LiqPay / Stripe) a webhookov",
+              "GTM + GA4 s nastavením Primary Goals a VBB v Google Ads",
+              "Oficiálna zmluva, SOW a 100% prevod majetkových práv (IP)"
             ],
             "growthFeatures": [
-              "Prioritná technická podpora a SLA",
-              "Priebežný rozvoj funkcií podľa potrieb biznisu"
+              "Týždenná optimalizácia Google Ads (ponuky, VBB, vylučujúce slová)",
+              "Priebežná analýza nákladov na akvizíciu (CPA/ROAS)",
+              "Prioritné SLA: do 10 hodín vývoja a úprav mesačne"
             ],
             "cta": "Vybrať konfiguráciu"
           }
@@ -756,8 +895,8 @@ window.i18nData = {
         "namePlaceholder": "Ako vás oslovovať?",
         "companyLabel": "Spoločnosť",
         "companyPlaceholder": "Názov alebo odvetvie",
-        "contactLabel": "Email alebo Telegram",
-        "contactPlaceholder": "name@company.com alebo @username",
+        "contactLabel": "Email alebo WhatsApp",
+        "contactPlaceholder": "meno@firma.sk alebo tel. číslo (+421...)",
         "serviceLabel": "Čo potrebujete spustiť?",
         "selectPlaceholder": "Vyberte oblasť alebo konfiguráciu",
         "services": [
@@ -770,22 +909,153 @@ window.i18nData = {
         "messageLabel": "Kontext zadania",
         "messagePlaceholder": "Web, súčasný stack, kde vznikajú úniky leadov alebo čo treba vybudovať od nuly...",
         "consent": "Údaje sa odosielajú výhradne na vyhodnotenie zadania. Žiadny spam ani ukladanie v cudzích databázach.",
-        "submit": "Vytvoriť dopyt do Telegramu",
+        "submit": "Odoslať dopyt cez WhatsApp",
         "footnote": "Vygeneruje pripravenú správu s vyplnenými údajmi — pred odoslaním si ju môžete skontrolovať.",
         "privacyDetailsTitle": "Ako sa spracúva váš dopyt",
-        "privacyTextOne": "Prevádzkovateľ: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyTextOne": "Prevádzkovateľ: Arsenii Leno, arsenii.leno.digital@gmail.com.",
         "privacyTextTwo": "Účel: posúdenie dopytu a príprava cenovej ponuky. Komunikácia zostáva v pracovnom čate.",
         "privacyTextThree": "Web neukladá dáta na server: vytvorí koncept na odoslanie cez Telegram alebo email.",
         "privacyTextFour": "Pred podpisom NDA neposielajte citlivé osobné ani dôverné obchodné informácie.",
-        "note": "Formulár vytvára priamy dopyt. Žiadne skryté sledovače ani predaj kontaktov.",
+        "note": "Otvorí sa WhatsApp s pripraveným technickým zadaním — pred odoslaním ho môžete skontrolovať.",
         "privacySummary": "Ako sa spracúva váš dopyt (GDPR a súkromie)",
-        "privacyController": "Prevádzkovateľ: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyController": "Prevádzkovateľ: Arsenii Leno, arsenii.leno.digital@gmail.com.",
         "privacyPurpose": "Účel: prvotné technické posúdenie a príprava SOW. Komunikácia sa neposkytuje tretím stranám.",
         "privacyTelegram": "Web neukladá zadané údaje do databáz: dopyt sa otvorí ako pripravený koncept vo vašom Telegrame alebo emaile.",
         "privacyRights": "Máte právo na vymazanie komunikácie kedykoľvek na základe žiadosti na kontaktný email.",
         "requiredError": "Prosím, vyplňte povinné polia.",
-        "openingStatus": "Otváram Telegram...",
-        "fallbackStatus": "Nepodarilo sa otvoriť? Napíšte priamo: @Arsen_Kozaque"
+        "openingStatus": "Otváram WhatsApp...",
+        "fallbackStatus": "Nepodarilo sa otvoriť? Napíšte na WhatsApp: +380997063003 alebo arsenii.leno.digital@gmail.com"
+      }
+    },
+    "about": {
+      "hero": {
+        "eyebrow": "Inžinierstvo s komerčným kontextom",
+        "title": "Technická hĺbka.",
+        "titleAccent": "Zodpovednosť za celý proces.",
+        "lede": "Budujem digitálne systémy na priesečníku softvérového inžinierstva, merateľného marketingu a právne ukotveného delivery — bez ilúzie, že jediný nástroj vyrieši biznis cieľ.",
+        "cta": "Prekonzultovať zadanie",
+        "secondaryCta": "Prezrieť projekty"
+      },
+      "profile": {
+        "label": "Profil praxe",
+        "role": "Digital Infrastructure & Growth Engineer",
+        "status": "Bratislava · Uzhhorod · Remote",
+        "facts": [
+          {
+            "label": "Špecializácia",
+            "value": "Infrastructure Developer"
+          },
+          {
+            "label": "Inžiniersky základ",
+            "value": "FIIT STU (Software Eng.)"
+          },
+          {
+            "label": "Právny základ",
+            "value": "UžNU (Právo)"
+          },
+          {
+            "label": "Formát",
+            "value": "Fixed SOW · 100% IP Transfer"
+          }
+        ]
+      },
+      "notion": {
+        "badge": "OFICIÁLNY REGISTER",
+        "title": "Notion Workfolio",
+        "desc": "Pôvodné zmluvy, SOW, architektonické schémy a overený backlog. Web je komerčná ponuka, Notion sú inžinierske dôkazy."
+      },
+      "tracks": {
+        "eyebrow": "Tri disciplíny, jeden myšlienkový systém",
+        "title": "Vzdelanie, ktoré mení spôsob delivery.",
+        "intro": "Ide o aktuálne smery štúdia, nie o tvrdenia o licencovanej advokátskej praxi. Ich hodnota spočíva v lepších technických, zmluvných a obchodných rozhodnutiach.",
+        "items": [
+          {
+            "type": "Softvérové inžinierstvo · FIIT STU",
+            "title": "Čistá architektúra a Edge výkon",
+            "body": "Návrh systémov bez technického dlhu: prechod od ťažkopádnych CMS k rýchlemu Edge riešeniu (Astro, Workers), sub-100ms odozva a odolnosť."
+          },
+          {
+            "type": "Merateľný marketing · Growth Rig",
+            "title": "Telemetria konverzií a cielená návštevnosť",
+            "body": "Priame prepojenie webu s biznis výsledkami: end-to-end analytika (GTM/GA4), smart bidding v Google Ads a sledovanie skutočnej ceny akvizície."
+          },
+          {
+            "type": "Právny kontext · UžNU Právo",
+            "title": "Právna istota a prevod práv",
+            "body": "Jasné zmluvné podmienky: transparentný SOW, dodržiavanie GDPR/ePrivacy a garantovaný prevod duševného vlastníctva (IP) na klienta."
+          }
+        ]
+      },
+      "principles": {
+        "eyebrow": "Pracovná filozofia",
+        "title": "Tri princípy, ktoré pretrvávajú zmeny technológií.",
+        "items": [
+          {
+            "title": "Rýchlosť ako kľúčová vlastnosť",
+            "body": "Každá milisekunda zdržania znamená stratu konverzií a neefektívny rozpočet na reklamu. Tvorím systémy s okamžitým načítaním."
+          },
+          {
+            "title": "Žiadne čierne skrinky v dátach",
+            "body": "Každý lead je presne priradený k UTM zdroju a okamžite doručený do Telegramu či CRM. Reklamné algoritmy sa učia len z čistých dát."
+          },
+          {
+            "title": "Plná nezávislosť klienta",
+            "body": "Nevytváram závislosť na vývojárovi. Po dokončení vlastníte 100 % kódu, prístupov a intuitívne prostredie na správu obsahu."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Ako prebieha spolupráca",
+        "title": "Od diagnostiky po kontrolované nasadenie.",
+        "intro": "Každá fáza má jasný výstup, artefakt a kritérium dokončenia. Tým predchádzame nekonečným úpravám a nečakaným nákladom.",
+        "items": [
+          {
+            "title": "Diagnostika a architektonický audit",
+            "body": "Analyzujeme súčasný web, prekážky v načítaní a miesta úniku leadov.",
+            "output": "Technická správa a odporúčania"
+          },
+          {
+            "title": "Definícia SOW a plánovanie",
+            "body": "Zafixujeme termíny, rozsah modulov, integrácie a pevnú cenu prác.",
+            "output": "Podpísaný SOW a štruktúra"
+          },
+          {
+            "title": "Vývoj, integrácie a Edge deploy",
+            "body": "Kódovanie na Astro + Tailwind, prepojenie doručovania správ do Telegramu a GTM/GA4.",
+            "output": "Funkčná testovacia verzia na Edge"
+          },
+          {
+            "title": "Release, prevod práv a monitoring",
+            "body": "Nasadenie na produkčnú doménu, doladenie meraní a kompletné odovzdanie repozitára.",
+            "output": "Live systém a protokol o prevode IP"
+          }
+        ]
+      },
+      "safeguards": {
+        "eyebrow": "Štandardy spolupráce",
+        "title": "Menej sľubov. Viac zmluvných garancií.",
+        "intro": "Formát závisí od jurisdikcie a typu projektu; pri špecifických reguláciách materiály prechádzajú kontrolou kvalifikovaného právnika.",
+        "noteTitle": "Dôležité:",
+        "note": "právnické vzdelanie pomáha identifikovať riziká a pripraviť podklady, nenahrádza však licencovaného advokáta ani oficiálne právne poradenstvo.",
+        "items": [
+          {
+            "title": "Pevný rozsah prác (SOW)",
+            "body": "Žiadne skryté poplatky: všetky moduly, termíny a dodávky sú špecifikované pred začatkom vývoja."
+          },
+          {
+            "title": "100 % prevod duševného vlastníctva",
+            "body": "Celý vytvorený kód, konfigurácie a prístupy prechádzajú do výlučného vlastníctva klienta."
+          },
+          {
+            "title": "Súlad s Privacy a GDPR",
+            "body": "Formuláre spĺňajú európske aj lokálne legislatívne nároky: transparentný súhlas a minimalizácia ukladaných dát."
+          }
+        ]
+      },
+      "cta": {
+        "eyebrow": "Hľadáte jedného zodpovedného partnera?",
+        "title": "Prepojme inžinierstvo, dáta a rast do jednej roadmapy.",
+        "button": "Začať diagnostikou"
       }
     }
   },
@@ -802,7 +1072,7 @@ window.i18nData = {
         "consultation": "Consultation"
       },
       "footer": {
-        "tagline": "Digital infrastructure for businesses that measure outcomes.",
+        "tagline": "Digital infrastructure for business.",
         "location": "Bratislava · Uzhhorod · Remote",
         "privacy": "Privacy"
       }
@@ -927,8 +1197,8 @@ window.i18nData = {
       "case": {
         "eyebrow": "Flagship Case · med.uz.ua",
         "title": "Architecture evolution: from WordPress optimization to pure Edge.",
-        "intro": "Deep understanding of WordPress internals — from MySQL tuning to plugin refactoring. Yet for high-ticket clinics and B2B, monoliths become a bottleneck. The solution: retain flexible data management while migrating the platform to high-speed Edge architecture (Astro + structured Headless JSON content).",
-        "visit": "Open live project",
+        "intro": "Engineering audit and refactoring of a legacy monolith: eliminating MySQL bottlenecks, purging plugin bloat, and resolving render-blocking assets. The platform was migrated to <strong>Astro Islands Architecture</strong> powered by global Edge CDNs, backed by structured <strong>Headless JSON</strong> for instant content updates with zero database failure risk.",
+        "visit": "Audit live platform",
         "comparisonLabel": "Architecture before and after comparison",
         "beforeLabel": "before",
         "beforeTitle": "Monolithic WordPress",
@@ -947,18 +1217,18 @@ window.i18nData = {
         "metrics": [
           {
             "value": "4 languages",
-            "label": "multilingual live platform"
+            "label": "Zero-runtime database-free i18n"
           },
           {
             "value": "< 120ms",
-            "label": "global Edge CDN response"
+            "label": "global TTFB on Edge CDN"
           },
           {
             "value": "0 DB load",
-            "label": "zero-database resilience"
+            "label": "zero database server overhead"
           }
         ],
-        "claimNote": "Live architecture, speed, and multilingual routing verified on production: med.uz.ua."
+        "claimNote": "Production verification: latency telemetry, 100/100 Core Web Vitals, and lead routing can be directly audited live at med.uz.ua."
       },
       "selected": {
         "eyebrow": "Selected systems",
@@ -1006,7 +1276,7 @@ window.i18nData = {
               "TypeScript",
               "Local-first"
             ],
-            "href": "mailto:xlenoa@stuba.sk?subject=Clinic-App%20case",
+            "href": "mailto:arsenii.leno.digital@gmail.com?subject=Clinic-App%20case",
             "linkLabel": "Request case note",
             "external": false
           }
@@ -1077,63 +1347,67 @@ window.i18nData = {
         "popular": "Most popular",
         "buildCaption": "one-time · fixed SOW",
         "growthCaption": "/ month · fixed sprint",
-        "note": "Baseline estimates as of August 2026. Final scope dictates precise quotation. Ad spend, hosting, licenses, translations, and taxes billed separately.",
+        "note": "Baseline estimates as of September 2026. Final scope dictates precise quotation. Ad spend, hosting, licenses, translations, and taxes billed separately.",
         "tiers": [
           {
             "featured": false,
-            "kicker": "01 · Lean web",
-            "title": "Fast Web Platform",
-            "description": "High-performance edge platform designed to replace bloated monoliths or launch clean.",
+            "kicker": "01 · Audit & Modernization",
+            "title": "Legacy Rescue & Audit",
+            "description": "Monolith recovery and stabilization: patching vulnerabilities, cache purge, MySQL tuning, and migration prep.",
             "buildPrice": "$350",
             "growthPrice": "$150",
             "features": [
-              "Astro + Tailwind modern stack",
-              "95–100 Google PageSpeed & Core Web Vitals",
-              "Mobile-First semantic SEO layout",
-              "Headless JSON content architecture"
+              "Static PHP code audit and malicious module isolation",
+              "Cache unblocking and database query optimization",
+              "wp-config security hardening, DNS and SSL configuration",
+              "Formal SOW contract and full technical documentation"
             ],
             "growthFeatures": [
               "24/7 uptime & latency health checks",
-              "Scheduled automated backups & content edits"
+              "Automated offsite backups & proactive security updates",
+              "Up to 3 hours of dedicated engineering work per month"
             ],
             "cta": "Choose setup"
           },
           {
             "featured": true,
-            "kicker": "02 · Acquisition engine",
-            "title": "Growth & Ads Engine",
-            "description": "High-speed web synchronized with conversion telemetry and targeted client acquisition.",
-            "buildPrice": "$650",
+            "kicker": "02 · High-Speed Edge",
+            "title": "High-Speed Edge Platform",
+            "description": "Clean greenfield web platform built on Astro: zero database bloat, sub-100ms rendering on global Edge CDN.",
+            "buildPrice": "$750",
             "growthPrice": "$250",
             "features": [
-              "Everything in Fast Web Platform",
-              "GTM + GA4 + Primary Conversion Goals",
-              "Google Ads (Search, PMax, VBB strategies)",
-              "Tailored responsive RSA copy & assets"
+              "Astro + Tailwind CSS (Islands Architecture)",
+              "Sub-100ms LCP & rock-solid 100/100 Core Web Vitals",
+              "Headless JSON content workflow with zero DB failure risk",
+              "Semantic SEO, OpenGraph tags, and schema markup",
+              "Formal contract, SOW, and 100% IP rights assignment"
             ],
             "growthFeatures": [
-              "Weekly bid & budget intelligence updates",
-              "Continuous A/B copy and offer experiments",
-              "Monthly cost-per-acquisition (CPA) review"
+              "Continuous global Edge network health monitoring",
+              "Iterative A/B offer and conversion block experiments",
+              "Up to 6 hours of scoped engineering enhancements monthly"
             ],
             "cta": "Choose setup"
           },
           {
             "featured": false,
-            "kicker": "03 · Full loop",
-            "title": "Full E2E Infrastructure",
-            "description": "Self-sustaining infrastructure with automated lead routing, payments, and legal certainty.",
-            "buildPrice": "$950",
-            "growthPrice": "$350",
+            "kicker": "03 · Turnkey Infrastructure",
+            "title": "Turnkey Growth Infrastructure",
+            "description": "Turnkey digital revenue pipeline: Edge platform, Workers lead routing, payment gateway, and Google Ads VBB engine.",
+            "buildPrice": "$1,350",
+            "growthPrice": "$450",
             "features": [
-              "Full stack Web + Analytics + Ads",
-              "Telegram Bot + Cloudflare Workers routing",
-              "Payment gateway integration (LiqPay / Stripe)",
-              "Formal SOW contract & 100% IP rights transfer"
+              "Complete Edge Web stack + Cloudflare Workers routing",
+              "Telegram Bot for real-time lead & booking alerts",
+              "Payment gateway integrations (LiqPay / Stripe) & webhooks",
+              "GTM + GA4 Primary Goals telemetry & Google Ads VBB engine",
+              "Formal SOW contract and 100% IP deed assignment"
             ],
             "growthFeatures": [
-              "Priority SLA emergency response window",
-              "Iterative feature development & expansions"
+              "Weekly Google Ads intelligence (Smart Bidding, negative keywords)",
+              "Continuous acquisition cost & ROAS/CPA performance auditing",
+              "Priority SLA: up to 10 hours of hands-on development monthly"
             ],
             "cta": "Choose setup"
           }
@@ -1151,8 +1425,8 @@ window.i18nData = {
         "namePlaceholder": "How should I address you?",
         "companyLabel": "Company",
         "companyPlaceholder": "Company or industry",
-        "contactLabel": "Email or Telegram",
-        "contactPlaceholder": "name@company.com or @username",
+        "contactLabel": "Email or WhatsApp",
+        "contactPlaceholder": "name@company.com or phone (+421 / international)",
         "serviceLabel": "What do you need to launch?",
         "selectPlaceholder": "Select scope or configuration",
         "services": [
@@ -1165,22 +1439,153 @@ window.i18nData = {
         "messageLabel": "Project context",
         "messagePlaceholder": "Website URL, current stack, lead leakage points, or greenfield scope...",
         "consent": "Data is transmitted solely to evaluate your inquiry. Zero spam or third-party persistence.",
-        "submit": "Draft request in Telegram",
+        "submit": "Send Inquiry via WhatsApp",
         "footnote": "Generates a pre-filled Telegram draft — you can review and edit every detail before sending.",
         "privacyDetailsTitle": "How your inquiry is processed",
-        "privacyTextOne": "Controller: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyTextOne": "Controller: Arsenii Leno, arsenii.leno.digital@gmail.com.",
         "privacyTextTwo": "Purpose: inquiry assessment and proposal scoping. Stored strictly in direct work chat.",
         "privacyTextThree": "The site does not persist form data to databases: it prepares a local draft for Telegram or email.",
         "privacyTextFour": "Do not transmit sensitive medical or proprietary customer data prior to executing an NDA.",
-        "note": "This form compiles a direct draft. Zero hidden trackers or lead broker sharing.",
+        "note": "Opens WhatsApp with a pre-filled technical brief — review and edit before sending.",
         "privacySummary": "How your inquiry is processed (GDPR & Privacy Notice)",
-        "privacyController": "Controller: Arsenii Leno, xlenoa@stuba.sk.",
+        "privacyController": "Controller: Arsenii Leno, arsenii.leno.digital@gmail.com.",
         "privacyPurpose": "Purpose: preliminary engineering assessment and SOW scoping. Conversations remain confidential.",
         "privacyTelegram": "This website does not store form submissions in databases: it formats a ready draft inside your Telegram client or email app.",
         "privacyRights": "You retain full rights to request erasure of conversation records at any time via email.",
         "requiredError": "Please fill in all required fields.",
-        "openingStatus": "Opening Telegram...",
-        "fallbackStatus": "Failed to launch app? Contact directly: @Arsen_Kozaque"
+        "openingStatus": "Opening WhatsApp...",
+        "fallbackStatus": "Failed to open? Message WhatsApp: +380997063003 or email arsenii.leno.digital@gmail.com"
+      }
+    },
+    "about": {
+      "hero": {
+        "eyebrow": "Engineering with commercial context",
+        "title": "Technical depth.",
+        "titleAccent": "End-to-end accountability.",
+        "lede": "I engineer digital infrastructure across software engineering, conversion telemetry, and compliance-aware delivery — without pretending a single tool solves a business challenge.",
+        "cta": "Discuss project scope",
+        "secondaryCta": "Review projects"
+      },
+      "profile": {
+        "label": "Practice profile",
+        "role": "Digital Infrastructure & Growth Engineer",
+        "status": "Bratislava · Uzhhorod · Remote",
+        "facts": [
+          {
+            "label": "Specialization",
+            "value": "Infrastructure Developer"
+          },
+          {
+            "label": "Engineering Base",
+            "value": "FIIT STU (Software Eng.)"
+          },
+          {
+            "label": "Legal Foundation",
+            "value": "UzhNU (Faculty of Law)"
+          },
+          {
+            "label": "Engagement",
+            "value": "Fixed SOW · 100% IP Transfer"
+          }
+        ]
+      },
+      "notion": {
+        "badge": "OFFICIAL REGISTRY",
+        "title": "Notion Workfolio",
+        "desc": "Primary legal agreements, SOWs, architectural diagrams, and verified backlog. The site is a commercial offer; Notion holds the engineering proof."
+      },
+      "tracks": {
+        "eyebrow": "Three disciplines, one operational mindset",
+        "title": "Dual academic grounding shaping delivery.",
+        "intro": "Reflects ongoing university studies, not formal legal practice claims. The tangible value lies in sharper architectural, contractual, and commercial decision-making.",
+        "items": [
+          {
+            "type": "Software Engineering · FIIT STU",
+            "title": "Clean Architecture & Edge Performance",
+            "body": "Building systems free from technical debt: replacing legacy monoliths with lightweight Edge deployments (Astro, Workers), sub-100ms TTFB, and rock-solid uptime."
+          },
+          {
+            "type": "Measurable Growth · Telemetry Rig",
+            "title": "Lossless Conversions & Targeted Traffic",
+            "body": "Aligning frontend mechanics directly with business KPIs: robust GTM/GA4 data pipelines, Google Ads smart bidding, and precise customer acquisition analytics."
+          },
+          {
+            "type": "Legal Foundation · UzhNU Law",
+            "title": "Regulatory Cleanliness & IP Handover",
+            "body": "Commercial clarity: transparent SOW scopes, strict GDPR/ePrivacy compliance, and an irrevocable 100% IP rights assignment deed upon delivery."
+          }
+        ]
+      },
+      "principles": {
+        "eyebrow": "Engineering Philosophy",
+        "title": "Three principles that outlast tech stack cycles.",
+        "items": [
+          {
+            "title": "Performance as a business feature",
+            "body": "Latency directly burns ad spend and hurts conversion rates. Systems must render instantly from global Edge CDNs."
+          },
+          {
+            "title": "Zero black boxes in tracking",
+            "body": "Every lead capture is accompanied by UTM parameters and routed to Telegram or CRM in milliseconds. Ad bidding algorithms learn exclusively on verified data."
+          },
+          {
+            "title": "Complete client autonomy",
+            "body": "No artificial lock-ins. You retain 100% ownership of source repositories, accounts, and clean Headless JSON content editing environments."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Delivery Framework",
+        "title": "From architectural audit to managed launch.",
+        "intro": "Every phase produces a concrete deliverable, technical artifact, and sign-off criteria, preventing scope creep and hidden budgets.",
+        "items": [
+          {
+            "title": "Diagnostic & Architecture Audit",
+            "body": "Evaluating current frontend performance, bottlenecks, and lead conversion leaks.",
+            "output": "Technical findings & system proposal"
+          },
+          {
+            "title": "SOW Scope & Architecture Blueprint",
+            "body": "Finalizing deliverables, deadlines, component integrations, and a guaranteed fixed cost.",
+            "output": "Signed SOW & contract documentation"
+          },
+          {
+            "title": "Edge Implementation & Integrations",
+            "body": "Developing on Astro + Tailwind, integrating realtime Telegram lead delivery, and GTM telemetry.",
+            "output": "Staging deployment on Cloudflare Edge"
+          },
+          {
+            "title": "Production Cutover & IP Handover",
+            "body": "DNS routing, production analytics validation, and full transfer of git repositories.",
+            "output": "Live platform & signed IP Deed"
+          }
+        ]
+      },
+      "safeguards": {
+        "eyebrow": "Operational Standards",
+        "title": "Fewer promises. Documented commitments.",
+        "intro": "Contractual framework adapts to project scope and jurisdiction; regulated matters undergo review by qualified legal counsel.",
+        "noteTitle": "Notice:",
+        "note": "legal studies inform architectural risk identification and contract prep, but do not replace licensed attorney counsel.",
+        "items": [
+          {
+            "title": "Guaranteed Scope of Work (SOW)",
+            "body": "Zero surprise costs: all milestones, modules, and completion standards are locked in before coding begins."
+          },
+          {
+            "title": "100% IP Assignment Deed",
+            "body": "All custom code, configurations, and digital assets transfer fully to your business upon completion."
+          },
+          {
+            "title": "GDPR & Privacy Compliance",
+            "body": "Lead capture pipelines respect European and regional privacy requirements with explicit consent flows."
+          }
+        ]
+      },
+      "cta": {
+        "eyebrow": "Need a single accountable partner?",
+        "title": "Let’s align engineering, tracking, and growth into one roadmap.",
+        "button": "Start with a diagnostic"
       }
     }
   }

@@ -58,7 +58,11 @@
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const value = lookup(element.dataset.i18n);
       if (typeof value === "string" || typeof value === "number") {
-        element.textContent = String(value);
+        if (typeof value === "string" && value.includes("<")) {
+          element.innerHTML = String(value);
+        } else {
+          element.textContent = String(value);
+        }
       }
     });
 
@@ -534,14 +538,22 @@
         `\nPage: ${window.location.href}`
       ].filter(Boolean).join("\n");
 
-      const telegramUrl = `https://t.me/Arsen_Kozaque?text=${encodeURIComponent(message)}`;
+      const encodedMsg = encodeURIComponent(message);
+      let targetUrl = "";
+
+      if (currentLanguage === "uk") {
+        targetUrl = `https://t.me/Arsen_Kozaque?text=${encodedMsg}`;
+      } else {
+        targetUrl = `https://wa.me/380997063003?text=${encodedMsg}`;
+      }
+
       status.textContent = lookup("home.contact.openingStatus");
-      const opened = window.open(telegramUrl, "_blank");
+      const opened = window.open(targetUrl, "_blank");
       if (opened) {
         opened.opener = null;
       } else {
         status.textContent = lookup("home.contact.fallbackStatus");
-        window.location.href = telegramUrl;
+        window.location.href = targetUrl;
       }
     });
   }
@@ -570,4 +582,50 @@
   setLanguage(currentLanguage);
   bindControls();
   bindLeadForm();
+
+  function triggerPrivacyHighlight() {
+    const target = document.getElementById("privacy");
+    if (!target) return;
+    target.open = true;
+    target.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  // Перехоплення кліку на посилання "Приватність"
+  document.addEventListener("click", (event) => {
+    const trigger = event.target.closest("a[href*=\"#privacy\"], [data-action=\"privacy\"]");
+    if (!trigger) return;
+    event.preventDefault();
+    triggerPrivacyHighlight();
+  });
+
+  // Авто-спрацьовування, якщо сторінка відкрита напряму з #privacy у URL
+  if (window.location.hash === "#privacy") {
+    setTimeout(triggerPrivacyHighlight, 250);
+  }
+
+  bindPrivacyTrigger();
+  initLiveClock();
 })();
+
+
+  function initLiveClock() {
+    const clockEl = document.getElementById("live-time");
+    if (!clockEl) return;
+    const tick = () => {
+      try {
+        const time = new Intl.DateTimeFormat("en-GB", {
+          timeZone: "Europe/Bratislava",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+        }).format(new Date());
+        clockEl.textContent = `${time} CET`;
+      } catch (e) {
+        clockEl.textContent = "CET";
+      }
+    };
+    tick();
+    setInterval(tick, 1000);
+  }
+  initLiveClock();
